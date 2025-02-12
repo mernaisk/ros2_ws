@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'joy_listener'
+package_name = 'joystick_publisher'
 
 setup(
     name=package_name,
@@ -14,13 +14,13 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='pi2',
-    maintainer_email='pi2@todo.todo',
+    maintainer_email='mernaiskander35@gmail.com',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'joy_subscriber = joy_listener.joy_subscriber:main',
+            'joystick_publisher = joystick_publisher.joystick_publisher:main',
         ],
     },
 )
