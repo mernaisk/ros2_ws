@@ -52,16 +52,34 @@ class JoySubscriber(Node):
             position_direction = math.pi/2
         elif msg.axes[2] == 0 and msg.axes[3] >= -1 and msg.axes[3] < -0.5:
             position_direction = -math.pi/2
-        
+        elif msg.axes[3] == 0 and msg.axes[2] > 0.5 and msg.axes[2] <= 1:
+            position_direction = math.pi
+        elif msg.axes[3] == 0 and msg.axes[2] >= -1 and msg.axes[2] < -0.5:
+            position_direction = 0.0
+        elif msg.axes[2] >= -1 and msg.axes[2] < 0 and msg.axes[3] > 0 and msg.axes[3] <= 1:
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2])
+        elif msg.axes[2] >= -1 and msg.axes[2] < 0 and msg.axes[3] >= -1 and msg.axes[3] < 0:
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2])
+        elif msg.axes[2] > 0 and msg.axes[2] <= 1 and msg.axes[3] > 0 and msg.axes[3] <= 1:
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) + math.pi
+        elif msg.axes[2] > 0 and msg.axes[2] <= 1 and msg.axes[3] >= -1 and msg.axes[3] < 0:
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) - math.pi
+
+
         msg_array = Command()
         msg_array.turn_command = turn_command
         msg_array.turn_angle = turn_angle
         msg_array.position_command = position_command
-
+        msg_array._position_direction = position_direction
 
 
         self.publisher_.publish(msg_array)
-        self.get_logger().info(f'Publishing: turn_command={msg_array.turn_command}, turn_angle={msg_array.turn_angle}')
+        self.get_logger().info(
+            f'Publishing: turn_command={msg_array.turn_command}, '
+            f'turn_angle={msg_array.turn_angle}, '
+            f'position_command={msg_array.position_command}, '
+            f'position_direction={msg_array.position_direction}'
+        )
 
 def main(args=None):
     rclpy.init(args=args)
