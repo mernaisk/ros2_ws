@@ -1,8 +1,9 @@
+
 import math
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy  # Import Joy message type
-from std_msgs.msg import Float32MultiArray  # Import array message type
+from joystick_parameter.msg import Command
 
 class JoySubscriber(Node):
     def __init__(self):
@@ -16,7 +17,7 @@ class JoySubscriber(Node):
             10  
         )
 
-        self.publisher_ = self.create_publisher(Float32MultiArray, '/joystick_command', 10)
+        self.publisher_ = self.create_publisher(Command, '/joystick_command', 10)
 
     def joy_callback(self, msg):
         self.joystick_commands(msg)
@@ -24,11 +25,11 @@ class JoySubscriber(Node):
     def joystick_commands(self, msg):
         # Convert boolean to float (1.0 for True, 0.0 for False)
         if msg.buttons[4] == 1 and msg.buttons[5] == 0:
-            turn_command = 1.0
+            turn_command = True
         elif msg.buttons[4] == 0 and msg.buttons[5] == 1:
-            turn_command = 1.0
+            turn_command = True
         else:
-            turn_command = 0.0
+            turn_command = False
 
         if msg.buttons[4] == 1 and msg.buttons[5] == 0:
             turn_angle = math.pi / 2  
@@ -37,11 +38,30 @@ class JoySubscriber(Node):
         else:
             turn_angle = 0.0
 
-        msg_array = Float32MultiArray()
-        msg_array.data = [turn_command, turn_angle]  # Store values as an array
+#     bool position_command
+# float32 position_direction
+
+        if msg.axes[2] >= -0.5 and msg.axes[2] <= 0.5 and msg.axes[3] >= -0.5 and msg.axes[3] <= 0.5:
+            position_command = False
+        else:
+            position_command =  True
+
+        if msg.axes[2] >= -0.5 and msg.axes[2] <= 0.5 and msg.axes[3] >= -0.5 and msg.axes[3] <= 0.5:
+            position_direction = 0.0
+        elif msg.axes[2] == 0 and msg.axes[3] > 0.5 and msg.axes[3] <= 1:
+            position_direction = math.pi/2
+        elif msg.axes[2] == 0 and msg.axes[3] >= -1 and msg.axes[3] < -0.5:
+            position_direction = -math.pi/2
+        
+        msg_array = Command()
+        msg_array.turn_command = turn_command
+        msg_array.turn_angle = turn_angle
+        msg_array.position_command = position_command
+
+
 
         self.publisher_.publish(msg_array)
-        # self.get_logger().info(f"Published: {msg_array.data}")
+        self.get_logger().info(f'Publishing: turn_command={msg_array.turn_command}, turn_angle={msg_array.turn_angle}')
 
 def main(args=None):
     rclpy.init(args=args)
