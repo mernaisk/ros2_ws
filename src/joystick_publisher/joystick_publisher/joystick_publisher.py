@@ -16,6 +16,7 @@ class JoySubscriber(Node):
             self.joy_callback,
             10  
         )
+        self.velocity = math.pi/12
 
         self.publisher_ = self.create_publisher(Command, '/joystick_command', 10)
 
@@ -66,12 +67,23 @@ class JoySubscriber(Node):
             position_direction = math.atan(msg.axes[3]/-msg.axes[2]) - math.pi
 
 
+        if msg.buttons[3] == 1 and msg.buttons[1] == 0:
+            self.velocity += math.pi/100
+        elif msg.buttons[3] == 0 and msg.buttons[1] == 1:
+            self.velocity -= math.pi/100
+
+        if self.velocity > math.pi/4:
+            self.velocity = math.pi/4
+        elif self.velocity < math.pi/12:
+            self.velocity = math.pi/12
+
+
         msg_array = Command()
         msg_array.turn_command = turn_command
         msg_array.turn_angle = turn_angle
         msg_array.position_command = position_command
-        msg_array._position_direction = position_direction
-
+        msg_array.position_direction = position_direction
+        msg_array.velocity = self.veolocity
 
         self.publisher_.publish(msg_array)
         self.get_logger().info(
