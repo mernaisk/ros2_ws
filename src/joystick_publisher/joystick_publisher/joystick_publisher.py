@@ -83,7 +83,7 @@ class JoySubscriber(Node):
         msg_array.turn_angle = turn_angle
         msg_array.position_command = position_command
         msg_array.position_direction = position_direction
-        msg_array.velocity = self.veolocity
+        msg_array.velocity = self.velocity
 
         self.publisher_.publish(msg_array)
         self.get_logger().info(
