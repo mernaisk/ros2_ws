@@ -1,0 +1,8 @@
+setup.py
+my_parameters/__init__.py
+my_parameters.egg-info/PKG-INFO
+my_parameters.egg-info/SOURCES.txt
+my_parameters.egg-info/dependency_links.txt
+my_parameters.egg-info/top_level.txt
+my_parameters/msg/__init__.py
+my_parameters/msg/_motor_parameters.py

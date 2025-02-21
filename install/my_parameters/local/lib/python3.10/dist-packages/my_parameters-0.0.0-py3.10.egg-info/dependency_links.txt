@@ -1,0 +1,1 @@
+/home/pi2/ros2_ws/build/my_parameters/ament_cmake_python/my_parameters/my_parameters.egg-info/dependency_links.txt

@@ -1,0 +1,1 @@
+/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h

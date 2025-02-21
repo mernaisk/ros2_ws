@@ -1,0 +1,6 @@
+Invoking command in '/home/pi2/ros2_ws/build/my_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi2/ros2_ws/src/my_parameters -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/my_parameters
+Invoked command in '/home/pi2/ros2_ws/build/my_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi2/ros2_ws/src/my_parameters -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/my_parameters
+Invoking command in '/home/pi2/ros2_ws/build/my_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/my_parameters -- -j4 -l4
+Invoked command in '/home/pi2/ros2_ws/build/my_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/my_parameters -- -j4 -l4
+Invoking command in '/home/pi2/ros2_ws/build/my_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi2/ros2_ws/build/my_parameters
+Invoked command in '/home/pi2/ros2_ws/build/my_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi2/ros2_ws/build/my_parameters

@@ -1,0 +1,88 @@
+[0.000000] (-) TimerEvent: {}
+[0.001282] (my_parameters) JobQueued: {'identifier': 'my_parameters', 'dependencies': OrderedDict()}
+[0.001530] (my_parameters) JobStarted: {'identifier': 'my_parameters'}
+[0.034791] (my_parameters) JobProgress: {'identifier': 'my_parameters', 'progress': 'cmake'}
+[0.035742] (my_parameters) Command: {'cmd': ['/usr/bin/cmake', '/home/pi2/ros2_ws/src/my_parameters', '-DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/my_parameters'], 'cwd': '/home/pi2/ros2_ws/build/my_parameters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 55684 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/install/motor_parameter/lib:/home/pi2/ros2_ws/install/motor_parameter/lib:/home/pi2/ros2_ws/install/joystick_parameter/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/my_parameters'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 55684 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/install/motor_parameter/local/lib/python3.10/dist-packages:/home/pi2/install/motor_commands/lib/python3.10/site-packages:/home/pi2/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_parameter/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_parameter/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install')]), 'shell': False}
+[0.097862] (-) TimerEvent: {}
+[0.198640] (-) TimerEvent: {}
+[0.299437] (-) TimerEvent: {}
+[0.405343] (-) TimerEvent: {}
+[0.445080] (my_parameters) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.505523] (-) TimerEvent: {}
+[0.606267] (-) TimerEvent: {}
+[0.707069] (-) TimerEvent: {}
+[0.753892] (my_parameters) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.788561] (my_parameters) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.807183] (-) TimerEvent: {}
+[0.907928] (-) TimerEvent: {}
+[1.008764] (-) TimerEvent: {}
+[1.109706] (-) TimerEvent: {}
+[1.153175] (my_parameters) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.184168] (my_parameters) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.186002] (my_parameters) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.187539] (my_parameters) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.201237] (my_parameters) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.209825] (-) TimerEvent: {}
+[1.310608] (-) TimerEvent: {}
+[1.411449] (-) TimerEvent: {}
+[1.512315] (-) TimerEvent: {}
+[1.596435] (my_parameters) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.612478] (-) TimerEvent: {}
+[1.628759] (my_parameters) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.630308] (my_parameters) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.631872] (my_parameters) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.670395] (my_parameters) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.712683] (-) TimerEvent: {}
+[1.813510] (-) TimerEvent: {}
+[1.914624] (-) TimerEvent: {}
+[2.015300] (-) TimerEvent: {}
+[2.116085] (-) TimerEvent: {}
+[2.217022] (-) TimerEvent: {}
+[2.317957] (-) TimerEvent: {}
+[2.418842] (-) TimerEvent: {}
+[2.520095] (-) TimerEvent: {}
+[2.620938] (-) TimerEvent: {}
+[2.636314] (my_parameters) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.721160] (-) TimerEvent: {}
+[2.821910] (-) TimerEvent: {}
+[2.922851] (-) TimerEvent: {}
+[3.023889] (-) TimerEvent: {}
+[3.124593] (-) TimerEvent: {}
+[3.225270] (-) TimerEvent: {}
+[3.310007] (my_parameters) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.325460] (-) TimerEvent: {}
+[3.426284] (-) TimerEvent: {}
+[3.526974] (-) TimerEvent: {}
+[3.627655] (-) TimerEvent: {}
+[3.728441] (-) TimerEvent: {}
+[3.813660] (my_parameters) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.828595] (-) TimerEvent: {}
+[3.929262] (-) TimerEvent: {}
+[4.029938] (-) TimerEvent: {}
+[4.130704] (-) TimerEvent: {}
+[4.187278] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.230884] (-) TimerEvent: {}
+[4.242607] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.314887] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.331065] (-) TimerEvent: {}
+[4.410186] (my_parameters) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:35 (message):\n'}
+[4.410948] (my_parameters) StderrLine: {'line': b"  No 'rosidl_typesupport_c' found\n"}
+[4.411627] (my_parameters) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.412173] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:8 (get_used_typesupports)\n'}
+[4.412576] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[4.412976] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.413519] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[4.413974] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.414411] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/std_msgs/cmake/std_msgsConfig.cmake:41 (include)\n'}
+[4.414844] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.415260] (my_parameters) StderrLine: {'line': b'  /opt/ros/humble/share/geometry_msgs/cmake/geometry_msgsConfig.cmake:41 (include)\n'}
+[4.415723] (my_parameters) StderrLine: {'line': b'  CMakeLists.txt:26 (find_package)\n'}
+[4.416192] (my_parameters) StderrLine: {'line': b'\n'}
+[4.416614] (my_parameters) StderrLine: {'line': b'\x1b[0m\n'}
+[4.417350] (my_parameters) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.418058] (my_parameters) StdoutLine: {'line': b'See also "/home/pi2/ros2_ws/build/my_parameters/CMakeFiles/CMakeOutput.log".\n'}
+[4.429217] (my_parameters) CommandEnded: {'returncode': 1}
+[4.431239] (-) TimerEvent: {}
+[4.526991] (my_parameters) JobEnded: {'identifier': 'my_parameters', 'rc': 1}
+[4.531383] (-) TimerEvent: {}
+[4.538576] (-) EventReactorShutdown: {}

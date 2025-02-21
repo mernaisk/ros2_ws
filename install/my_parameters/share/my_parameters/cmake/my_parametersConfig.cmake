@@ -1,0 +1,1 @@
+/home/pi2/ros2_ws/build/my_parameters/ament_cmake_core/my_parametersConfig.cmake
