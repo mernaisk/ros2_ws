@@ -1,1 +1,6 @@
-/home/pi2/ros2_ws/build/my_parameters/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/my_parameters
+msg/JoystickParameters.idl
+msg/JoystickParameters.msg
+msg/MotorParameters.idl
+msg/MotorParameters.msg
+msg/Stm32Data.idl
+msg/Stm32Data.msg

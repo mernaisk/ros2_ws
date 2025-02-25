@@ -19,6 +19,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_motor_parameters.py" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_stm32_data.py" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_stm32_data_s.c" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

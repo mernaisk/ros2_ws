@@ -1,0 +1,4 @@
+[console_scripts]
+motor_commands = motor_commands.motor_commands:main
+transmit_command = motor_commands.transmit_command:main
+

@@ -71,9 +71,11 @@ my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameter
 my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_c.c
 my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/_motor_parameters.py
 my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/_joystick_parameters.py
+my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/_stm32_data.py
 my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/__init__.py
 my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c
 my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c
+my_parameters__py/CMakeFiles/my_parameters__py: rosidl_generator_py/my_parameters/msg/_stm32_data_s.c
 
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +92,7 @@ rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtp
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_parameters/msg/MotorParameters.idl
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_parameters/msg/JoystickParameters.idl
+rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_parameters/msg/Stm32Data.idl
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -165,6 +168,9 @@ rosidl_generator_py/my_parameters/msg/_motor_parameters.py: rosidl_generator_py/
 rosidl_generator_py/my_parameters/msg/_joystick_parameters.py: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_parameters/msg/_joystick_parameters.py
 
+rosidl_generator_py/my_parameters/msg/_stm32_data.py: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_parameters/msg/_stm32_data.py
+
 rosidl_generator_py/my_parameters/msg/__init__.py: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_parameters/msg/__init__.py
 
@@ -173,6 +179,9 @@ rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c: rosidl_generator_py
 
 rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c
+
+rosidl_generator_py/my_parameters/msg/_stm32_data_s.c: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_parameters/msg/_stm32_data_s.c
 
 my_parameters__py: my_parameters__py/CMakeFiles/my_parameters__py
 my_parameters__py: rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_c.c
@@ -183,6 +192,8 @@ my_parameters__py: rosidl_generator_py/my_parameters/msg/_joystick_parameters.py
 my_parameters__py: rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c
 my_parameters__py: rosidl_generator_py/my_parameters/msg/_motor_parameters.py
 my_parameters__py: rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c
+my_parameters__py: rosidl_generator_py/my_parameters/msg/_stm32_data.py
+my_parameters__py: rosidl_generator_py/my_parameters/msg/_stm32_data_s.c
 my_parameters__py: my_parameters__py/CMakeFiles/my_parameters__py.dir/build.make
 .PHONY : my_parameters__py
 

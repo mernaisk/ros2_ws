@@ -18,7 +18,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/detail/motor_parameters__builder.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/detail/motor_parameters__struct.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/detail/motor_parameters__traits.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__builder.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__struct.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__traits.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/joystick_parameters.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/stm32_data.hpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp"
   )
 
 

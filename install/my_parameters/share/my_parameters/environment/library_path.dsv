@@ -1,1 +1,1 @@
-/home/pi2/ros2_ws/build/my_parameters/ament_cmake_environment_hooks/library_path.dsv
+prepend-non-duplicate;LD_LIBRARY_PATH;lib

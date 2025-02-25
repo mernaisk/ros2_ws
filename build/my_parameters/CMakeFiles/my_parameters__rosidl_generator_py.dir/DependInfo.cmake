@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c" "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c" "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c.o.d"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_py/my_parameters/msg/_stm32_data_s.c" "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_stm32_data_s.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_stm32_data_s.c.o.d"
   )
 
 # Targets to which this target links.

@@ -1,0 +1,3 @@
+[console_scripts]
+motor_serial = motor_serial.motor_serial:main
+

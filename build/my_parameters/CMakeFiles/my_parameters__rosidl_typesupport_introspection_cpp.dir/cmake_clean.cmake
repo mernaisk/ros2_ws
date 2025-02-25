@@ -3,12 +3,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/joystick_parameters__type_support.cpp.o.d"
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/motor_parameters__type_support.cpp.o"
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/motor_parameters__type_support.cpp.o.d"
+  "CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/stm32_data__type_support.cpp.o"
+  "CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/stm32_data__type_support.cpp.o.d"
   "libmy_parameters__rosidl_typesupport_introspection_cpp.pdb"
   "libmy_parameters__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/joystick_parameters__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/motor_parameters__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/stm32_data__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/stm32_data__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

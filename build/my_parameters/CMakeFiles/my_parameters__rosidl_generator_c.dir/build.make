@@ -84,6 +84,7 @@ rosidl_generator_c/my_parameters/msg/motor_parameters.h: /opt/ros/humble/share/r
 rosidl_generator_c/my_parameters/msg/motor_parameters.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/my_parameters/msg/motor_parameters.h: rosidl_adapter/my_parameters/msg/MotorParameters.idl
 rosidl_generator_c/my_parameters/msg/motor_parameters.h: rosidl_adapter/my_parameters/msg/JoystickParameters.idl
+rosidl_generator_c/my_parameters/msg/motor_parameters.h: rosidl_adapter/my_parameters/msg/Stm32Data.idl
 rosidl_generator_c/my_parameters/msg/motor_parameters.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/my_parameters/msg/motor_parameters.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/my_parameters/msg/motor_parameters.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -168,11 +169,26 @@ rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__struct.h: rosid
 rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__type_support.h: rosidl_generator_c/my_parameters/msg/motor_parameters.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__type_support.h
 
+rosidl_generator_c/my_parameters/msg/stm32_data.h: rosidl_generator_c/my_parameters/msg/motor_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/stm32_data.h
+
+rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h: rosidl_generator_c/my_parameters/msg/motor_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h
+
+rosidl_generator_c/my_parameters/msg/detail/stm32_data__struct.h: rosidl_generator_c/my_parameters/msg/motor_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/stm32_data__struct.h
+
+rosidl_generator_c/my_parameters/msg/detail/stm32_data__type_support.h: rosidl_generator_c/my_parameters/msg/motor_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/stm32_data__type_support.h
+
 rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c: rosidl_generator_c/my_parameters/msg/motor_parameters.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c
 
 rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c: rosidl_generator_c/my_parameters/msg/motor_parameters.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c
+
+rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c: rosidl_generator_c/my_parameters/msg/motor_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c
 
 CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o: CMakeFiles/my_parameters__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o: rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c
@@ -202,16 +218,32 @@ CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c -o CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.s
 
+CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o: CMakeFiles/my_parameters__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o: rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c
+CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o: CMakeFiles/my_parameters__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o -MF CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o.d -o CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o -c /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c
+
+CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c > CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.i
+
+CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c -o CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.s
+
 # Object files for target my_parameters__rosidl_generator_c
 my_parameters__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o" \
-"CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o"
+"CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o" \
+"CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o"
 
 # External object files for target my_parameters__rosidl_generator_c
 my_parameters__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libmy_parameters__rosidl_generator_c.so: CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o
 libmy_parameters__rosidl_generator_c.so: CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o
+libmy_parameters__rosidl_generator_c.so: CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o
 libmy_parameters__rosidl_generator_c.so: CMakeFiles/my_parameters__rosidl_generator_c.dir/build.make
 libmy_parameters__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libmy_parameters__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -219,7 +251,7 @@ libmy_parameters__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfac
 libmy_parameters__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_parameters__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_parameters__rosidl_generator_c.so: CMakeFiles/my_parameters__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libmy_parameters__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmy_parameters__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_parameters__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -238,8 +270,13 @@ CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_p
 CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.h
 CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/motor_parameters__struct.h
 CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/motor_parameters__type_support.h
+CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c
+CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h
+CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/stm32_data__struct.h
+CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/detail/stm32_data__type_support.h
 CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/joystick_parameters.h
 CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/motor_parameters.h
+CMakeFiles/my_parameters__rosidl_generator_c.dir/depend: rosidl_generator_c/my_parameters/msg/stm32_data.h
 	cd /home/pi2/ros2_ws/build/my_parameters && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi2/ros2_ws/src/my_parameters /home/pi2/ros2_ws/src/my_parameters /home/pi2/ros2_ws/build/my_parameters /home/pi2/ros2_ws/build/my_parameters /home/pi2/ros2_ws/build/my_parameters/CMakeFiles/my_parameters__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_parameters__rosidl_generator_c.dir/depend
 
