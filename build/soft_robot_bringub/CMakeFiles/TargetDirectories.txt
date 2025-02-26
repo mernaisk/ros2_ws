@@ -1,0 +1,9 @@
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/uninstall.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/soft_robot_bringub_uninstall.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/test.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/edit_cache.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/rebuild_cache.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/list_install_components.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/install.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/install/local.dir
+/home/pi2/ros2_ws/build/soft_robot_bringub/CMakeFiles/install/strip.dir

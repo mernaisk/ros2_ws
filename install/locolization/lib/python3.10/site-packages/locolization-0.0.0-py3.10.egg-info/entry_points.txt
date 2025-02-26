@@ -1,0 +1,3 @@
+[console_scripts]
+robot_tf = locolization.robot_tf:main
+

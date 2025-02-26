@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/locolization/locolization.egg-info/PKG-INFO
+../../build/locolization/locolization.egg-info/SOURCES.txt
+../../build/locolization/locolization.egg-info/dependency_links.txt
+../../build/locolization/locolization.egg-info/entry_points.txt
+../../build/locolization/locolization.egg-info/requires.txt
+../../build/locolization/locolization.egg-info/top_level.txt
+../../build/locolization/locolization.egg-info/zip-safe
+locolization/__init__.py
+locolization/robot_tf.py
+resource/locolization
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

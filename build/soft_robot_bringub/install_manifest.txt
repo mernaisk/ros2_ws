@@ -1,0 +1,16 @@
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/launch/soft_robot.launch.py
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/ament_index/resource_index/package_run_dependencies/soft_robot_bringub
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/ament_index/resource_index/parent_prefix_path/soft_robot_bringub
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/ament_prefix_path.sh
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/ament_prefix_path.dsv
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/path.sh
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/path.dsv
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.bash
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.sh
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.zsh
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.dsv
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.dsv
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/ament_index/resource_index/packages/soft_robot_bringub
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/cmake/soft_robot_bringubConfig.cmake
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/cmake/soft_robot_bringubConfig-version.cmake
+/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.xml

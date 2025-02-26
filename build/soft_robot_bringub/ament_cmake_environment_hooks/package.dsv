@@ -1,0 +1,4 @@
+source;share/soft_robot_bringub/local_setup.bash
+source;share/soft_robot_bringub/local_setup.dsv
+source;share/soft_robot_bringub/local_setup.sh
+source;share/soft_robot_bringub/local_setup.zsh

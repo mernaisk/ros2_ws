@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/locolization/locolization.egg-info
+writing ../../build/locolization/locolization.egg-info/PKG-INFO
+writing dependency_links to ../../build/locolization/locolization.egg-info/dependency_links.txt
+writing entry points to ../../build/locolization/locolization.egg-info/entry_points.txt
+writing requirements to ../../build/locolization/locolization.egg-info/requires.txt
+writing top-level names to ../../build/locolization/locolization.egg-info/top_level.txt
+writing manifest file '../../build/locolization/locolization.egg-info/SOURCES.txt'
+reading manifest file '../../build/locolization/locolization.egg-info/SOURCES.txt'
+writing manifest file '../../build/locolization/locolization.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/pi2/ros2_ws/build/locolization/build
+creating /home/pi2/ros2_ws/build/locolization/build/lib
+creating /home/pi2/ros2_ws/build/locolization/build/lib/locolization
+copying locolization/__init__.py -> /home/pi2/ros2_ws/build/locolization/build/lib/locolization
+running install
+running install_lib
+creating /home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages/locolization
+copying /home/pi2/ros2_ws/build/locolization/build/lib/locolization/__init__.py -> /home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages/locolization
+byte-compiling /home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages/locolization/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/pi2/ros2_ws/install/locolization/share/ament_index
+creating /home/pi2/ros2_ws/install/locolization/share/ament_index/resource_index
+creating /home/pi2/ros2_ws/install/locolization/share/ament_index/resource_index/packages
+copying resource/locolization -> /home/pi2/ros2_ws/install/locolization/share/ament_index/resource_index/packages
+copying package.xml -> /home/pi2/ros2_ws/install/locolization/share/locolization
+running install_egg_info
+Copying ../../build/locolization/locolization.egg-info to /home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages/locolization-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/pi2/ros2_ws/build/locolization/install.log'
