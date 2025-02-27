@@ -1,0 +1,24 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0  # EKF update rate (Hz)
+
+    two_d_mode: true  # Ignore Z-axis for a ground robot
+
+    # Frames
+    map_frame: "map"
+    odom_frame: "odom"
+    base_link_frame: "bno055"
+
+    # IMU (BNO055)
+    imu0: "bno055/imu"
+    imu0_config: [false, false, false,  # Use no X, Y, Z position
+                  true, true, true,     # Use roll, pitch, yaw (orientation)
+                  false, false, false,  # No linear velocity
+                  true, false, false,   # Use yaw velocity (angular z)
+                  false, false, false]  # No acceleration
+
+
+    # Output fused odometry
+    publish_tf: true
+    odom0_differential: false
+    imu0_differential: true  # IMU drifts, so use differential mode
