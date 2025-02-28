@@ -1,0 +1,221 @@
+[1.397s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'soft_robot_bringub']
+[1.398s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['soft_robot_bringub'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffaae14880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffaafc9330>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffaafc9330>>)
+[3.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.179s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi2/ros2_ws'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.268s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.269s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extensions ['ignore', 'ignore_ament_install']
+[3.270s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'ignore'
+[3.270s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'ignore_ament_install'
+[3.270s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extensions ['colcon_pkg']
+[3.271s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'colcon_pkg'
+[3.271s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extensions ['colcon_meta']
+[3.271s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'colcon_meta'
+[3.271s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extensions ['ros']
+[3.271s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'ros'
+[3.272s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extensions ['cmake', 'python']
+[3.272s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'cmake'
+[3.272s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'python'
+[3.273s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extensions ['python_setup_py']
+[3.273s] Level 1:colcon.colcon_core.package_identification:_identify(joy2twist.yaml) by extension 'python_setup_py'
+[3.276s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.277s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.277s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.280s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.280s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.280s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.281s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.281s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.281s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.281s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.282s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extensions ['ignore', 'ignore_ament_install']
+[3.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extension 'ignore'
+[3.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extension 'ignore_ament_install'
+[3.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extensions ['colcon_pkg']
+[3.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extension 'colcon_pkg'
+[3.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extensions ['colcon_meta']
+[3.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extension 'colcon_meta'
+[3.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extensions ['ros']
+[3.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/bno055) by extension 'ros'
+[3.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bno055' with type 'ros.ament_python' and name 'bno055'
+[3.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extensions ['ignore', 'ignore_ament_install']
+[3.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extension 'ignore'
+[3.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extension 'ignore_ament_install'
+[3.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extensions ['colcon_pkg']
+[3.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extension 'colcon_pkg'
+[3.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extensions ['colcon_meta']
+[3.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extension 'colcon_meta'
+[3.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extensions ['ros']
+[3.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_publisher) by extension 'ros'
+[3.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_publisher' with type 'ros.ament_python' and name 'joystick_publisher'
+[3.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extensions ['ignore', 'ignore_ament_install']
+[3.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extension 'ignore'
+[3.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extension 'ignore_ament_install'
+[3.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extensions ['colcon_pkg']
+[3.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extension 'colcon_pkg'
+[3.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extensions ['colcon_meta']
+[3.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extension 'colcon_meta'
+[3.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extensions ['ros']
+[3.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_commands) by extension 'ros'
+[3.321s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_commands' with type 'ros.ament_python' and name 'motor_commands'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extensions ['ignore', 'ignore_ament_install']
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extension 'ignore'
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extension 'ignore_ament_install'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extensions ['colcon_pkg']
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extension 'colcon_pkg'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extensions ['colcon_meta']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extension 'colcon_meta'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extensions ['ros']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_serial) by extension 'ros'
+[3.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_serial' with type 'ros.ament_python' and name 'motor_serial'
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extensions ['ignore', 'ignore_ament_install']
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extension 'ignore'
+[3.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extension 'ignore_ament_install'
+[3.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extensions ['colcon_pkg']
+[3.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extension 'colcon_pkg'
+[3.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extensions ['colcon_meta']
+[3.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extension 'colcon_meta'
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extensions ['ros']
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_parameters) by extension 'ros'
+[3.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_parameters' with type 'ros.ament_cmake' and name 'my_parameters'
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[3.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[3.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[3.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[3.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[3.344s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[3.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extensions ['ignore', 'ignore_ament_install']
+[3.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extension 'ignore'
+[3.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extension 'ignore_ament_install'
+[3.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extensions ['colcon_pkg']
+[3.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extension 'colcon_pkg'
+[3.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extensions ['colcon_meta']
+[3.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extension 'colcon_meta'
+[3.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extensions ['ros']
+[3.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/soft_robot_bringub) by extension 'ros'
+[3.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/soft_robot_bringub' with type 'ros.ament_cmake' and name 'soft_robot_bringub'
+[3.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.587s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'bno055' in 'src/bno055'
+[3.587s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'joystick_publisher' in 'src/joystick_publisher'
+[3.588s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'motor_commands' in 'src/motor_commands'
+[3.588s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'motor_serial' in 'src/motor_serial'
+[3.588s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'my_parameters' in 'src/my_parameters'
+[3.588s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sllidar_ros2' in 'src/sllidar_ros2'
+[3.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.592s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.628s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/pi2/ros2_ws/install
+[3.641s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/humble
+[3.650s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.957s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'cmake_args' from command line to 'None'
+[3.958s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'cmake_target' from command line to 'None'
+[3.958s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.958s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'cmake_clean_cache' from command line to 'False'
+[3.958s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'cmake_clean_first' from command line to 'False'
+[3.959s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'cmake_force_configure' from command line to 'False'
+[3.959s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'ament_cmake_args' from command line to 'None'
+[3.959s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'catkin_cmake_args' from command line to 'None'
+[3.959s] Level 5:colcon.colcon_core.verb:set package 'soft_robot_bringub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.959s] DEBUG:colcon.colcon_core.verb:Building package 'soft_robot_bringub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi2/ros2_ws/build/soft_robot_bringub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi2/ros2_ws/install/soft_robot_bringub', 'merge_install': False, 'path': '/home/pi2/ros2_ws/src/soft_robot_bringub', 'symlink_install': False, 'test_result_base': None}
+[3.960s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.964s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.965s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi2/ros2_ws/src/soft_robot_bringub' with build type 'ament_cmake'
+[3.966s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi2/ros2_ws/src/soft_robot_bringub'
+[3.990s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.992s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.992s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi2/ros2_ws/build/soft_robot_bringub': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/locolization:/opt/ros/humble:/home/pi2/ros2_ws/install CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble PYTHONPATH=/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/pi2/ros2_ws/build/soft_robot_bringub -- -j4 -l4
+[4.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi2/ros2_ws/build/soft_robot_bringub' returned '0': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/locolization:/opt/ros/humble:/home/pi2/ros2_ws/install CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble PYTHONPATH=/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/pi2/ros2_ws/build/soft_robot_bringub -- -j4 -l4
+[4.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi2/ros2_ws/build/soft_robot_bringub': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/locolization:/opt/ros/humble:/home/pi2/ros2_ws/install CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble PYTHONPATH=/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/pi2/ros2_ws/build/soft_robot_bringub
+[4.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(soft_robot_bringub)
+[4.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi2/ros2_ws/build/soft_robot_bringub' returned '0': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/locolization:/opt/ros/humble:/home/pi2/ros2_ws/install CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble PYTHONPATH=/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/pi2/ros2_ws/build/soft_robot_bringub
+[4.888s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub' for CMake module files
+[4.892s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub' for CMake config files
+[4.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('soft_robot_bringub', 'cmake_prefix_path')
+[4.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/hook/cmake_prefix_path.ps1'
+[4.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/hook/cmake_prefix_path.dsv'
+[4.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/hook/cmake_prefix_path.sh'
+[4.909s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/bin'
+[4.910s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/lib/pkgconfig/soft_robot_bringub.pc'
+[4.911s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/lib/python3.10/site-packages'
+[4.912s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/bin'
+[4.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.ps1'
+[4.918s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.dsv'
+[4.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.sh'
+[4.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.bash'
+[4.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.zsh'
+[4.937s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi2/ros2_ws/install/soft_robot_bringub/share/colcon-core/packages/soft_robot_bringub)
+[5.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(soft_robot_bringub)
+[5.066s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub' for CMake module files
+[5.070s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub' for CMake config files
+[5.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('soft_robot_bringub', 'cmake_prefix_path')
+[5.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/hook/cmake_prefix_path.ps1'
+[5.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/hook/cmake_prefix_path.dsv'
+[5.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/hook/cmake_prefix_path.sh'
+[5.082s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/bin'
+[5.083s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/lib/pkgconfig/soft_robot_bringub.pc'
+[5.084s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/lib/python3.10/site-packages'
+[5.085s] Level 1:colcon.colcon_core.environment:checking '/home/pi2/ros2_ws/install/soft_robot_bringub/bin'
+[5.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.ps1'
+[5.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.dsv'
+[5.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.sh'
+[5.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.bash'
+[5.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.zsh'
+[5.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi2/ros2_ws/install/soft_robot_bringub/share/colcon-core/packages/soft_robot_bringub)
+[5.107s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.108s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.108s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.108s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.147s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.148s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.148s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.148s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.187s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[5.188s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.189s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi2/ros2_ws/install/local_setup.ps1'
+[5.196s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi2/ros2_ws/install/_local_setup_util_ps1.py'
+[5.206s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi2/ros2_ws/install/setup.ps1'
+[5.216s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi2/ros2_ws/install/local_setup.sh'
+[5.221s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi2/ros2_ws/install/_local_setup_util_sh.py'
+[5.225s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi2/ros2_ws/install/setup.sh'
+[5.236s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi2/ros2_ws/install/local_setup.bash'
+[5.240s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi2/ros2_ws/install/setup.bash'
+[5.250s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi2/ros2_ws/install/local_setup.zsh'
+[5.255s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi2/ros2_ws/install/setup.zsh'

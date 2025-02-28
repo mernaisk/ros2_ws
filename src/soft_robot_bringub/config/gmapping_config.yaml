@@ -1,0 +1,13 @@
+slam_toolbox:
+  ros__parameters:
+    mode: mapping
+    use_sim_time: true
+    map_update_interval: 1.0
+    odom_frame: odom
+    base_frame: base_link
+    laser_scan_topic: /scan
+    transform_timeout: 5.0
+    pub_map_odom_transform: true
+    message_queue_size: 5000  # Increased to buffer more messages
+    maxRange: 6.0
+    maxUrange: 6.0  # Keep this slightly below maxRange to avoid noise

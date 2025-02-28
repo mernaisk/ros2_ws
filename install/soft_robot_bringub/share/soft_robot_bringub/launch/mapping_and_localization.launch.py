@@ -6,8 +6,12 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 # Path to the EKF configuration file
-config_file = os.path.join(
+config_file1 = os.path.join(
     get_package_share_directory('soft_robot_bringub'), 'config', 'ekf_config.yaml'
+)
+
+config_file2 = os.path.join(
+    get_package_share_directory('soft_robot_bringub'), 'config', 'gmapping_config.yaml'
 )
 
 sllidar_launch_file = os.path.join(
@@ -34,13 +38,37 @@ def generate_launch_description():
             name='tf_static_lidar',
             arguments=['0.3', '0.0', '0.2', '0', '0', '0', '1', 'base_link', 'lidar_link']
         ),
+
+        # Static transform between base_link and bno055 (IMU)
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='tf_static_bno055',
+            arguments=['0.0', '0.0', '0.0', '0', '0', '0', '1', 'base_link', 'bno055']
+        ),
+
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='tf_static_laser',
+            arguments=['0', '0', '0', '0', '0', '0', '1', 'lidar_link', 'laser']
+        ),
+
         # Launch the EKF localization node (no need for IncludeLaunchDescription)
         Node(
             package='robot_localization',
             executable='ekf_node',  # this is the EKF localization node
             name='ekf_filter_node',
             output='screen',
-            parameters=[config_file]  # path to the EKF config file
+            parameters=[config_file1]  # path to the EKF config file
+        ),
+
+        Node(
+            package='slam_toolbox',
+            executable='sync_slam_toolbox_node',
+            name='slam_toolbox',
+            output='screen',
+            parameters=[config_file2]  # SLAM Toolbox config file
         )
         
     ])
