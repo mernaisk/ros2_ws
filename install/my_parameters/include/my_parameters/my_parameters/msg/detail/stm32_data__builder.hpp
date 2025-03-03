@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Stm32Data_enabled
+{
+public:
+  explicit Init_Stm32Data_enabled(::my_parameters::msg::Stm32Data & msg)
+  : msg_(msg)
+  {}
+  ::my_parameters::msg::Stm32Data enabled(::my_parameters::msg::Stm32Data::_enabled_type arg)
+  {
+    msg_.enabled = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::my_parameters::msg::Stm32Data msg_;
+};
+
 class Init_Stm32Data_motor3_rl
 {
 public:
   explicit Init_Stm32Data_motor3_rl(::my_parameters::msg::Stm32Data & msg)
   : msg_(msg)
   {}
-  ::my_parameters::msg::Stm32Data motor3_rl(::my_parameters::msg::Stm32Data::_motor3_rl_type arg)
+  Init_Stm32Data_enabled motor3_rl(::my_parameters::msg::Stm32Data::_motor3_rl_type arg)
   {
     msg_.motor3_rl = std::move(arg);
-    return std::move(msg_);
+    return Init_Stm32Data_enabled(msg_);
   }
 
 private:

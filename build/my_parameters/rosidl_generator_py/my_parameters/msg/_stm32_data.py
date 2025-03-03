@@ -67,6 +67,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         '_motor1_rl',
         '_motor2_rl',
         '_motor3_rl',
+        '_enabled',
     ]
 
     _fields_and_field_types = {
@@ -82,6 +83,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         'motor1_rl': 'int32',
         'motor2_rl': 'int32',
         'motor3_rl': 'int32',
+        'enabled': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -97,6 +99,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -115,6 +118,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         self.motor1_rl = kwargs.get('motor1_rl', int())
         self.motor2_rl = kwargs.get('motor2_rl', int())
         self.motor3_rl = kwargs.get('motor3_rl', int())
+        self.enabled = kwargs.get('enabled', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -168,6 +172,8 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         if self.motor2_rl != other.motor2_rl:
             return False
         if self.motor3_rl != other.motor3_rl:
+            return False
+        if self.enabled != other.enabled:
             return False
         return True
 
@@ -355,3 +361,16 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'motor3_rl' field must be an integer in [-2147483648, 2147483647]"
         self._motor3_rl = value
+
+    @builtins.property
+    def enabled(self):
+        """Message field 'enabled'."""
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'enabled' field must be of type 'bool'"
+        self._enabled = value

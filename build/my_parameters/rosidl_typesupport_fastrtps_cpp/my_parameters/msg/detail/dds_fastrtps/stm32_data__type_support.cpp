@@ -56,6 +56,8 @@ cdr_serialize(
   cdr << ros_message.motor2_rl;
   // Member: motor3_rl
   cdr << ros_message.motor3_rl;
+  // Member: enabled
+  cdr << (ros_message.enabled ? true : false);
   return true;
 }
 
@@ -100,6 +102,13 @@ cdr_deserialize(
 
   // Member: motor3_rl
   cdr >> ros_message.motor3_rl;
+
+  // Member: enabled
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.enabled = tmp ? true : false;
+  }
 
   return true;
 }
@@ -186,6 +195,12 @@ get_serialized_size(
   // Member: motor3_rl
   {
     size_t item_size = sizeof(ros_message.motor3_rl);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: enabled
+  {
+    size_t item_size = sizeof(ros_message.enabled);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -321,6 +336,14 @@ max_serialized_size_Stm32Data(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: enabled
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -329,7 +352,7 @@ max_serialized_size_Stm32Data(
     using DataType = my_parameters::msg::Stm32Data;
     is_plain =
       (
-      offsetof(DataType, motor3_rl) +
+      offsetof(DataType, enabled) +
       last_member_size
       ) == ret_val;
   }

@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/motor_commands/motor_commands.egg-info/PKG-INFO
+writing dependency_links to ../../build/motor_commands/motor_commands.egg-info/dependency_links.txt
+writing entry points to ../../build/motor_commands/motor_commands.egg-info/entry_points.txt
+writing requirements to ../../build/motor_commands/motor_commands.egg-info/requires.txt
+writing top-level names to ../../build/motor_commands/motor_commands.egg-info/top_level.txt
+reading manifest file '../../build/motor_commands/motor_commands.egg-info/SOURCES.txt'
+writing manifest file '../../build/motor_commands/motor_commands.egg-info/SOURCES.txt'
+running build
+running build_py
+copying motor_commands/motor_commands.py -> /home/pi2/ros2_ws/build/motor_commands/build/lib/motor_commands
+running install
+running install_lib
+copying /home/pi2/ros2_ws/build/motor_commands/build/lib/motor_commands/motor_commands.py -> /home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands
+byte-compiling /home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands/motor_commands.py to motor_commands.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/motor_commands/motor_commands.egg-info to /home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motor_commands script to /home/pi2/ros2_ws/install/motor_commands/lib/motor_commands
+Installing transmit_command script to /home/pi2/ros2_ws/install/motor_commands/lib/motor_commands
+writing list of installed files to '/home/pi2/ros2_ws/build/motor_commands/install.log'

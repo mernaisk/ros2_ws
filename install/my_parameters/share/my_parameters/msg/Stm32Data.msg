@@ -13,3 +13,5 @@ int32 motor3_rr
 int32 motor1_rl
 int32 motor2_rl
 int32 motor3_rl
+
+bool enabled

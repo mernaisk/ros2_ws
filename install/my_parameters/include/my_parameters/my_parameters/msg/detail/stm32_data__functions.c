@@ -29,6 +29,7 @@ my_parameters__msg__Stm32Data__init(my_parameters__msg__Stm32Data * msg)
   // motor1_rl
   // motor2_rl
   // motor3_rl
+  // enabled
   return true;
 }
 
@@ -50,6 +51,7 @@ my_parameters__msg__Stm32Data__fini(my_parameters__msg__Stm32Data * msg)
   // motor1_rl
   // motor2_rl
   // motor3_rl
+  // enabled
 }
 
 bool
@@ -106,6 +108,10 @@ my_parameters__msg__Stm32Data__are_equal(const my_parameters__msg__Stm32Data * l
   if (lhs->motor3_rl != rhs->motor3_rl) {
     return false;
   }
+  // enabled
+  if (lhs->enabled != rhs->enabled) {
+    return false;
+  }
   return true;
 }
 
@@ -141,6 +147,8 @@ my_parameters__msg__Stm32Data__copy(
   output->motor2_rl = input->motor2_rl;
   // motor3_rl
   output->motor3_rl = input->motor3_rl;
+  // enabled
+  output->enabled = input->enabled;
   return true;
 }
 

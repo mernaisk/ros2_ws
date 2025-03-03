@@ -50,6 +50,7 @@ struct Stm32Data_
       this->motor1_rl = 0l;
       this->motor2_rl = 0l;
       this->motor3_rl = 0l;
+      this->enabled = false;
     }
   }
 
@@ -71,6 +72,7 @@ struct Stm32Data_
       this->motor1_rl = 0l;
       this->motor2_rl = 0l;
       this->motor3_rl = 0l;
+      this->enabled = false;
     }
   }
 
@@ -111,6 +113,9 @@ struct Stm32Data_
   using _motor3_rl_type =
     int32_t;
   _motor3_rl_type motor3_rl;
+  using _enabled_type =
+    bool;
+  _enabled_type enabled;
 
   // setters for named parameter idiom
   Type & set__motor1_fr(
@@ -183,6 +188,12 @@ struct Stm32Data_
     const int32_t & _arg)
   {
     this->motor3_rl = _arg;
+    return *this;
+  }
+  Type & set__enabled(
+    const bool & _arg)
+  {
+    this->enabled = _arg;
     return *this;
   }
 
@@ -262,6 +273,9 @@ struct Stm32Data_
       return false;
     }
     if (this->motor3_rl != other.motor3_rl) {
+      return false;
+    }
+    if (this->enabled != other.enabled) {
       return false;
     }
     return true;

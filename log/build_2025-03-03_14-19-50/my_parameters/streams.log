@@ -1,0 +1,60 @@
+[0.096s] Invoking command in '/home/pi2/ros2_ws/build/my_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/my_parameters -- -j4 -l4
+[0.793s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.797s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.235s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.514s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.532s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.577s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.650s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.737s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.993s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.369s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[6.677s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.590s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.728s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[7.882s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.883s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[7.883s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[8.139s] -- Added test 'lint_cmake' to check CMake code style
+[8.153s] -- Added test 'xmllint' to check XML markup files
+[8.240s] -- Configuring done
+[8.666s] -- Generating done
+[8.688s] -- Build files have been written to: /home/pi2/ros2_ws/build/my_parameters
+[8.970s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.028s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.102s] [  4%] Built target ament_cmake_python_copy_my_parameters
+[13.176s] [  4%] Built target my_parameters__cpp
+[13.336s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_generator_c[0m
+[13.388s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.419s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.570s] [ 10%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o[0m
+[18.163s] [ 12%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o[0m
+[19.189s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_cpp[0m
+[19.260s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_cpp[0m
+[19.606s] [ 14%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/motor_parameters__type_support.cpp.o[0m
+[19.614s] [ 17%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o[0m
+[23.319s] [ 19%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o[0m
+[70.179s] Traceback (most recent call last):
+[70.359s]   File "/home/pi2/ros2_ws/build/my_parameters/ament_cmake_python/my_parameters/setup.py", line 4, in <module>
+[70.359s]     setup(
+[70.360s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 152, in setup
+[70.361s]     _install_setup_requires(attrs)
+[70.361s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 142, in _install_setup_requires
+[70.362s]     dist = MinimalDistribution(attrs)
+[70.362s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 134, in __init__
+[70.363s]     distutils.core.Distribution.__init__(self, filtered)
+[70.363s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 457, in __init__
+[70.399s]     for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):
+[70.399s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 647, in <genexpr>
+[70.548s]     if name is None or name == entry.name
+[70.549s] KeyboardInterrupt
+[70.597s] gmake[2]: *** [CMakeFiles/my_parameters__rosidl_generator_c.dir/build.make:225: CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o] Interrupt
+[70.599s] gmake[2]: *** [CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/build.make:154: CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/motor_parameters__type_support.cpp.o] Interrupt
+[70.602s] gmake[2]: *** [CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/build.make:165: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o] Interrupt
+[70.604s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/my_parameters__rosidl_generator_c.dir/all] Interrupt
+[70.605s] gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[70.605s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/all] Interrupt
+[70.775s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_my_parameters_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_my_parameters_egg] Interrupt
+[70.775s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_my_parameters_egg.dir/all] Interrupt
+[70.779s] gmake: *** [Makefile:146: all] Interrupt
+[70.806s] Invoked command in '/home/pi2/ros2_ws/build/my_parameters' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/my_parameters -- -j4 -l4

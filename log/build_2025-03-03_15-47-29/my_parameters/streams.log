@@ -1,0 +1,275 @@
+[0.057s] Invoking command in '/home/pi2/ros2_ws/build/my_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/my_parameters -- -j4 -l4
+[0.216s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.002s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.371s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.605s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.624s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.665s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.729s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.808s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.023s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.319s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.607s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.507s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.644s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.782s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.782s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.783s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[7.011s] -- Added test 'lint_cmake' to check CMake code style
+[7.025s] -- Added test 'xmllint' to check XML markup files
+[7.060s] -- Configuring done
+[7.370s] -- Generating done
+[7.390s] -- Build files have been written to: /home/pi2/ros2_ws/build/my_parameters
+[7.515s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.568s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.670s] [  4%] Built target ament_cmake_python_copy_my_parameters
+[10.085s] running egg_info
+[10.091s] writing my_parameters.egg-info/PKG-INFO
+[10.095s] writing dependency_links to my_parameters.egg-info/dependency_links.txt
+[10.095s] writing top-level names to my_parameters.egg-info/top_level.txt
+[10.114s] reading manifest file 'my_parameters.egg-info/SOURCES.txt'
+[10.129s] writing manifest file 'my_parameters.egg-info/SOURCES.txt'
+[10.387s] [  4%] Built target ament_cmake_python_build_my_parameters_egg
+[10.590s] [  4%] Built target my_parameters__cpp
+[10.699s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[10.759s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[10.840s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_generator_c[0m
+[10.894s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.947s] [ 12%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o[0m
+[11.599s] [ 14%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o[0m
+[12.231s] [ 17%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o[0m
+[12.699s] [ 19%] [32m[1mLinking C shared library libmy_parameters__rosidl_generator_c.so[0m
+[12.787s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_cpp[0m
+[12.946s] [ 21%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/motor_parameters__type_support.cpp.o[0m
+[13.045s] [ 21%] Built target my_parameters__rosidl_generator_c
+[13.152s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.665s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_introspection_cpp[0m
+[13.832s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_cpp[0m
+[13.908s] [ 25%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/motor_parameters__type_support.cpp.o[0m
+[13.992s] [ 27%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o[0m
+[15.944s] [ 29%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/joystick_parameters__type_support.cpp.o[0m
+[16.480s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_c[0m
+[16.733s] [ 31%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/motor_parameters__type_support_c.cpp.o[0m
+[17.563s] [ 34%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/joystick_parameters__type_support.cpp.o[0m
+[17.616s] [ 36%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/joystick_parameters__type_support.cpp.o[0m
+[18.433s] [ 38%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/stm32_data__type_support.cpp.o[0m
+[20.203s] [ 40%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/joystick_parameters__type_support_c.cpp.o[0m
+[20.633s] [ 42%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/stm32_data__type_support.cpp.o[0m
+[21.047s] [ 44%] [32m[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_cpp.so[0m
+[21.584s] [ 44%] Built target my_parameters__rosidl_typesupport_cpp
+[21.668s] [ 46%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/stm32_data__type_support_c.cpp.o[0m
+[21.706s] [ 48%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/stm32_data__type_support.cpp.o[0m
+[22.795s] [ 51%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[23.827s] [ 53%] [32m[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_introspection_cpp.so[0m
+[24.304s] [ 53%] Built target my_parameters__rosidl_typesupport_introspection_cpp
+[24.495s] [ 55%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[24.601s] [ 57%] [32m[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_fastrtps_c.so[0m
+[25.273s] [ 57%] Built target my_parameters__rosidl_typesupport_fastrtps_c
+[25.486s] [ 59%] [32m[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_fastrtps_cpp.so[0m
+[25.972s] [ 59%] Built target my_parameters__rosidl_typesupport_fastrtps_cpp
+[26.004s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_introspection_c[0m
+[26.106s] [ 61%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/joystick_parameters__type_support.c.o[0m
+[26.148s] [ 65%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/motor_parameters__type_support.c.o[0m
+[26.152s] [ 65%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/stm32_data__type_support.c.o[0m
+[26.497s] [ 68%] [32m[1mLinking C shared library libmy_parameters__rosidl_typesupport_introspection_c.so[0m
+[26.711s] [ 68%] Built target my_parameters__rosidl_typesupport_introspection_c
+[26.742s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_c[0m
+[26.810s] [ 70%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o[0m
+[26.812s] [ 72%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp.o[0m
+[26.816s] [ 74%] [32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp.o[0m
+[27.033s] [ 76%] [32m[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_c.so[0m
+[27.239s] [ 76%] Built target my_parameters__rosidl_typesupport_c
+[27.344s] [ 76%] Built target my_parameters
+[27.458s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[30.576s] [ 78%] Built target my_parameters__py
+[30.637s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_generator_py[0m
+[30.731s] [ 80%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c.o[0m
+[30.742s] [ 82%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_stm32_data_s.c.o[0m
+[30.750s] [ 85%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c.o[0m
+[31.631s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/my_parameters/libmy_parameters__rosidl_generator_py.so[0m
+[31.872s] [ 87%] Built target my_parameters__rosidl_generator_py
+[31.937s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_c__pyext[0m
+[31.941s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_c__pyext[0m
+[31.958s] [35m[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_introspection_c__pyext[0m
+[32.040s] [ 91%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[32.044s] [ 89%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_c.c.o[0m
+[32.088s] [ 93%] [32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[32.843s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[32.891s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[33.167s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[33.217s] [100%] Built target my_parameters__rosidl_typesupport_c__pyext
+[33.288s] [100%] Built target my_parameters__rosidl_typesupport_fastrtps_c__pyext
+[33.439s] [100%] Built target my_parameters__rosidl_typesupport_introspection_c__pyext
+[33.497s] Invoked command in '/home/pi2/ros2_ws/build/my_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/my_parameters -- -j4 -l4
+[34.231s] Invoking command in '/home/pi2/ros2_ws/build/my_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --install /home/pi2/ros2_ws/build/my_parameters
+[34.267s] -- Install configuration: ""
+[34.271s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/rosidl_interfaces/my_parameters
+[34.272s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters
+[34.272s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg
+[34.273s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/motor_parameters.h
+[34.274s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_generator_c__visibility_control.h
+[34.274s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail
+[34.275s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__functions.h
+[34.277s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__functions.c
+[34.279s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__type_support.h
+[34.281s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__functions.c
+[34.284s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__struct.h
+[34.285s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__type_support.h
+[34.287s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__functions.c
+[34.290s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__struct.h
+[34.291s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__functions.h
+[34.293s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__struct.h
+[34.295s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__functions.h
+[34.296s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__type_support.h
+[34.298s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/stm32_data.h
+[34.300s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/joystick_parameters.h
+[34.304s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/library_path.sh
+[34.304s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/library_path.dsv
+[34.310s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_c.so
+[34.314s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_c.so" to ""
+[34.315s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters
+[34.317s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg
+[34.317s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[34.318s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail
+[34.319s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_fastrtps_c.h
+[34.319s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_fastrtps_c.h
+[34.321s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_fastrtps_c.h
+[34.326s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_c.so
+[34.330s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_c.so" to ""
+[34.331s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters
+[34.332s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg
+[34.332s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/joystick_parameters.hpp
+[34.335s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/stm32_data.hpp
+[34.336s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/motor_parameters.hpp
+[34.338s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail
+[34.341s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__struct.hpp
+[34.342s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__builder.hpp
+[34.347s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__builder.hpp
+[34.347s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__traits.hpp
+[34.349s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__traits.hpp
+[34.351s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__builder.hpp
+[34.354s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__struct.hpp
+[34.355s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__struct.hpp
+[34.357s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__traits.hpp
+[34.361s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters
+[34.362s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg
+[34.363s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[34.363s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail
+[34.364s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/dds_fastrtps
+[34.365s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[34.365s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_fastrtps_cpp.hpp
+[34.374s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[34.374s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_cpp.so
+[34.376s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_cpp.so" to ""
+[34.377s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters
+[34.377s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg
+[34.378s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail
+[34.378s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_introspection_c.h
+[34.379s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_introspection_c.h
+[34.381s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_introspection_c.h
+[34.383s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__type_support.c
+[34.393s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__type_support.c
+[34.393s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__type_support.c
+[34.394s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[34.394s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_c.so
+[34.395s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_c.so" to ""
+[34.399s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_c.so
+[34.403s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_c.so" to ""
+[34.403s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters
+[34.404s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg
+[34.406s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail
+[34.407s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__type_support.cpp
+[34.409s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_introspection_cpp.hpp
+[34.411s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_introspection_cpp.hpp
+[34.422s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_introspection_cpp.hpp
+[34.423s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__type_support.cpp
+[34.423s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__type_support.cpp
+[34.429s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_cpp.so
+[34.433s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_cpp.so" to ""
+[34.437s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_cpp.so
+[34.442s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_cpp.so" to ""
+[34.442s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/pythonpath.sh
+[34.443s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/pythonpath.dsv
+[34.444s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info
+[34.446s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/PKG-INFO
+[34.448s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/top_level.txt
+[34.450s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/SOURCES.txt
+[34.452s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/dependency_links.txt
+[34.455s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters
+[34.456s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/__init__.py
+[34.458s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c
+[34.460s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[34.462s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[34.464s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/_my_parameters_s.ep.rosidl_typesupport_introspection_c.c
+[34.466s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/libmy_parameters__rosidl_generator_py.so
+[34.468s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[34.470s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg
+[34.472s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/__init__.py
+[34.473s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_joystick_parameters.py
+[34.475s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_stm32_data.py
+[34.477s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_motor_parameters_s.c
+[34.479s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_stm32_data_s.c
+[34.481s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_motor_parameters.py
+[34.482s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_joystick_parameters_s.c
+[34.484s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/_my_parameters_s.ep.rosidl_typesupport_c.c
+[34.774s] Listing '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters'...
+[34.776s] Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/__init__.py'...
+[34.777s] Listing '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg'...
+[34.779s] Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/__init__.py'...
+[34.780s] Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_joystick_parameters.py'...
+[34.781s] Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_motor_parameters.py'...
+[34.783s] Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_stm32_data.py'...
+[34.808s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[34.817s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[34.818s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[34.818s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[34.819s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[34.823s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[34.827s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_py.so
+[34.830s] -- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_py.so" to ""
+[34.831s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/MotorParameters.idl
+[34.832s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/JoystickParameters.idl
+[34.833s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/Stm32Data.idl
+[34.834s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/MotorParameters.msg
+[34.837s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/JoystickParameters.msg
+[34.837s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/Stm32Data.msg
+[34.839s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/package_run_dependencies/my_parameters
+[34.840s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/parent_prefix_path/my_parameters
+[34.846s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/ament_prefix_path.sh
+[34.847s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/ament_prefix_path.dsv
+[34.849s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/path.sh
+[34.850s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/path.dsv
+[34.852s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.bash
+[34.853s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.sh
+[34.854s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.zsh
+[34.855s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.dsv
+[34.856s] -- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/package.dsv
+[34.859s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/packages/my_parameters
+[34.863s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_cExport.cmake
+[34.864s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_cExport-noconfig.cmake
+[34.865s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cExport.cmake
+[34.866s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[34.868s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_cppExport.cmake
+[34.870s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cppExport.cmake
+[34.871s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[34.872s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cExport.cmake
+[34.874s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[34.875s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cExport.cmake
+[34.876s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cExport-noconfig.cmake
+[34.878s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cppExport.cmake
+[34.879s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[34.882s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cppExport.cmake
+[34.882s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cppExport-noconfig.cmake
+[34.885s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_pyExport.cmake
+[34.886s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_pyExport-noconfig.cmake
+[34.887s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/rosidl_cmake-extras.cmake
+[34.888s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.888s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.889s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_libraries-extras.cmake
+[34.890s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_targets-extras.cmake
+[34.891s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[34.892s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[34.893s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parametersConfig.cmake
+[34.894s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parametersConfig-version.cmake
+[34.895s] -- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/package.xml
+[34.908s] Invoked command in '/home/pi2/ros2_ws/build/my_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --install /home/pi2/ros2_ws/build/my_parameters

@@ -109,6 +109,11 @@ static bool _Stm32Data__cdr_serialize(
     cdr << ros_message->motor3_rl;
   }
 
+  // Field name: enabled
+  {
+    cdr << (ros_message->enabled ? true : false);
+  }
+
   return true;
 }
 
@@ -179,6 +184,13 @@ static bool _Stm32Data__cdr_deserialize(
   // Field name: motor3_rl
   {
     cdr >> ros_message->motor3_rl;
+  }
+
+  // Field name: enabled
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->enabled = tmp ? true : false;
   }
 
   return true;
@@ -267,6 +279,12 @@ size_t get_serialized_size_my_parameters__msg__Stm32Data(
   // field.name motor3_rl
   {
     size_t item_size = sizeof(ros_message->motor3_rl);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name enabled
+  {
+    size_t item_size = sizeof(ros_message->enabled);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -395,6 +413,13 @@ size_t max_serialized_size_my_parameters__msg__Stm32Data(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: enabled
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -404,7 +429,7 @@ size_t max_serialized_size_my_parameters__msg__Stm32Data(
     using DataType = my_parameters__msg__Stm32Data;
     is_plain =
       (
-      offsetof(DataType, motor3_rl) +
+      offsetof(DataType, enabled) +
       last_member_size
       ) == ret_val;
   }

@@ -32,6 +32,7 @@ typedef struct my_parameters__msg__Stm32Data
   int32_t motor1_rl;
   int32_t motor2_rl;
   int32_t motor3_rl;
+  bool enabled;
 } my_parameters__msg__Stm32Data;
 
 // Struct for a sequence of my_parameters__msg__Stm32Data.

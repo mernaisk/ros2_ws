@@ -1,0 +1,437 @@
+[0.000000] (-) TimerEvent: {}
+[0.001850] (-) JobUnselected: {'identifier': 'bno055'}
+[0.002598] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.003143] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.003356] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.003663] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003846] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.003962] (my_parameters) JobQueued: {'identifier': 'my_parameters', 'dependencies': OrderedDict()}
+[0.004097] (my_parameters) JobStarted: {'identifier': 'my_parameters'}
+[0.086658] (my_parameters) JobProgress: {'identifier': 'my_parameters', 'progress': 'cmake'}
+[0.092996] (my_parameters) JobProgress: {'identifier': 'my_parameters', 'progress': 'build'}
+[0.096271] (my_parameters) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi2/ros2_ws/build/my_parameters', '--', '-j4', '-l4'], 'cwd': '/home/pi2/ros2_ws/build/my_parameters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 52932 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/my_parameters'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 52932 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.101100] (-) TimerEvent: {}
+[0.201897] (-) TimerEvent: {}
+[0.302948] (-) TimerEvent: {}
+[0.403960] (-) TimerEvent: {}
+[0.505140] (-) TimerEvent: {}
+[0.606082] (-) TimerEvent: {}
+[0.706899] (-) TimerEvent: {}
+[0.796839] (my_parameters) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.807088] (-) TimerEvent: {}
+[0.907889] (-) TimerEvent: {}
+[1.008755] (-) TimerEvent: {}
+[1.109614] (-) TimerEvent: {}
+[1.210537] (-) TimerEvent: {}
+[1.311336] (-) TimerEvent: {}
+[1.412061] (-) TimerEvent: {}
+[1.512891] (-) TimerEvent: {}
+[1.613711] (-) TimerEvent: {}
+[1.714490] (-) TimerEvent: {}
+[1.800100] (my_parameters) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.814681] (-) TimerEvent: {}
+[1.915449] (-) TimerEvent: {}
+[2.016478] (-) TimerEvent: {}
+[2.117676] (-) TimerEvent: {}
+[2.218614] (-) TimerEvent: {}
+[2.238171] (my_parameters) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.318805] (-) TimerEvent: {}
+[2.419646] (-) TimerEvent: {}
+[2.517255] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.519797] (-) TimerEvent: {}
+[2.535753] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.580681] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.619983] (-) TimerEvent: {}
+[2.654098] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.720179] (-) TimerEvent: {}
+[2.740318] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.820452] (-) TimerEvent: {}
+[2.921315] (-) TimerEvent: {}
+[2.996333] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.021503] (-) TimerEvent: {}
+[3.122265] (-) TimerEvent: {}
+[3.223012] (-) TimerEvent: {}
+[3.323942] (-) TimerEvent: {}
+[3.424861] (-) TimerEvent: {}
+[3.525992] (-) TimerEvent: {}
+[3.626908] (-) TimerEvent: {}
+[3.727989] (-) TimerEvent: {}
+[3.828823] (-) TimerEvent: {}
+[3.929682] (-) TimerEvent: {}
+[4.030495] (-) TimerEvent: {}
+[4.131196] (-) TimerEvent: {}
+[4.231982] (-) TimerEvent: {}
+[4.332924] (-) TimerEvent: {}
+[4.372137] (my_parameters) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.433100] (-) TimerEvent: {}
+[4.533845] (-) TimerEvent: {}
+[4.634552] (-) TimerEvent: {}
+[4.735567] (-) TimerEvent: {}
+[4.836626] (-) TimerEvent: {}
+[4.937684] (-) TimerEvent: {}
+[5.038496] (-) TimerEvent: {}
+[5.139213] (-) TimerEvent: {}
+[5.239908] (-) TimerEvent: {}
+[5.340736] (-) TimerEvent: {}
+[5.441517] (-) TimerEvent: {}
+[5.542384] (-) TimerEvent: {}
+[5.643336] (-) TimerEvent: {}
+[5.744257] (-) TimerEvent: {}
+[5.845001] (-) TimerEvent: {}
+[5.945778] (-) TimerEvent: {}
+[6.046578] (-) TimerEvent: {}
+[6.147374] (-) TimerEvent: {}
+[6.248139] (-) TimerEvent: {}
+[6.348935] (-) TimerEvent: {}
+[6.449688] (-) TimerEvent: {}
+[6.550639] (-) TimerEvent: {}
+[6.651395] (-) TimerEvent: {}
+[6.680087] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.751603] (-) TimerEvent: {}
+[6.852413] (-) TimerEvent: {}
+[6.953299] (-) TimerEvent: {}
+[7.054243] (-) TimerEvent: {}
+[7.154966] (-) TimerEvent: {}
+[7.255727] (-) TimerEvent: {}
+[7.356431] (-) TimerEvent: {}
+[7.457316] (-) TimerEvent: {}
+[7.558377] (-) TimerEvent: {}
+[7.593551] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.658550] (-) TimerEvent: {}
+[7.731126] (my_parameters) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[7.758742] (-) TimerEvent: {}
+[7.859636] (-) TimerEvent: {}
+[7.885528] (my_parameters) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.886540] (my_parameters) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[7.887052] (my_parameters) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[7.959814] (-) TimerEvent: {}
+[8.060657] (-) TimerEvent: {}
+[8.142137] (my_parameters) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.156239] (my_parameters) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.160826] (-) TimerEvent: {}
+[8.243442] (my_parameters) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.261015] (-) TimerEvent: {}
+[8.361758] (-) TimerEvent: {}
+[8.462629] (-) TimerEvent: {}
+[8.563463] (-) TimerEvent: {}
+[8.664338] (-) TimerEvent: {}
+[8.669144] (my_parameters) StdoutLine: {'line': b'-- Generating done\n'}
+[8.691961] (my_parameters) StdoutLine: {'line': b'-- Build files have been written to: /home/pi2/ros2_ws/build/my_parameters\n'}
+[8.764584] (-) TimerEvent: {}
+[8.865704] (-) TimerEvent: {}
+[8.966654] (-) TimerEvent: {}
+[8.973320] (my_parameters) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.031174] (my_parameters) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.066822] (-) TimerEvent: {}
+[9.105264] (my_parameters) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_my_parameters\n'}
+[9.167008] (-) TimerEvent: {}
+[9.268523] (-) TimerEvent: {}
+[9.370954] (-) TimerEvent: {}
+[9.472013] (-) TimerEvent: {}
+[9.572929] (-) TimerEvent: {}
+[9.675031] (-) TimerEvent: {}
+[9.777861] (-) TimerEvent: {}
+[9.887361] (-) TimerEvent: {}
+[9.989093] (-) TimerEvent: {}
+[10.090751] (-) TimerEvent: {}
+[10.192617] (-) TimerEvent: {}
+[10.294541] (-) TimerEvent: {}
+[10.396764] (-) TimerEvent: {}
+[10.497685] (-) TimerEvent: {}
+[10.601256] (-) TimerEvent: {}
+[10.702143] (-) TimerEvent: {}
+[10.803178] (-) TimerEvent: {}
+[10.905370] (-) TimerEvent: {}
+[11.006958] (-) TimerEvent: {}
+[11.108867] (-) TimerEvent: {}
+[11.211018] (-) TimerEvent: {}
+[11.312458] (-) TimerEvent: {}
+[11.414352] (-) TimerEvent: {}
+[11.515983] (-) TimerEvent: {}
+[11.617349] (-) TimerEvent: {}
+[11.718405] (-) TimerEvent: {}
+[11.819405] (-) TimerEvent: {}
+[11.920538] (-) TimerEvent: {}
+[12.021493] (-) TimerEvent: {}
+[12.122711] (-) TimerEvent: {}
+[12.223737] (-) TimerEvent: {}
+[12.324945] (-) TimerEvent: {}
+[12.426235] (-) TimerEvent: {}
+[12.527651] (-) TimerEvent: {}
+[12.628900] (-) TimerEvent: {}
+[12.730284] (-) TimerEvent: {}
+[12.831209] (-) TimerEvent: {}
+[12.933235] (-) TimerEvent: {}
+[13.034358] (-) TimerEvent: {}
+[13.135425] (-) TimerEvent: {}
+[13.156137] (my_parameters) StdoutLine: {'line': b'[  4%] Built target my_parameters__cpp\n'}
+[13.235629] (-) TimerEvent: {}
+[13.336707] (-) TimerEvent: {}
+[13.339562] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_generator_c\x1b[0m\n'}
+[13.391948] (my_parameters) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.422913] (my_parameters) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.436828] (-) TimerEvent: {}
+[13.537632] (-) TimerEvent: {}
+[13.573303] (my_parameters) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o\x1b[0m\n'}
+[13.637816] (-) TimerEvent: {}
+[13.738823] (-) TimerEvent: {}
+[13.839829] (-) TimerEvent: {}
+[13.940728] (-) TimerEvent: {}
+[14.042073] (-) TimerEvent: {}
+[14.143049] (-) TimerEvent: {}
+[14.244293] (-) TimerEvent: {}
+[14.345571] (-) TimerEvent: {}
+[14.446622] (-) TimerEvent: {}
+[14.547909] (-) TimerEvent: {}
+[14.648987] (-) TimerEvent: {}
+[14.750379] (-) TimerEvent: {}
+[14.851211] (-) TimerEvent: {}
+[14.953167] (-) TimerEvent: {}
+[15.054527] (-) TimerEvent: {}
+[15.155497] (-) TimerEvent: {}
+[15.256690] (-) TimerEvent: {}
+[15.357662] (-) TimerEvent: {}
+[15.459434] (-) TimerEvent: {}
+[15.561782] (-) TimerEvent: {}
+[15.662828] (-) TimerEvent: {}
+[15.763917] (-) TimerEvent: {}
+[15.864792] (-) TimerEvent: {}
+[15.965903] (-) TimerEvent: {}
+[16.066779] (-) TimerEvent: {}
+[16.167924] (-) TimerEvent: {}
+[16.269524] (-) TimerEvent: {}
+[16.371627] (-) TimerEvent: {}
+[16.474454] (-) TimerEvent: {}
+[16.575451] (-) TimerEvent: {}
+[16.676425] (-) TimerEvent: {}
+[16.777464] (-) TimerEvent: {}
+[16.880602] (-) TimerEvent: {}
+[16.981896] (-) TimerEvent: {}
+[17.083481] (-) TimerEvent: {}
+[17.184460] (-) TimerEvent: {}
+[17.285892] (-) TimerEvent: {}
+[17.387641] (-) TimerEvent: {}
+[17.488686] (-) TimerEvent: {}
+[17.589593] (-) TimerEvent: {}
+[17.690791] (-) TimerEvent: {}
+[17.792161] (-) TimerEvent: {}
+[17.892947] (-) TimerEvent: {}
+[17.993940] (-) TimerEvent: {}
+[18.096486] (-) TimerEvent: {}
+[18.147809] (my_parameters) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o\x1b[0m\n'}
+[18.196737] (-) TimerEvent: {}
+[18.298638] (-) TimerEvent: {}
+[18.399690] (-) TimerEvent: {}
+[18.501294] (-) TimerEvent: {}
+[18.603686] (-) TimerEvent: {}
+[18.704743] (-) TimerEvent: {}
+[18.805870] (-) TimerEvent: {}
+[18.906852] (-) TimerEvent: {}
+[19.007828] (-) TimerEvent: {}
+[19.108941] (-) TimerEvent: {}
+[19.157323] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_cpp\x1b[0m\n'}
+[19.209688] (-) TimerEvent: {}
+[19.264078] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[19.309886] (-) TimerEvent: {}
+[19.411045] (-) TimerEvent: {}
+[19.512057] (-) TimerEvent: {}
+[19.608471] (my_parameters) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/motor_parameters__type_support.cpp.o\x1b[0m\n'}
+[19.612406] (-) TimerEvent: {}
+[19.614922] (my_parameters) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o\x1b[0m\n'}
+[19.712849] (-) TimerEvent: {}
+[19.814380] (-) TimerEvent: {}
+[19.915417] (-) TimerEvent: {}
+[20.016545] (-) TimerEvent: {}
+[20.117704] (-) TimerEvent: {}
+[20.218802] (-) TimerEvent: {}
+[20.319974] (-) TimerEvent: {}
+[20.421697] (-) TimerEvent: {}
+[20.522987] (-) TimerEvent: {}
+[20.624394] (-) TimerEvent: {}
+[20.725950] (-) TimerEvent: {}
+[20.827050] (-) TimerEvent: {}
+[20.928008] (-) TimerEvent: {}
+[21.028942] (-) TimerEvent: {}
+[21.130031] (-) TimerEvent: {}
+[21.231425] (-) TimerEvent: {}
+[21.332766] (-) TimerEvent: {}
+[21.433687] (-) TimerEvent: {}
+[21.535196] (-) TimerEvent: {}
+[21.636021] (-) TimerEvent: {}
+[21.736902] (-) TimerEvent: {}
+[21.839090] (-) TimerEvent: {}
+[21.941009] (-) TimerEvent: {}
+[22.041856] (-) TimerEvent: {}
+[22.142714] (-) TimerEvent: {}
+[22.243778] (-) TimerEvent: {}
+[22.345158] (-) TimerEvent: {}
+[22.446562] (-) TimerEvent: {}
+[22.547544] (-) TimerEvent: {}
+[22.648634] (-) TimerEvent: {}
+[22.749701] (-) TimerEvent: {}
+[22.850805] (-) TimerEvent: {}
+[22.951736] (-) TimerEvent: {}
+[23.052793] (-) TimerEvent: {}
+[23.153801] (-) TimerEvent: {}
+[23.254968] (-) TimerEvent: {}
+[23.299094] (my_parameters) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o\x1b[0m\n'}
+[23.355202] (-) TimerEvent: {}
+[23.456545] (-) TimerEvent: {}
+[23.557464] (-) TimerEvent: {}
+[23.658920] (-) TimerEvent: {}
+[23.760394] (-) TimerEvent: {}
+[23.861574] (-) TimerEvent: {}
+[23.963253] (-) TimerEvent: {}
+[24.064887] (-) TimerEvent: {}
+[24.166420] (-) TimerEvent: {}
+[24.267561] (-) TimerEvent: {}
+[24.368466] (-) TimerEvent: {}
+[24.469445] (-) TimerEvent: {}
+[24.571660] (-) TimerEvent: {}
+[24.673255] (-) TimerEvent: {}
+[24.774906] (-) TimerEvent: {}
+[24.876072] (-) TimerEvent: {}
+[24.977662] (-) TimerEvent: {}
+[25.079641] (-) TimerEvent: {}
+[25.181382] (-) TimerEvent: {}
+[25.282745] (-) TimerEvent: {}
+[25.384100] (-) TimerEvent: {}
+[25.485588] (-) TimerEvent: {}
+[25.588042] (-) TimerEvent: {}
+[25.689263] (-) TimerEvent: {}
+[25.790579] (-) TimerEvent: {}
+[25.892329] (-) TimerEvent: {}
+[25.994242] (-) TimerEvent: {}
+[26.095459] (-) TimerEvent: {}
+[26.196525] (-) TimerEvent: {}
+[26.297543] (-) TimerEvent: {}
+[26.398844] (-) TimerEvent: {}
+[26.500497] (-) TimerEvent: {}
+[26.602470] (-) TimerEvent: {}
+[26.704053] (-) TimerEvent: {}
+[26.805055] (-) TimerEvent: {}
+[26.906109] (-) TimerEvent: {}
+[27.007151] (-) TimerEvent: {}
+[27.108937] (-) TimerEvent: {}
+[27.210959] (-) TimerEvent: {}
+[27.312317] (-) TimerEvent: {}
+[27.413667] (-) TimerEvent: {}
+[27.515591] (-) TimerEvent: {}
+[27.616902] (-) TimerEvent: {}
+[27.718157] (-) TimerEvent: {}
+[27.819171] (-) TimerEvent: {}
+[27.920329] (-) TimerEvent: {}
+[28.021955] (-) TimerEvent: {}
+[28.123801] (-) TimerEvent: {}
+[28.225083] (-) TimerEvent: {}
+[28.326289] (-) TimerEvent: {}
+[28.427451] (-) TimerEvent: {}
+[28.528850] (-) TimerEvent: {}
+[28.645732] (-) TimerEvent: {}
+[28.747097] (-) TimerEvent: {}
+[28.848633] (-) TimerEvent: {}
+[28.950141] (-) TimerEvent: {}
+[29.064530] (-) TimerEvent: {}
+[29.165636] (-) TimerEvent: {}
+[29.266751] (-) TimerEvent: {}
+[29.415953] (-) TimerEvent: {}
+[30.009711] (-) TimerEvent: {}
+[30.122041] (-) TimerEvent: {}
+[30.310782] (-) TimerEvent: {}
+[30.411904] (-) TimerEvent: {}
+[30.513158] (-) TimerEvent: {}
+[30.614588] (-) TimerEvent: {}
+[30.716370] (-) TimerEvent: {}
+[30.817755] (-) TimerEvent: {}
+[30.918791] (-) TimerEvent: {}
+[31.019770] (-) TimerEvent: {}
+[31.120820] (-) TimerEvent: {}
+[31.222552] (-) TimerEvent: {}
+[31.324408] (-) TimerEvent: {}
+[31.425797] (-) TimerEvent: {}
+[31.527408] (-) TimerEvent: {}
+[31.629270] (-) TimerEvent: {}
+[31.730430] (-) TimerEvent: {}
+[31.831736] (-) TimerEvent: {}
+[31.933268] (-) TimerEvent: {}
+[32.034504] (-) TimerEvent: {}
+[32.135795] (-) TimerEvent: {}
+[32.237239] (-) TimerEvent: {}
+[32.338681] (-) TimerEvent: {}
+[32.439896] (-) TimerEvent: {}
+[32.541150] (-) TimerEvent: {}
+[32.642393] (-) TimerEvent: {}
+[32.744401] (-) TimerEvent: {}
+[32.846120] (-) TimerEvent: {}
+[32.978175] (-) TimerEvent: {}
+[33.079225] (-) TimerEvent: {}
+[33.673627] (-) TimerEvent: {}
+[35.547560] (-) TimerEvent: {}
+[35.673838] (-) TimerEvent: {}
+[37.499745] (-) TimerEvent: {}
+[38.917946] (-) TimerEvent: {}
+[40.309597] (-) TimerEvent: {}
+[41.857865] (-) TimerEvent: {}
+[43.609342] (-) TimerEvent: {}
+[46.622764] (-) TimerEvent: {}
+[51.670804] (-) TimerEvent: {}
+[57.212709] (-) TimerEvent: {}
+[62.196299] (-) TimerEvent: {}
+[66.089565] (-) TimerEvent: {}
+[68.539286] (-) TimerEvent: {}
+[70.104733] (my_parameters) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[70.361397] (-) TimerEvent: {}
+[70.362086] (my_parameters) StderrLine: {'line': b'  File "/home/pi2/ros2_ws/build/my_parameters/ament_cmake_python/my_parameters/setup.py", line 4, in <module>\n'}
+[70.362938] (my_parameters) StderrLine: {'line': b'    setup(\n'}
+[70.363518] (my_parameters) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 152, in setup\n'}
+[70.364305] (my_parameters) StderrLine: {'line': b'    _install_setup_requires(attrs)\n'}
+[70.364983] (my_parameters) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 142, in _install_setup_requires\n'}
+[70.365570] (my_parameters) StderrLine: {'line': b'    dist = MinimalDistribution(attrs)\n'}
+[70.366114] (my_parameters) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 134, in __init__\n'}
+[70.366714] (my_parameters) StderrLine: {'line': b'    distutils.core.Distribution.__init__(self, filtered)\n'}
+[70.367240] (my_parameters) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 457, in __init__\n'}
+[70.401953] (my_parameters) StderrLine: {'line': b"    for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):\n"}
+[70.403186] (my_parameters) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 647, in <genexpr>\n'}
+[70.461627] (-) TimerEvent: {}
+[70.551047] (my_parameters) StderrLine: {'line': b'    if name is None or name == entry.name\n'}
+[70.552248] (my_parameters) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[70.561837] (-) TimerEvent: {}
+[70.600400] (my_parameters) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_parameters__rosidl_generator_c.dir/build.make:225: CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o] Interrupt\n'}
+[70.601899] (my_parameters) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/build.make:154: CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/motor_parameters__type_support.cpp.o] Interrupt\n'}
+[70.604025] (my_parameters) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/build.make:165: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o] Interrupt\n'}
+[70.606977] (my_parameters) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/my_parameters__rosidl_generator_c.dir/all] Interrupt\n'}
+[70.608242] (my_parameters) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt\n'}
+[70.608848] (my_parameters) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/all] Interrupt\n'}
+[70.662037] (-) TimerEvent: {}
+[70.763200] (-) TimerEvent: {}
+[70.777000] (my_parameters) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_build_my_parameters_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_my_parameters_egg] Interrupt\n'}
+[70.779045] (my_parameters) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_my_parameters_egg.dir/all] Interrupt\n'}
+[70.782603] (my_parameters) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[70.801269] (my_parameters) CommandEnded: {'returncode': -2}
+[70.863356] (-) TimerEvent: {}
+[70.964197] (-) TimerEvent: {}
+[71.065047] (-) TimerEvent: {}
+[71.166165] (-) TimerEvent: {}
+[71.267083] (-) TimerEvent: {}
+[71.367981] (-) TimerEvent: {}
+[71.468786] (-) TimerEvent: {}
+[71.569813] (-) TimerEvent: {}
+[71.670680] (-) TimerEvent: {}
+[71.771493] (-) TimerEvent: {}
+[71.872471] (-) TimerEvent: {}
+[71.973306] (-) TimerEvent: {}
+[72.074286] (-) TimerEvent: {}
+[72.175152] (-) TimerEvent: {}
+[72.276218] (-) TimerEvent: {}
+[72.377282] (-) TimerEvent: {}
+[72.478525] (-) TimerEvent: {}
+[72.579999] (-) TimerEvent: {}
+[72.686438] (-) TimerEvent: {}
+[72.789006] (-) TimerEvent: {}
+[72.892109] (-) TimerEvent: {}
+[73.008209] (-) TimerEvent: {}
+[73.109268] (-) TimerEvent: {}
+[73.210177] (-) TimerEvent: {}
+[73.316120] (-) TimerEvent: {}
+[73.327691] (my_parameters) JobEnded: {'identifier': 'my_parameters', 'rc': 'SIGINT'}
+[73.355645] (-) EventReactorShutdown: {}

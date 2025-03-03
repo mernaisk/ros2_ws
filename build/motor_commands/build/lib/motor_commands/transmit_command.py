@@ -84,26 +84,27 @@ class MotorCommandPublisher(Node):
             self.motor2_rl =  90
             self.motor3_rl =  90   
 
+
         if msg.pre_tight == True:
-            const = 5   
+            const = 15  
         else:
             const = 0
 
               
-        self.pretight1_fr = const
+        self.pretight1_fr = -2 + const
         self.pretight2_fr = 3 + const
-        self.pretight3_fr = 10 + const
+        self.pretight3_fr = 8 + const
 
-        self.pretight1_fl = 5 + const
-        self.pretight2_fl = -2 + const
-        self.pretight3_fl = 4 + const
+        self.pretight1_fl = -7 + const
+        self.pretight2_fl = -1 + const
+        self.pretight3_fl = 5 + const
 
-        self.pretight1_rr = const
-        self.pretight2_rr = 5 + const
-        self.pretight3_rr = 5 + const
+        self.pretight1_rr = 2 + const
+        self.pretight2_rr = 7 + const
+        self.pretight3_rr = 3 + const
 
-        self.pretight1_rl = const
-        self.pretight2_rl = const
+        self.pretight1_rl = 3 + const
+        self.pretight2_rl = -5 + const
         self.pretight3_rl = 3 + const
 
         self.motor1_fr -=  self.pretight1_fr
@@ -138,13 +139,14 @@ class MotorCommandPublisher(Node):
         msg_array.motor1_rl = math.floor(self.motor1_rl)
         msg_array.motor2_rl = math.floor(self.motor2_rl)
         msg_array.motor3_rl = math.floor(self.motor3_rl)
+        msg_array.enabled = msg.pre_tight
 
         self.publisher_.publish(msg_array)
 
-        self.get_logger().info(f'FR Motors: {self.motor1_fr}, {self.motor2_fr}, {self.motor3_fr}')
-        self.get_logger().info(f'FL Motors: {self.motor1_fl}, {self.motor2_fl}, {self.motor3_fl}')
-        self.get_logger().info(f'RR Motors: {self.motor1_rr}, {self.motor2_rr}, {self.motor3_rr}')
-        self.get_logger().info(f'RL Motors: {self.motor1_rl}, {self.motor2_rl}, {self.motor3_rl}')
+        # self.get_logger().info(f'FR Motors: {self.motor1_fr}, {self.motor2_fr}, {self.motor3_fr}')
+        # self.get_logger().info(f'FL Motors: {self.motor1_fl}, {self.motor2_fl}, {self.motor3_fl}')
+        # self.get_logger().info(f'RR Motors: {self.motor1_rr}, {self.motor2_rr}, {self.motor3_rr}')
+        # self.get_logger().info(f'RL Motors: {self.motor1_rl}, {self.motor2_rl}, {self.motor3_rl}')
 
 
 

@@ -29,6 +29,7 @@ class MotorCommandPublisher(Node):
         self.alpha_r_ref = 0
         self.alpha_b_ref = 0.6247
         self.z_l_ref = 0.0076
+        self.period = 0.8
         self.move = False
         self.pre_tight = False
 
@@ -99,10 +100,10 @@ class MotorCommandPublisher(Node):
 
         # self.get_logger().info(f't_mod: {t_mod}')
         # --- Function 1 (Sinusoidal) ---
-        func1_value = self.alpha_b_ref * math.sin(2 * math.pi / 0.8 * elapsed_time)
+        func1_value = self.alpha_b_ref * math.sin(2 * math.pi / self.period * elapsed_time)
 
         # --- Function 2 (Negative Sinusoidal) ---
-        func2_value = -self.alpha_b_ref * math.sin(2 * math.pi / 0.8 * elapsed_time)
+        func2_value = -self.alpha_b_ref * math.sin(2 * math.pi / self.period * elapsed_time)
 
         # --- Function 3 (Custom Wave) ---
         if 0 <= t_mod < 0.2:
@@ -146,14 +147,23 @@ class MotorCommandPublisher(Node):
         motor_command.move = self.move
         motor_command.pre_tight = self.pre_tight
         self.publisher_.publish(motor_command)
-        # self.get_logger().info(f'alpha a: {motor_command.alpha_a_fl}')
-        # self.get_logger().info(f'alpha b: {motor_command.alpha_b_fl}')
-        # self.get_logger().info(f'alpha c: {motor_command.alpha_c_fl}')
+        
+        self.get_logger().info(f'alpha a fr: {motor_command.alpha_a_fr}')
+        self.get_logger().info(f'alpha b fr: {motor_command.alpha_b_fr}')
+        self.get_logger().info(f'alpha c fr: {motor_command.alpha_c_fr}')
 
-        # self.get_logger().info(f'alpha_r_fr: {self.alpha_r_fr}')
-        # self.get_logger().info(f'alpha_b_fr: {self.alpha_b_fr}')
-        # self.get_logger().info(f'z_l_fr: {self.z_l_fr}')
-        # self.get_logger().info(f't_mod: {t_mod}')
+        # self.get_logger().info(f'alpha a fl: {motor_command.alpha_a_fl}')
+        # self.get_logger().info(f'alpha b fl: {motor_command.alpha_b_fl}')
+        # self.get_logger().info(f'alpha c fl: {motor_command.alpha_c_fl}')
+
+        # self.get_logger().info(f'alpha a rr: {motor_command.alpha_a_rr}')
+        # self.get_logger().info(f'alpha b rr: {motor_command.alpha_b_rr}')
+        # self.get_logger().info(f'alpha c rr: {motor_command.alpha_c_rr}')
+
+        # self.get_logger().info(f'alpha a rl: {motor_command.alpha_a_rl}')
+        # self.get_logger().info(f'alpha b rl: {motor_command.alpha_b_rl}')
+        # self.get_logger().info(f'alpha c rl: {motor_command.alpha_c_rl}')
+
 
 
 def main(args=None):

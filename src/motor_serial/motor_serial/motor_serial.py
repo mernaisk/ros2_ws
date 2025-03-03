@@ -29,14 +29,13 @@ class MotorSerialNode(Node):
 
         # Relay commands: 200 when running, 10 when stopped
         self.relay_commands = bytearray([10, 10])  # Default to stopped
-        self.move = False  # Move status from /motor_command
+        self.enabled = False  # Move status from /motor_command
 
         self.header = bytearray([83])  # STM32 Header
         self.terminators = bytearray([0, 55, 69])  # STM32 Terminators
 
         # Subscribers
         self.create_subscription(Stm32Data, '/StmData', self.stm_data_callback, 10)
-        self.create_subscription(MotorParameters, '/motor_command', self.motor_command_callback, 10)
 
         # Safety mechanism: Ensure safe shutdown
         self.safe_shutdown = False
@@ -50,25 +49,39 @@ class MotorSerialNode(Node):
             msg.motor1_rl, msg.motor2_rl, msg.motor3_rl
         ])
 
-    def motor_command_callback(self, msg):
-        """ Callback function to check move status from /motor_command """
-        if self.move == True and msg.move == False:
-            self.resetMotor()
+        if self.enabled == False and msg.enabled == True:
+            self.relay_commands = bytearray([200, 200])
+        elif self.enabled == True and msg.enabled == False:
+            self.relay_commands = bytearray([200, 200])  # Temporary relay command to set neutral
+            self.motor_commands = bytearray([90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90])
 
-        self.move = msg.move
-        self.relay_commands = bytearray([200, 200]) if self.move else bytearray([10, 10])
-        self.get_logger().info(f"Relay commands: {list(self.relay_commands)}")
-        self.get_logger().info(f"Move command: {self.move}")
+            self.release()
+            self.relay_commands = bytearray([10, 10])
 
-    def resetMotor(self):
-        self.relay_commands = bytearray([200, 200])  # Temporary relay command to set neutral
-        self.motor_commands = bytearray([90, 85, 80, 93, 91, 83, 92, 82, 85, 85, 90, 87])
+
+
+
+
+    def release(self):
+
+
+        start_time = time.time()
+        
+        while time.time() - start_time < 2:  # Run for 2 seconds
+            data_to_stm32 = self.get_data_to_stm32()
+            if data_to_stm32:
+                with self.lock:
+                    self.ser.write(data_to_stm32)
+                    self.get_logger().info(f"⏳ Sending: {list(data_to_stm32)}")
+            time.sleep(0.05)  # Send every 50ms
+        
+        self.relay_commands = bytearray([10, 10])  # Turn off relay after 2 seconds
         data_to_stm32 = self.get_data_to_stm32()
         if data_to_stm32:
             with self.lock:
                 self.ser.write(data_to_stm32)
-                self.get_logger().info("🔄 Setting motors to neutral position...")
-        time.sleep(2)
+                self.get_logger().info("🛑 Motors fully stopped!")
+
 
     def send_motor_commands(self):
         """ Sends the motor and relay commands to STM32 """
@@ -81,7 +94,7 @@ class MotorSerialNode(Node):
                 self.ser.write(data_to_stm32)
                 self.get_logger().info(f"➡️ Sent to STM32: {list(data_to_stm32)}")
                 data_from_stm32 = self.ser.read(19)
-                self.get_logger().info(f"⬅️ Received from STM32: {list(data_from_stm32)}")
+                # self.get_logger().info(f"⬅️ Received from STM32: {list(data_from_stm32)}")
 
         except Exception as error:
             self.get_logger().error(f"Error in serial communication: {error}")
@@ -91,25 +104,17 @@ class MotorSerialNode(Node):
         data_to_stm32 = self.header + self.motor_commands + self.relay_commands + self.terminators
 
         if len(data_to_stm32) != 18:
-            self.get_logger().error("Motor command length incorrect!")
+            # self.get_logger().error("Motor command length incorrect!")
             return None
         
         return data_to_stm32
     def destroy_node(self):
-        """ Ensure safe shutdown by first setting neutral motor positions, then stopping relay. """
-        self.safe_shutdown = True
+        self.relay_commands = bytearray([200, 200])  # Temporary relay command to set neutral
+        self.motor_commands = bytearray([90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90])
 
-        self.resetMotor()
+        self.release()
+        self.relay_commands = bytearray([10, 10])
 
-        # Step 2: Now send stop command with relay_command = 10
-        self.relay_commands = bytearray([10, 10])  # Final stop command
-        data_to_stm32 = self.get_data_to_stm32()
-
-        if data_to_stm32:
-            with self.lock:
-                self.ser.write(data_to_stm32)
-                self.get_logger().info("🛑 Emergency STOP sent to STM32!")
-        time.sleep(2)
         super().destroy_node()
 
 
@@ -119,7 +124,7 @@ def main():
 
     # Handle termination signals (Ctrl+C & Ctrl+Z)
     def shutdown_handler(signum, frame):
-        node.get_logger().info(f"Received signal {signum}. Stopping safely...")
+        # node.get_logger().info(f"Received signal {signum}. Stopping safely...")
         node.destroy_node()
         rclpy.shutdown()
         exit(0)  # Ensure the program exits properly

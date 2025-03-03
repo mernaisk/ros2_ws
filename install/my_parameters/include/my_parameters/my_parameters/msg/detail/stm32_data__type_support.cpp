@@ -37,7 +37,7 @@ void Stm32Data_fini_function(void * message_memory)
   typed_message->~Stm32Data();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Stm32Data_message_member_array[12] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Stm32Data_message_member_array[13] = {
   {
     "motor1_fr",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -241,13 +241,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Stm32Data_mes
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "enabled",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_parameters::msg::Stm32Data, enabled),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Stm32Data_message_members = {
   "my_parameters::msg",  // message namespace
   "Stm32Data",  // message name
-  12,  // number of fields
+  13,  // number of fields
   sizeof(my_parameters::msg::Stm32Data),
   Stm32Data_message_member_array,  // message members
   Stm32Data_init_function,  // function to initialize message memory (memory has to be allocated)

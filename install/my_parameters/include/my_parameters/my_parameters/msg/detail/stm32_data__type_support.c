@@ -31,7 +31,7 @@ void my_parameters__msg__Stm32Data__rosidl_typesupport_introspection_c__Stm32Dat
   my_parameters__msg__Stm32Data__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember my_parameters__msg__Stm32Data__rosidl_typesupport_introspection_c__Stm32Data_message_member_array[12] = {
+static rosidl_typesupport_introspection_c__MessageMember my_parameters__msg__Stm32Data__rosidl_typesupport_introspection_c__Stm32Data_message_member_array[13] = {
   {
     "motor1_fr",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -235,13 +235,30 @@ static rosidl_typesupport_introspection_c__MessageMember my_parameters__msg__Stm
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "enabled",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_parameters__msg__Stm32Data, enabled),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers my_parameters__msg__Stm32Data__rosidl_typesupport_introspection_c__Stm32Data_message_members = {
   "my_parameters__msg",  // message namespace
   "Stm32Data",  // message name
-  12,  // number of fields
+  13,  // number of fields
   sizeof(my_parameters__msg__Stm32Data),
   my_parameters__msg__Stm32Data__rosidl_typesupport_introspection_c__Stm32Data_message_member_array,  // message members
   my_parameters__msg__Stm32Data__rosidl_typesupport_introspection_c__Stm32Data_init_function,  // function to initialize message memory (memory has to be allocated)
