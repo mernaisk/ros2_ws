@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_parameters__cpp"
+  "rosidl_generator_cpp/my_parameters/msg/debug_parameter.hpp"
+  "rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp"
+  "rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp"
+  "rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp"
   "rosidl_generator_cpp/my_parameters/msg/detail/joystick_parameters__builder.hpp"
   "rosidl_generator_cpp/my_parameters/msg/detail/joystick_parameters__struct.hpp"
   "rosidl_generator_cpp/my_parameters/msg/detail/joystick_parameters__traits.hpp"

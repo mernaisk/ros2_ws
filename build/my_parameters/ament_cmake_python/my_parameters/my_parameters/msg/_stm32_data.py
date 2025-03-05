@@ -67,7 +67,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         '_motor1_rl',
         '_motor2_rl',
         '_motor3_rl',
-        '_move',
+        '_enabled',
     ]
 
     _fields_and_field_types = {
@@ -83,7 +83,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         'motor1_rl': 'int32',
         'motor2_rl': 'int32',
         'motor3_rl': 'int32',
-        'move': 'boolean',
+        'enabled': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -118,7 +118,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         self.motor1_rl = kwargs.get('motor1_rl', int())
         self.motor2_rl = kwargs.get('motor2_rl', int())
         self.motor3_rl = kwargs.get('motor3_rl', int())
-        self.move = kwargs.get('move', bool())
+        self.enabled = kwargs.get('enabled', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -173,7 +173,7 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
             return False
         if self.motor3_rl != other.motor3_rl:
             return False
-        if self.move != other.move:
+        if self.enabled != other.enabled:
             return False
         return True
 
@@ -363,14 +363,14 @@ class Stm32Data(metaclass=Metaclass_Stm32Data):
         self._motor3_rl = value
 
     @builtins.property
-    def move(self):
-        """Message field 'move'."""
-        return self._move
+    def enabled(self):
+        """Message field 'enabled'."""
+        return self._enabled
 
-    @move.setter
-    def move(self, value):
+    @enabled.setter
+    def enabled(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'move' field must be of type 'bool'"
-        self._move = value
+                "The 'enabled' field must be of type 'bool'"
+        self._enabled = value

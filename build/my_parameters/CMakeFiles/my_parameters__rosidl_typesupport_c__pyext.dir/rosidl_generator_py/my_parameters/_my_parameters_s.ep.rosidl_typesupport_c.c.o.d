@@ -210,4 +210,7 @@ CMakeFiles/my_parameters__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my
  /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.h \
  /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__type_support.h \
  /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__struct.h \
- /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h
+ /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h \
+ /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__type_support.h \
+ /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__struct.h \
+ /home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.h

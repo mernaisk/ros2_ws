@@ -78,6 +78,10 @@ CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/stm32_data
 CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__builder.hpp
 CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__struct.hpp
 CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__traits.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/debug_parameter.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp
 
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -97,6 +101,7 @@ rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/sha
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/MotorParameters.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/JoystickParameters.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/Stm32Data.idl
+rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/DebugParameter.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -193,7 +198,23 @@ rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__struct.hpp: rosidl_gen
 rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__traits.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__traits.hpp
 
+rosidl_generator_cpp/my_parameters/msg/debug_parameter.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/debug_parameter.hpp
+
+rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp
+
+rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp
+
+rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp
+
 my_parameters__cpp: CMakeFiles/my_parameters__cpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/debug_parameter.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/joystick_parameters__builder.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/joystick_parameters__struct.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/joystick_parameters__traits.hpp

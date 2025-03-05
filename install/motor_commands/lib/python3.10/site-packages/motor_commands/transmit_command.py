@@ -86,26 +86,26 @@ class MotorCommandPublisher(Node):
 
 
         if msg.pre_tight == True:
-            const = 15  
+            const = 10  
         else:
             const = 0
 
               
-        self.pretight1_fr = -2 + const
-        self.pretight2_fr = 3 + const
-        self.pretight3_fr = 8 + const
+        self.pretight1_fr = -7 + const
+        self.pretight2_fr = 4 + const
+        self.pretight3_fr = 5 + const
 
-        self.pretight1_fl = -7 + const
-        self.pretight2_fl = -1 + const
-        self.pretight3_fl = 5 + const
+        self.pretight1_fl = -8 + const
+        self.pretight2_fl = -4 + const
+        self.pretight3_fl = 6 + const
 
-        self.pretight1_rr = 2 + const
-        self.pretight2_rr = 7 + const
-        self.pretight3_rr = 3 + const
+        self.pretight1_rr = -1 + const
+        self.pretight2_rr = 9 + const
+        self.pretight3_rr = 6 + const
 
-        self.pretight1_rl = 3 + const
-        self.pretight2_rl = -5 + const
-        self.pretight3_rl = 3 + const
+        self.pretight1_rl = 5 + const
+        self.pretight2_rl = -3 + const
+        self.pretight3_rl = 6 + const
 
         self.motor1_fr -=  self.pretight1_fr
         self.motor2_fr -=  self.pretight2_fr

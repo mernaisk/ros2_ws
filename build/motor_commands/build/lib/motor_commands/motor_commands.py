@@ -3,6 +3,7 @@ import rclpy
 from rclpy.node import Node
 from my_parameters.msg import JoystickParameters  # Correct import based on your topic info
 from my_parameters.msg import MotorParameters
+from my_parameters.msg import DebugParameter
 
 class MotorCommandPublisher(Node):
     def __init__(self):
@@ -11,12 +12,10 @@ class MotorCommandPublisher(Node):
         # Initialize the start time
         self.time_start = self.get_clock().now()
 
-        # Timer for periodic update (10 ms interval)
-        self.timer = self.create_timer(0.0001, self.update_motor_command)
 
         # Publisher for motor command
         self.publisher_ = self.create_publisher(MotorParameters, "motor_command", 10)
-
+        self.debug_publisher_ = self.create_publisher(DebugParameter, "debug_motor_parameters", 10)
         # Subscription to joystick command
         self.subscription = self.create_subscription(
             JoystickParameters,  
@@ -27,7 +26,8 @@ class MotorCommandPublisher(Node):
 
         # Initial references and states
         self.alpha_r_ref = 0
-        self.alpha_b_ref = 0.6247
+        # self.alpha_b_ref = 0.6247
+        self.alpha_b_ref = 0.0
         self.z_l_ref = 0.0076
         self.period = 0.8
         self.move = False
@@ -55,10 +55,6 @@ class MotorCommandPublisher(Node):
         self.alpha_r_ref = msg.turn_angle if msg.turn_command else msg.position_direction
 
         # Call the second function to calculate angles
-        self.function2(msg)
-
-    def function2(self, msg):
-        # Calculate angles based on turning state
         if msg.turn_command:
             self.alpha_r_rr = self.alpha_r_ref + math.pi
             self.alpha_r_rl = self.alpha_r_ref + math.pi
@@ -78,6 +74,9 @@ class MotorCommandPublisher(Node):
             self.move = False
 
         self.pre_tight = msg.enabled
+        self.alpha_b_ref = msg.velocity
+        self.update_motor_command()
+
 
     def calculate_alpha_abc(self, alpha_r, alpha_b, z_l):
         """ Mathematical calculation for alpha_A, alpha_B, and alpha_C """
@@ -100,10 +99,33 @@ class MotorCommandPublisher(Node):
 
         # self.get_logger().info(f't_mod: {t_mod}')
         # --- Function 1 (Sinusoidal) ---
-        func1_value = self.alpha_b_ref * math.sin(2 * math.pi / self.period * elapsed_time)
+        # func1_value = self.alpha_b_ref * math.sin(2 * math.pi / self.period * elapsed_time)
 
-        # --- Function 2 (Negative Sinusoidal) ---
-        func2_value = -self.alpha_b_ref * math.sin(2 * math.pi / self.period * elapsed_time)
+        # # --- Function 2 (Negative Sinusoidal) ---
+        # func2_value = -self.alpha_b_ref * math.sin(2 * math.pi / self.period * elapsed_time)
+
+
+
+        # --- Function 1 (Linear Wave) ---
+        if 0 <= t_mod < 0.2:
+            func1_value = t_mod / 0.2
+        elif 0.2 <= t_mod < 0.6:
+            func1_value = -5*t_mod + 2
+        elif 0.6 <= t_mod < 0.8:
+            func1_value = 5 * t_mod - 4
+        else:
+            func1_value = 0
+
+        # --- Function 2 (Inverse Linear Wave) ---
+        if 0 <= t_mod < 0.2:
+            func2_value = -t_mod / 0.2
+        elif 0.2 <= t_mod < 0.6:
+            func2_value = 5 * t_mod - 2
+        elif 0.6 <= t_mod < 0.8:
+            func2_value = -5*t_mod + 4
+        else:
+            func2_value = 0
+        
 
         # --- Function 3 (Custom Wave) ---
         if 0 <= t_mod < 0.2:
@@ -128,10 +150,10 @@ class MotorCommandPublisher(Node):
             func4_value = 0
 
         # Assign calculated values to variables
-        self.alpha_b_fr = func1_value 
-        self.alpha_b_rl = func1_value 
-        self.alpha_b_fl = func2_value 
-        self.alpha_b_rr = func2_value 
+        self.alpha_b_fr = func1_value * self.alpha_b_ref
+        self.alpha_b_rl = func1_value * self.alpha_b_ref
+        self.alpha_b_fl = func2_value * self.alpha_b_ref
+        self.alpha_b_rr = func2_value * self.alpha_b_ref
         self.z_l_fl = func3_value * self.z_l_ref
         self.z_l_rr = func3_value * self.z_l_ref
         self.z_l_fr = func4_value * self.z_l_ref
@@ -147,10 +169,27 @@ class MotorCommandPublisher(Node):
         motor_command.move = self.move
         motor_command.pre_tight = self.pre_tight
         self.publisher_.publish(motor_command)
-        
-        self.get_logger().info(f'alpha a fr: {motor_command.alpha_a_fr}')
-        self.get_logger().info(f'alpha b fr: {motor_command.alpha_b_fr}')
-        self.get_logger().info(f'alpha c fr: {motor_command.alpha_c_fr}')
+
+
+        debug_msg = DebugParameter()
+        debug_msg.alpha_r_fr = self.alpha_r_fr
+        debug_msg.alpha_b_fr = self.alpha_b_fr
+        debug_msg.z_l_fr = self.z_l_fr
+        debug_msg.alpha_r_fl = self.alpha_r_fl
+        debug_msg.alpha_b_fl = self.alpha_b_fl
+        debug_msg.z_l_fl = self.z_l_fl
+        debug_msg.alpha_r_rr = self.alpha_r_rr
+        debug_msg.alpha_b_rr = self.alpha_b_rr
+        debug_msg.z_l_rr = self.z_l_rr
+        debug_msg.alpha_r_rl = self.alpha_r_rl
+        debug_msg.alpha_b_rl = self.alpha_b_rl
+        debug_msg.z_l_rl = self.z_l_rl
+
+        self.debug_publisher_.publish(debug_msg)
+
+        # self.get_logger().info(f'alpha a fr: {motor_command.alpha_a_fr}')
+        # self.get_logger().info(f'alpha b fr: {motor_command.alpha_b_fr}')
+        # self.get_logger().info(f'alpha c fr: {motor_command.alpha_c_fr}')
 
         # self.get_logger().info(f'alpha a fl: {motor_command.alpha_a_fl}')
         # self.get_logger().info(f'alpha b fl: {motor_command.alpha_b_fl}')

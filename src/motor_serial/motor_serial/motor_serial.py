@@ -72,7 +72,7 @@ class MotorSerialNode(Node):
             if data_to_stm32:
                 with self.lock:
                     self.ser.write(data_to_stm32)
-                    self.get_logger().info(f"⏳ Sending: {list(data_to_stm32)}")
+                    # self.get_logger().info(f"⏳ Sending: {list(data_to_stm32)}")
             time.sleep(0.05)  # Send every 50ms
         
         self.relay_commands = bytearray([10, 10])  # Turn off relay after 2 seconds
@@ -92,7 +92,7 @@ class MotorSerialNode(Node):
 
             with self.lock:
                 self.ser.write(data_to_stm32)
-                self.get_logger().info(f"➡️ Sent to STM32: {list(data_to_stm32)}")
+                # self.get_logger().info(f"➡️ Sent to STM32: {list(data_to_stm32)}")
                 data_from_stm32 = self.ser.read(19)
                 # self.get_logger().info(f"⬅️ Received from STM32: {list(data_from_stm32)}")
 
@@ -109,11 +109,11 @@ class MotorSerialNode(Node):
         
         return data_to_stm32
     def destroy_node(self):
-        self.relay_commands = bytearray([200, 200])  # Temporary relay command to set neutral
-        self.motor_commands = bytearray([90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90])
+        # self.relay_commands = bytearray([200, 200])  # Temporary relay command to set neutral
+        # self.motor_commands = bytearray([90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90])
 
-        self.release()
-        self.relay_commands = bytearray([10, 10])
+        # self.release()
+        # self.relay_commands = bytearray([10, 10])
 
         super().destroy_node()
 

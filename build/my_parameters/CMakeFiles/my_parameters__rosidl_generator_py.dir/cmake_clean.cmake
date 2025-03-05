@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_debug_parameter_s.c.o"
+  "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_debug_parameter_s.c.o.d"
   "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c.o"
   "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c.o.d"
   "CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c.o"

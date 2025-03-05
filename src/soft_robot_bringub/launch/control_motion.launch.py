@@ -28,20 +28,20 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # # Launch transmit_command.py node
-        # Node(
-        #     package='motor_commands',
-        #     executable='transmit_command',
-        #     name='transmit_command',
-        #     output='screen'
-        # ),
+        # Launch transmit_command.py node
+        Node(
+            package='motor_commands',
+            executable='transmit_command',
+            name='transmit_command',
+            output='screen'
+        ),
         
-        # # Launch motor_serial node
-        # Node(
-        #     package='motor_serial',
-        #     executable='motor_serial',
-        #     name='motor_serial',
-        #     output='screen'
-        # ),
+        # Launch motor_serial node
+        Node(
+            package='motor_serial',
+            executable='motor_serial',
+            name='motor_serial',
+            output='screen'
+        ),
 
     ])

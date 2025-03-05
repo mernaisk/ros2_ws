@@ -1,3 +1,5 @@
+msg/DebugParameter.idl
+msg/DebugParameter.msg
 msg/JoystickParameters.idl
 msg/JoystickParameters.msg
 msg/MotorParameters.idl

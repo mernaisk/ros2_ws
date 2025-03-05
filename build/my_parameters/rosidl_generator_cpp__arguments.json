@@ -5,7 +5,8 @@
   "idl_tuples": [
     "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/MotorParameters.idl",
     "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/JoystickParameters.idl",
-    "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/Stm32Data.idl"
+    "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/Stm32Data.idl",
+    "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/DebugParameter.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -88,6 +89,7 @@
     "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters/msg/MotorParameters.idl",
     "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters/msg/JoystickParameters.idl",
     "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters/msg/Stm32Data.idl",
+    "/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters/msg/DebugParameter.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

@@ -30,6 +30,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorParameters.msg"
   "msg/JoystickParameters.msg"
   "msg/Stm32Data.msg"
+  "msg/DebugParameter.msg"
   DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
 

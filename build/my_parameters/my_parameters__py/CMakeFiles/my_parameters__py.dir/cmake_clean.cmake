@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/my_parameters/msg/__init__.py"
+  "../rosidl_generator_py/my_parameters/msg/_debug_parameter.py"
+  "../rosidl_generator_py/my_parameters/msg/_debug_parameter_s.c"
   "../rosidl_generator_py/my_parameters/msg/_joystick_parameters.py"
   "../rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c"
   "../rosidl_generator_py/my_parameters/msg/_motor_parameters.py"
