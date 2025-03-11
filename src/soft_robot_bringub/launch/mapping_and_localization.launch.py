@@ -14,24 +14,11 @@ config_file2 = os.path.join(
     get_package_share_directory('soft_robot_bringub'), 'config', 'gmapping_config.yaml'
 )
 
-sllidar_launch_file = os.path.join(
-    get_package_share_directory('sllidar_ros2'), 'launch', 'view_sllidar_a2m8_launch.py'
-)
+
 
 def generate_launch_description():
     return LaunchDescription([
-        # Launch joystick_publisher node
-        
-        Node(
-            package='bno055',
-            executable='bno055',
-            name='bno055',
-            output='screen'
-        ),
 
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(sllidar_launch_file)
-        ),
 
         Node(
             package='tf2_ros',

@@ -1,24 +1,39 @@
 ekf_filter_node:
   ros__parameters:
-    frequency: 15.0  # EKF update rate (Hz)
-
-    two_d_mode: true  # Ignore Z-axis for a ground robot
+    frequency: 15.0
+    two_d_mode: true
 
     # Frames
     map_frame: "map"
     odom_frame: "odom"
     base_link_frame: "base_link"
 
-    # IMU (BNO055)
     imu0: "bno055/imu"
-    imu0_config: [true, true, false,  # Use no X, Y, Z position
-                  true, true, true,     # Use roll, pitch, yaw (orientation)
-                  false, false, false,  # No linear velocity
-                  true, false, false,   # Use yaw velocity (angular z)
-                  false, false, false]  # No acceleration
+    imu0_config: [false, false, false,   
+                  true, true, true,      
+                  false, false, false,   
+                  true, false, false,   
+                  true, true, false]   
 
+    imu0_differential: false
+    imu0_remove_gravitational_acceleration: true  
 
-    # Output fused odometry
-    publish_tf: true
-    odom0_differential: false
-    imu0_differential: true  # IMU drifts, so use differential mode
+    process_noise_covariance: [
+      0.001, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 
+      0.0,  0.001, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.001, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 
+      0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
+      0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.002, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.002, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.002, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.02, 0.0,  0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,
+      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.015
+    ]
+
+    sensor_timeout: 1.0 
