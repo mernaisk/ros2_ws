@@ -1,6 +1,6 @@
 ekf_filter_node:
   ros__parameters:
-    frequency: 30.0  # EKF update rate (Hz)
+    frequency: 15.0  # EKF update rate (Hz)
 
     two_d_mode: true  # Ignore Z-axis for a ground robot
 
@@ -11,7 +11,7 @@ ekf_filter_node:
 
     # IMU (BNO055)
     imu0: "bno055/imu"
-    imu0_config: [false, false, false,  # Use no X, Y, Z position
+    imu0_config: [true, true, false,  # Use no X, Y, Z position
                   true, true, true,     # Use roll, pitch, yaw (orientation)
                   false, false, false,  # No linear velocity
                   true, false, false,   # Use yaw velocity (angular z)

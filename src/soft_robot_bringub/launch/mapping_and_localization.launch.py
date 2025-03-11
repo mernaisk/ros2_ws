@@ -21,6 +21,7 @@ sllidar_launch_file = os.path.join(
 def generate_launch_description():
     return LaunchDescription([
         # Launch joystick_publisher node
+        
         Node(
             package='bno055',
             executable='bno055',
@@ -36,7 +37,7 @@ def generate_launch_description():
             package='tf2_ros',
             executable='static_transform_publisher',
             name='tf_static_lidar',
-            arguments=['0.3', '0.0', '0.2', '0', '0', '0', '1', 'base_link', 'lidar_link']
+            arguments=['0.3', '0.0', '0.2', '0', '0', '0', '1', 'base_link', 'laser']
         ),
 
         # Static transform between base_link and bno055 (IMU)
@@ -47,12 +48,6 @@ def generate_launch_description():
             arguments=['0.0', '0.0', '0.0', '0', '0', '0', '1', 'base_link', 'bno055']
         ),
 
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_static_laser',
-            arguments=['0', '0', '0', '0', '0', '0', '1', 'lidar_link', 'laser']
-        ),
 
         # Launch the EKF localization node (no need for IncludeLaunchDescription)
         Node(

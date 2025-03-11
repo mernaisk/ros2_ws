@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.001753] (-) JobUnselected: {'identifier': 'bno055'}
+[0.002532] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.003071] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.003287] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.003603] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.003786] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003903] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.004020] (my_slam_package) JobQueued: {'identifier': 'my_slam_package', 'dependencies': OrderedDict()}
+[0.004169] (my_slam_package) JobStarted: {'identifier': 'my_slam_package'}
+[0.098852] (-) TimerEvent: {}
+[0.199542] (-) TimerEvent: {}
+[0.300334] (-) TimerEvent: {}
+[0.401169] (-) TimerEvent: {}
+[0.501933] (-) TimerEvent: {}
+[0.602681] (-) TimerEvent: {}
+[0.703368] (-) TimerEvent: {}
+[0.804091] (-) TimerEvent: {}
+[0.904810] (-) TimerEvent: {}
+[1.006029] (-) TimerEvent: {}
+[1.106779] (-) TimerEvent: {}
+[1.207469] (-) TimerEvent: {}
+[1.308201] (-) TimerEvent: {}
+[1.408960] (-) TimerEvent: {}
+[1.509880] (-) TimerEvent: {}
+[1.610940] (-) TimerEvent: {}
+[1.711886] (-) TimerEvent: {}
+[1.813214] (-) TimerEvent: {}
+[1.914444] (-) TimerEvent: {}
+[2.015266] (-) TimerEvent: {}
+[2.115982] (-) TimerEvent: {}
+[2.216740] (-) TimerEvent: {}
+[2.317513] (-) TimerEvent: {}
+[2.418407] (-) TimerEvent: {}
+[2.519274] (-) TimerEvent: {}
+[2.619971] (-) TimerEvent: {}
+[2.720670] (-) TimerEvent: {}
+[2.821375] (-) TimerEvent: {}
+[2.922156] (-) TimerEvent: {}
+[3.023013] (-) TimerEvent: {}
+[3.123758] (-) TimerEvent: {}
+[3.224602] (-) TimerEvent: {}
+[3.325396] (-) TimerEvent: {}
+[3.426100] (-) TimerEvent: {}
+[3.526904] (-) TimerEvent: {}
+[3.627798] (-) TimerEvent: {}
+[3.728898] (-) TimerEvent: {}
+[3.830167] (-) TimerEvent: {}
+[3.873425] (my_slam_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_slam_package', 'build', '--build-base', '/home/pi2/ros2_ws/build/my_slam_package/build', 'install', '--record', '/home/pi2/ros2_ws/build/my_slam_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi2/ros2_ws/src/my_slam_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi2', 'SSH_CLIENT': '192.168.0.107 58280 22', 'LC_TIME': 'sv_SE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi2/ros2_ws/install/my_parameters/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi2', 'OLDPWD': '/home/pi2/ros2_ws/src/my_slam_package', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'sv_SE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/pi2/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'sv_SE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'sv_SE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install', 'SHELL': '/bin/bash', 'LC_NAME': 'sv_SE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'sv_SE.UTF-8', 'LC_IDENTIFICATION': 'sv_SE.UTF-8', 'PWD': '/home/pi2/ros2_ws/build/my_slam_package', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.107 58280 192.168.0.100 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi2/ros2_ws/build/my_slam_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'sv_SE.UTF-8', 'LC_PAPER': 'sv_SE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install'}, 'shell': False}
+[3.930383] (-) TimerEvent: {}
+[4.031247] (-) TimerEvent: {}
+[4.132029] (-) TimerEvent: {}
+[4.232751] (-) TimerEvent: {}
+[4.333459] (-) TimerEvent: {}
+[4.434224] (-) TimerEvent: {}
+[4.543933] (-) TimerEvent: {}
+[4.644708] (-) TimerEvent: {}
+[4.745399] (-) TimerEvent: {}
+[4.846126] (-) TimerEvent: {}
+[4.947033] (-) TimerEvent: {}
+[5.047709] (-) TimerEvent: {}
+[5.148426] (-) TimerEvent: {}
+[5.249155] (-) TimerEvent: {}
+[5.323345] (my_slam_package) StdoutLine: {'line': b'running egg_info\n'}
+[5.326905] (my_slam_package) StdoutLine: {'line': b'creating ../../build/my_slam_package/my_slam_package.egg-info\n'}
+[5.328085] (my_slam_package) StdoutLine: {'line': b'writing ../../build/my_slam_package/my_slam_package.egg-info/PKG-INFO\n'}
+[5.329598] (my_slam_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_slam_package/my_slam_package.egg-info/dependency_links.txt\n'}
+[5.330545] (my_slam_package) StdoutLine: {'line': b'writing entry points to ../../build/my_slam_package/my_slam_package.egg-info/entry_points.txt\n'}
+[5.331537] (my_slam_package) StdoutLine: {'line': b'writing requirements to ../../build/my_slam_package/my_slam_package.egg-info/requires.txt\n'}
+[5.332528] (my_slam_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_slam_package/my_slam_package.egg-info/top_level.txt\n'}
+[5.333625] (my_slam_package) StdoutLine: {'line': b"writing manifest file '../../build/my_slam_package/my_slam_package.egg-info/SOURCES.txt'\n"}
+[5.341675] (my_slam_package) StdoutLine: {'line': b"reading manifest file '../../build/my_slam_package/my_slam_package.egg-info/SOURCES.txt'\n"}
+[5.345235] (my_slam_package) StdoutLine: {'line': b"writing manifest file '../../build/my_slam_package/my_slam_package.egg-info/SOURCES.txt'\n"}
+[5.345958] (my_slam_package) StdoutLine: {'line': b'running build\n'}
+[5.346569] (my_slam_package) StdoutLine: {'line': b'running build_py\n'}
+[5.347242] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/build/my_slam_package/build\n'}
+[5.347805] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/build/my_slam_package/build/lib\n'}
+[5.348366] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/build/my_slam_package/build/lib/my_slam_package\n'}
+[5.348805] (my_slam_package) StdoutLine: {'line': b'copying my_slam_package/__init__.py -> /home/pi2/ros2_ws/build/my_slam_package/build/lib/my_slam_package\n'}
+[5.349351] (-) TimerEvent: {}
+[5.349794] (my_slam_package) StdoutLine: {'line': b'running install\n'}
+[5.350570] (my_slam_package) StdoutLine: {'line': b'running install_lib\n'}
+[5.354036] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages/my_slam_package\n'}
+[5.354801] (my_slam_package) StdoutLine: {'line': b'copying /home/pi2/ros2_ws/build/my_slam_package/build/lib/my_slam_package/__init__.py -> /home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages/my_slam_package\n'}
+[5.357684] (my_slam_package) StdoutLine: {'line': b'byte-compiling /home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages/my_slam_package/__init__.py to __init__.cpython-310.pyc\n'}
+[5.359009] (my_slam_package) StdoutLine: {'line': b'running install_data\n'}
+[5.359682] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/install/my_slam_package/share/ament_index\n'}
+[5.360349] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/install/my_slam_package/share/ament_index/resource_index\n'}
+[5.360894] (my_slam_package) StdoutLine: {'line': b'creating /home/pi2/ros2_ws/install/my_slam_package/share/ament_index/resource_index/packages\n'}
+[5.361411] (my_slam_package) StdoutLine: {'line': b'copying resource/my_slam_package -> /home/pi2/ros2_ws/install/my_slam_package/share/ament_index/resource_index/packages\n'}
+[5.361956] (my_slam_package) StdoutLine: {'line': b'copying package.xml -> /home/pi2/ros2_ws/install/my_slam_package/share/my_slam_package\n'}
+[5.362409] (my_slam_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.375013] (my_slam_package) StdoutLine: {'line': b'Copying ../../build/my_slam_package/my_slam_package.egg-info to /home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages/my_slam_package-0.0.0-py3.10.egg-info\n'}
+[5.382096] (my_slam_package) StdoutLine: {'line': b'running install_scripts\n'}
+[5.449591] (-) TimerEvent: {}
+[5.473452] (my_slam_package) StdoutLine: {'line': b'Installing static_tf_broadcaster script to /home/pi2/ros2_ws/install/my_slam_package/lib/my_slam_package\n'}
+[5.475054] (my_slam_package) StdoutLine: {'line': b"writing list of installed files to '/home/pi2/ros2_ws/build/my_slam_package/install.log'\n"}
+[5.554268] (-) TimerEvent: {}
+[5.631498] (my_slam_package) CommandEnded: {'returncode': 0}
+[5.654524] (-) TimerEvent: {}
+[5.770556] (-) TimerEvent: {}
+[5.842417] (my_slam_package) JobEnded: {'identifier': 'my_slam_package', 'rc': 0}
+[5.848437] (-) EventReactorShutdown: {}

@@ -1,12 +1,10 @@
 slam_toolbox:
   ros__parameters:
-    mode: "online_async"
-    use_sim_time: false   # Make sure this is false unless using simulation
-    map_update_interval: 0.1  # Update the map every 0.2 seconds
-    resolution: 0.05      # Map resolution in meters (adjust as needed)
-    max_laser_range: 6.0  # Set the max range of your LiDAR
-    odom_frame: "odom"
+    resolution: 0.1   # Adjust resolution to fit your required size
     map_frame: "map"
+    odom_frame: "odom"
     base_frame: "base_link"
-    scan_topic: "/scan"   # Ensure this matches your LiDAR topic
-    transform_timeout: 0.2
+    scan_topic: "/scan"
+    max_laser_range: 6.0
+    map_size_x: 1.5  # Total map width (meters)
+    map_size_y: 0.9  # Total map height (meters)
