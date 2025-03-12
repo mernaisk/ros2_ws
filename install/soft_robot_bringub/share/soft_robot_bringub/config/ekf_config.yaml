@@ -1,40 +1,46 @@
 ekf_filter_node:
-  ros__parameters:
-    frequency: 15.0
-    two_d_mode: true
+    ros__parameters:
+        frequency: 25.0  # Update rate of the EKF in Hz
+        # Higher (e.g., 50 Hz) → Smoother output but uses more CPU.
+        # Lower (e.g., 10 Hz) → Less CPU usage but choppier localization.
 
-    # Frames
-    map_frame: "map"
-    odom_frame: "odom"
-    base_link_frame: "base_link"
+        sensor_timeout: 0.1
+        two_d_mode: true  
 
-    # IMU (BNO055) - FIXED!
-    imu0: "bno055/imu"
-    imu0_config: [false, false, false,   # ❌ Do NOT estimate position
-                  true, true, true,      # ✅ Use roll, pitch, yaw
-                  false, false, false,   # ❌ No linear velocity
-                  true, false, false,    # ✅ Use yaw velocity (angular Z)
-                  true, true, false]     # ✅ Use X and Y acceleration!
+        print_diagnostics: true
 
-    imu0_differential: false
-    imu0_remove_gravitational_acceleration: true  
+        publish_tf: true
 
-    process_noise_covariance: [
-      0.001, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 
-      0.0,  0.001, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,
-      0.0,  0.0,  0.001, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 
-      0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
-      0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.002, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.002, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.002, 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,  0.0,
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,  0.0,  0.0,
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.02, 0.0,  0.0,  0.0,
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,  0.0,
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.01, 0.0,
-      0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.015
-    ]
+        map_frame: map
+        odom_frame: odom
+        base_link_frame: base_link
+        world_frame: odom  # We want to estimate position inside odom frame
 
-    sensor_timeout: 1.0 
+        # -----------------------------------------------------
+        # 🔹 ODOMETRY SENSOR (LiDAR-based odometry)
+        # -----------------------------------------------------
+        odom0: /odom
+        odom0_config: 
+            [true,  true,  false,   # x, y, (ignore z)
+             false, false, false,   # roll, pitch, yaw
+             true,  true,  false,   # vx, vy, (ignore vz)
+             false, false, true,    # vroll, vpitch, vyaw
+             false, false, false]   # ax, ay, az  (ignore accel)
+        
+
+
+
+        # -----------------------------------------------------
+        # 🔹 IMU SENSOR
+        # -----------------------------------------------------
+        imu0: /bno055/imu
+        imu0_config:
+            [false, false, false,   # Ignore x, y, z (IMU position is unreliable)
+             true,  true,  true,    # roll, pitch, yaw (use IMU orientation)
+             false, false, false,   # Ignore vx, vy, vz (IMU can't track velocity well)
+             true,  true,  true,    # Use vroll, vpitch, vyaw (Angular velocity)
+             false, false, false]   # Ignore ax, ay, az (IMU accel is unreliable)
+
+
+
+        imu0_remove_gravitational_acceleration: true  # Remove gravity effect

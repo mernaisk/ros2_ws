@@ -1,0 +1,33 @@
+[0.125s] Invoking command in '/home/pi2/ros2_ws/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble LD_LIBRARY_PATH=/home/pi2/ros2_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/pi2/ros2_ws/src/ros2_laser_scan_matcher -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/ros2_laser_scan_matcher
+[0.758s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.646s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.763s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.055s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.079s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.136s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.322s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.737s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.977s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.992s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.265s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.557s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.675s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.264s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[5.295s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.304s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.336s] -- Found csm: 0.0.0 (/home/pi2/ros2_ws/install/csm/share/csm/cmake)
+[5.877s] -- Configuring done
+[6.027s] -- Generating done
+[6.044s] -- Build files have been written to: /home/pi2/ros2_ws/build/ros2_laser_scan_matcher
+[6.128s] Invoked command in '/home/pi2/ros2_ws/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble LD_LIBRARY_PATH=/home/pi2/ros2_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/pi2/ros2_ws/src/ros2_laser_scan_matcher -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/ros2_laser_scan_matcher
+[6.140s] Invoking command in '/home/pi2/ros2_ws/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble LD_LIBRARY_PATH=/home/pi2/ros2_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/pi2/ros2_ws/build/ros2_laser_scan_matcher -- -j4 -l4
+[6.427s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o[0m
+[9.847s] In file included from [01m[K/home/pi2/ros2_ws/src/ros2_laser_scan_matcher/include/ros2_laser_scan_matcher/laser_scan_matcher.h:47[m[K,
+[9.848s]                  from [01m[K/home/pi2/ros2_ws/src/ros2_laser_scan_matcher/src/laser_scan_matcher.cpp:38[m[K:
+[9.848s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[9.849s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[9.849s]       |  [01;35m[K^~~~~~~[m[K
+[62.680s] gmake[2]: *** [CMakeFiles/laser_scan_matcher.dir/build.make:76: CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o] Interrupt
+[62.699s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_scan_matcher.dir/all] Interrupt
+[62.700s] gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,48 @@
+[0.104s] Invoking command in '/home/pi2/ros2_ws/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble LD_LIBRARY_PATH=/home/pi2/ros2_ws/install/csm/lib:/home/pi2/ros2_ws/install/my_parameters/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/pi2/ros2_ws/src/ros2_laser_scan_matcher -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/ros2_laser_scan_matcher
+[1.802s] -- The C compiler identification is GNU 11.4.0
+[2.605s] -- The CXX compiler identification is GNU 11.4.0
+[2.659s] -- Detecting C compiler ABI info
+[3.166s] -- Detecting C compiler ABI info - done
+[3.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.200s] -- Detecting C compile features
+[3.204s] -- Detecting C compile features - done
+[3.221s] -- Detecting CXX compiler ABI info
+[3.692s] -- Detecting CXX compiler ABI info - done
+[3.738s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.741s] -- Detecting CXX compile features
+[3.742s] -- Detecting CXX compile features - done
+[3.826s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.945s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.374s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.027s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.652s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.751s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.872s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.032s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.795s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[8.362s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.414s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.327s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.639s] -- Found FastRTPS: /opt/ros/humble/include  
+[10.123s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.275s] -- Looking for pthread.h
+[10.782s] -- Looking for pthread.h - found
+[10.792s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.666s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.671s] -- Found Threads: TRUE  
+[12.167s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[12.347s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[13.685s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[13.987s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[13.997s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[13.998s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[14.024s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[14.039s] -- Found csm: 0.0.0 (/home/pi2/ros2_ws/install/csm/share/csm/cmake)
+[14.348s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[14.909s] -- Configuring done
+[15.051s] -- Generating done
+[15.062s] -- Build files have been written to: /home/pi2/ros2_ws/build/ros2_laser_scan_matcher
+[15.131s] Invoked command in '/home/pi2/ros2_ws/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble LD_LIBRARY_PATH=/home/pi2/ros2_ws/install/csm/lib:/home/pi2/ros2_ws/install/my_parameters/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/pi2/ros2_ws/src/ros2_laser_scan_matcher -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/ros2_laser_scan_matcher
+[15.141s] Invoking command in '/home/pi2/ros2_ws/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble LD_LIBRARY_PATH=/home/pi2/ros2_ws/install/csm/lib:/home/pi2/ros2_ws/install/my_parameters/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/pi2/ros2_ws/build/ros2_laser_scan_matcher -- -j4 -l4
+[15.589s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o[0m
