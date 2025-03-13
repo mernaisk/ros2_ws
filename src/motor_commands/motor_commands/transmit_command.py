@@ -86,7 +86,7 @@ class MotorCommandPublisher(Node):
 
 
         if msg.pre_tight == True:
-            const = 15  
+            const = 12  
         else:
             const = 0
 

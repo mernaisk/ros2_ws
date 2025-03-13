@@ -77,7 +77,6 @@ class MotorCommandPublisher(Node):
         self.alpha_b_ref = msg.velocity
         self.update_motor_command()
 
-
     def calculate_alpha_abc(self, alpha_r, alpha_b, z_l):
         """ Mathematical calculation for alpha_A, alpha_B, and alpha_C """
         L_disk = 0.02944
@@ -88,6 +87,7 @@ class MotorCommandPublisher(Node):
         alpha_B = -(-R_w * alpha_b * math.cos(-alpha_r + (2 * math.pi / 3)) + z_l) / R_spool
         alpha_C = -(-R_w * alpha_b * math.cos(-alpha_r + (4 * math.pi / 3)) + z_l) / R_spool
         
+
         return alpha_A, alpha_B, alpha_C
 
     def update_motor_command(self):

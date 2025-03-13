@@ -14,8 +14,13 @@ config_file2 = os.path.join(
     get_package_share_directory('soft_robot_bringub'), 'config', 'gmapping_config.yaml'
 )
 
+config_file3 = os.path.join(
+    get_package_share_directory('soft_robot_bringub'), 'config', 'amcl_config.yaml'
+)
 
-
+config_file4 = os.path.join(
+    get_package_share_directory('soft_robot_bringub'), 'config', 'my_map.yaml'
+)
 def generate_launch_description():
     return LaunchDescription([
 
@@ -27,6 +32,8 @@ def generate_launch_description():
             arguments=['0.3', '0.0', '0.2', '0', '0', '0', '1', 'base_link', 'laser']
         ),
 
+
+
         # Static transform between base_link and bno055 (IMU)
         Node(
             package='tf2_ros',
@@ -35,6 +42,12 @@ def generate_launch_description():
             arguments=['0.0', '0.0', '0.0', '0', '0', '0', '1', 'base_link', 'bno055']
         ),
 
+        Node(
+            package='ros2_laser_scan_matcher',
+            executable='laser_scan_matcher',
+            name='laser_scan_matcher',
+            output='screen'
+        ),
 
         # Launch the EKF localization node (no need for IncludeLaunchDescription)
         Node(
@@ -45,12 +58,45 @@ def generate_launch_description():
             parameters=[config_file1]  # path to the EKF config file
         ),
 
+        # Node(
+        #     package='slam_toolbox',
+        #     executable='sync_slam_toolbox_node',
+        #     name='slam_toolbox',
+        #     output='screen',
+        #     parameters=[config_file2]  # SLAM Toolbox config file
+        # )
+
         Node(
-            package='slam_toolbox',
-            executable='sync_slam_toolbox_node',
-            name='slam_toolbox',
+            package='nav2_map_server',
+            executable='map_server',
+            name='map_server',
             output='screen',
-            parameters=[config_file2]  # SLAM Toolbox config file
+            parameters=[
+                {'use_sim_time': True},
+                {'yaml_filename': config_file4}
+                ]
+        ),
+
+        Node(
+            package='nav2_lifecycle_manager',
+            executable='lifecycle_manager',
+            name='lifecycle_manager_mapper',
+            output='screen',
+            parameters=[{
+                'use_sim_time': True,
+                'autostart': True,
+                'node_names': ['map_server']
+            }]
+        ),
+
+        
+        # AMCL node for localization
+        Node(
+            package='nav2_amcl',
+            executable='amcl',
+            name='amcl',
+            output='screen',
+            parameters=[config_file3]
         )
         
     ])
