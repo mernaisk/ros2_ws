@@ -1,19 +1,28 @@
 amcl:
   ros__parameters:
-    use_sim_time: false
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+    global_frame_id: "map"
+    scan_topic: "/scan"  # **Ensure AMCL listens to `/scan`**
+    laser_max_range: 8.0
+    laser_min_range: 0.15
+    laser_model_type: "likelihood_field_prob"
+    max_beams: 80 #Increasing this can improve accuracy but slows down processing significantly. Decreasing it speeds up processing but might make localization less accurate.
+
+    use_sim_time: true
     min_particles: 500
     max_particles: 2000
     transform_tolerance: 0.2
     recovery_alpha_slow: 0.001
     recovery_alpha_fast: 0.1
-    odom_frame_id: "odom"
-    base_frame_id: "base_link"
-    global_frame_id: "map"
+
     use_map_topic: true
     tf_broadcast: true
-    laser_model_type: "likelihood_field"
     update_min_d: 0.2
     update_min_a: 0.2
     resample_interval: 1
     set_initial_pose: true
-    scan_topic: "/scan"  # **Ensure AMCL listens to `/scan`**
+    initial_pose.x: 0.0
+    initial_pose.y: 0.0
+    initial_pose.z: 0.0
+    initial_pose.yaw: 0.0

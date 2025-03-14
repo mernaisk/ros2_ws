@@ -85,7 +85,7 @@ def generate_launch_description():
             parameters=[{
                 'use_sim_time': True,
                 'autostart': True,
-                'node_names': ['map_server']
+                'node_names': ['map_server', 'amcl']
             }]
         ),
 
@@ -94,7 +94,7 @@ def generate_launch_description():
         Node(
             package='nav2_amcl',
             executable='amcl',
-            name='amcl',
+            name='amcl',  
             output='screen',
             parameters=[config_file3]
         )
