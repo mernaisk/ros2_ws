@@ -1,0 +1,42 @@
+[0.091s] Invoking command in '/home/pi2/ros2_ws/build/nav2_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake /home/pi2/ros2_ws/src/navigation2/nav2_behaviors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/nav2_behaviors
+[0.706s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.481s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.593s] -- Found nav2_common: 1.1.16 (/opt/ros/humble/share/nav2_common/cmake)
+[1.600s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.897s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.919s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.967s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.044s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.385s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.405s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.664s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.050s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.259s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[4.387s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[4.541s] -- Found nav2_behavior_tree: 1.1.18 (/opt/ros/humble/share/nav2_behavior_tree/cmake)
+[5.272s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.280s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.563s] -- Found nav2_costmap_2d: 1.1.18 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[6.193s] -- Found nav2_core: 1.1.18 (/opt/ros/humble/share/nav2_core/cmake)
+[11.971s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.407s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[13.192s] -- Added test 'copyright' to check source files copyright and LICENSE
+[13.218s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.228s] -- Configured cppcheck include dirs: /home/pi2/ros2_ws/src/navigation2/nav2_behaviors/include
+[13.228s] -- Configured cppcheck exclude dirs and/or files: 
+[13.247s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[13.247s] -- Configured cpplint exclude dirs and/or files: 
+[13.256s] -- Added test 'lint_cmake' to check CMake code style
+[13.279s] -- Added test 'uncrustify' to check C / C++ code style
+[13.279s] -- Configured uncrustify additional arguments: 
+[13.283s] -- Added test 'xmllint' to check XML markup files
+[13.318s] -- Configuring done
+[17.240s] -- Generating done
+[17.263s] -- Build files have been written to: /home/pi2/ros2_ws/build/nav2_behaviors
+[17.345s] Invoked command in '/home/pi2/ros2_ws/build/nav2_behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake /home/pi2/ros2_ws/src/navigation2/nav2_behaviors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/nav2_behaviors
+[17.359s] Invoking command in '/home/pi2/ros2_ws/build/nav2_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/pi2/ros2_ws/build/nav2_behaviors -- -j4 -l4
+[17.671s] [  5%] [32mBuilding CXX object CMakeFiles/nav2_spin_behavior.dir/plugins/spin.cpp.o[0m
+[17.677s] [ 10%] [32mBuilding CXX object CMakeFiles/nav2_back_up_behavior.dir/plugins/back_up.cpp.o[0m
+[17.681s] [ 15%] [32mBuilding CXX object CMakeFiles/nav2_wait_behavior.dir/plugins/wait.cpp.o[0m
+[17.694s] [ 20%] [32mBuilding CXX object CMakeFiles/nav2_drive_on_heading_behavior.dir/plugins/drive_on_heading.cpp.o[0m

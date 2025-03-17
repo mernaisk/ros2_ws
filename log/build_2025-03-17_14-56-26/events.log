@@ -1,0 +1,351 @@
+[0.000000] (-) TimerEvent: {}
+[0.001813] (-) JobUnselected: {'identifier': 'bno055'}
+[0.002475] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.003006] (-) JobUnselected: {'identifier': 'csm'}
+[0.003219] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.003549] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.003765] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.003896] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.004007] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.004143] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.004253] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.004362] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.004465] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.004560] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.004651] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.004738] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.004821] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.004907] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.004989] (-) JobUnselected: {'identifier': 'nav2_collision_monitor'}
+[0.005073] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.005159] (-) JobUnselected: {'identifier': 'nav2_constrained_smoother'}
+[0.005242] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.005326] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.005410] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.005493] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.005575] (-) JobUnselected: {'identifier': 'nav2_graceful_controller'}
+[0.005658] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.005771] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.005895] (-) JobUnselected: {'identifier': 'nav2_mppi_controller'}
+[0.006028] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.006145] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.006895] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.007105] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.007410] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.007585] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.007684] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.007790] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.007917] (-) JobUnselected: {'identifier': 'nav2_smoother'}
+[0.008013] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.008101] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.008187] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.008275] (-) JobUnselected: {'identifier': 'nav2_velocity_smoother'}
+[0.008377] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.008481] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.008583] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.008686] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.008789] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.008892] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.008999] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.009125] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.009296] (nav2_behaviors) JobQueued: {'identifier': 'nav2_behaviors', 'dependencies': OrderedDict([('nav2_common', '/home/pi2/ros2_ws/install/nav2_common'), ('nav2_msgs', '/home/pi2/ros2_ws/install/nav2_msgs'), ('nav2_voxel_grid', '/home/pi2/ros2_ws/install/nav2_voxel_grid'), ('nav2_util', '/home/pi2/ros2_ws/install/nav2_util'), ('nav2_behavior_tree', '/home/pi2/ros2_ws/install/nav2_behavior_tree'), ('nav2_lifecycle_manager', '/home/pi2/ros2_ws/install/nav2_lifecycle_manager'), ('nav2_map_server', '/home/pi2/ros2_ws/install/nav2_map_server'), ('nav2_costmap_2d', '/home/pi2/ros2_ws/install/nav2_costmap_2d'), ('nav2_core', '/home/pi2/ros2_ws/install/nav2_core')])}
+[0.010169] (nav2_behaviors) JobStarted: {'identifier': 'nav2_behaviors'}
+[0.083085] (nav2_behaviors) JobProgress: {'identifier': 'nav2_behaviors', 'progress': 'cmake'}
+[0.097120] (nav2_behaviors) Command: {'cmd': ['/usr/bin/cmake', '/home/pi2/ros2_ws/src/navigation2/nav2_behaviors', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/nav2_behaviors'], 'cwd': '/home/pi2/ros2_ws/build/nav2_behaviors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 50608 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/nav2_behaviors'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 50608 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.102798] (-) TimerEvent: {}
+[0.203672] (-) TimerEvent: {}
+[0.304735] (-) TimerEvent: {}
+[0.406554] (-) TimerEvent: {}
+[0.507530] (-) TimerEvent: {}
+[0.608402] (-) TimerEvent: {}
+[0.709349] (-) TimerEvent: {}
+[0.715081] (nav2_behaviors) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.809511] (-) TimerEvent: {}
+[0.910253] (-) TimerEvent: {}
+[1.010974] (-) TimerEvent: {}
+[1.111723] (-) TimerEvent: {}
+[1.212606] (-) TimerEvent: {}
+[1.313332] (-) TimerEvent: {}
+[1.414076] (-) TimerEvent: {}
+[1.490673] (nav2_behaviors) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.514273] (-) TimerEvent: {}
+[1.602346] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_common: 1.1.16 (/opt/ros/humble/share/nav2_common/cmake)\n'}
+[1.609314] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.614447] (-) TimerEvent: {}
+[1.715253] (-) TimerEvent: {}
+[1.816034] (-) TimerEvent: {}
+[1.906888] (nav2_behaviors) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.916200] (-) TimerEvent: {}
+[1.928738] (nav2_behaviors) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.976833] (nav2_behaviors) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.016407] (-) TimerEvent: {}
+[2.053650] (nav2_behaviors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.116606] (-) TimerEvent: {}
+[2.143772] (nav2_behaviors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.216798] (-) TimerEvent: {}
+[2.317583] (-) TimerEvent: {}
+[2.395048] (nav2_behaviors) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.414391] (nav2_behaviors) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.417853] (-) TimerEvent: {}
+[2.518590] (-) TimerEvent: {}
+[2.619370] (-) TimerEvent: {}
+[2.720183] (-) TimerEvent: {}
+[2.820987] (-) TimerEvent: {}
+[2.922040] (-) TimerEvent: {}
+[3.022781] (-) TimerEvent: {}
+[3.123498] (-) TimerEvent: {}
+[3.224214] (-) TimerEvent: {}
+[3.324970] (-) TimerEvent: {}
+[3.425713] (-) TimerEvent: {}
+[3.526474] (-) TimerEvent: {}
+[3.627207] (-) TimerEvent: {}
+[3.673424] (nav2_behaviors) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.727419] (-) TimerEvent: {}
+[3.828342] (-) TimerEvent: {}
+[3.929150] (-) TimerEvent: {}
+[4.029935] (-) TimerEvent: {}
+[4.059790] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[4.130126] (-) TimerEvent: {}
+[4.230995] (-) TimerEvent: {}
+[4.268560] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[4.331268] (-) TimerEvent: {}
+[4.397032] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[4.431475] (-) TimerEvent: {}
+[4.532317] (-) TimerEvent: {}
+[4.551301] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_behavior_tree: 1.1.18 (/opt/ros/humble/share/nav2_behavior_tree/cmake)\n'}
+[4.632500] (-) TimerEvent: {}
+[4.733304] (-) TimerEvent: {}
+[4.834315] (-) TimerEvent: {}
+[4.935157] (-) TimerEvent: {}
+[5.035958] (-) TimerEvent: {}
+[5.136841] (-) TimerEvent: {}
+[5.237657] (-) TimerEvent: {}
+[5.281304] (nav2_behaviors) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[5.289639] (nav2_behaviors) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.337865] (-) TimerEvent: {}
+[5.438625] (-) TimerEvent: {}
+[5.539438] (-) TimerEvent: {}
+[5.572926] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.1.18 (/opt/ros/humble/share/nav2_costmap_2d/cmake)\n'}
+[5.639637] (-) TimerEvent: {}
+[5.740395] (-) TimerEvent: {}
+[5.841169] (-) TimerEvent: {}
+[5.941887] (-) TimerEvent: {}
+[6.042647] (-) TimerEvent: {}
+[6.143463] (-) TimerEvent: {}
+[6.202374] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_core: 1.1.18 (/opt/ros/humble/share/nav2_core/cmake)\n'}
+[6.243680] (-) TimerEvent: {}
+[6.344562] (-) TimerEvent: {}
+[6.445644] (-) TimerEvent: {}
+[6.546789] (-) TimerEvent: {}
+[6.648012] (-) TimerEvent: {}
+[6.749270] (-) TimerEvent: {}
+[6.850594] (-) TimerEvent: {}
+[6.951900] (-) TimerEvent: {}
+[7.053348] (-) TimerEvent: {}
+[7.154539] (-) TimerEvent: {}
+[7.255942] (-) TimerEvent: {}
+[7.357233] (-) TimerEvent: {}
+[7.458644] (-) TimerEvent: {}
+[7.559741] (-) TimerEvent: {}
+[7.661178] (-) TimerEvent: {}
+[7.762491] (-) TimerEvent: {}
+[7.863877] (-) TimerEvent: {}
+[7.965413] (-) TimerEvent: {}
+[8.066696] (-) TimerEvent: {}
+[8.167588] (-) TimerEvent: {}
+[8.268564] (-) TimerEvent: {}
+[8.370444] (-) TimerEvent: {}
+[8.472143] (-) TimerEvent: {}
+[8.573918] (-) TimerEvent: {}
+[8.675833] (-) TimerEvent: {}
+[8.777585] (-) TimerEvent: {}
+[8.878760] (-) TimerEvent: {}
+[8.979828] (-) TimerEvent: {}
+[9.081311] (-) TimerEvent: {}
+[9.183086] (-) TimerEvent: {}
+[9.284807] (-) TimerEvent: {}
+[9.386684] (-) TimerEvent: {}
+[9.488544] (-) TimerEvent: {}
+[9.589273] (-) TimerEvent: {}
+[9.690329] (-) TimerEvent: {}
+[9.792069] (-) TimerEvent: {}
+[9.893687] (-) TimerEvent: {}
+[9.995602] (-) TimerEvent: {}
+[10.097374] (-) TimerEvent: {}
+[10.199147] (-) TimerEvent: {}
+[10.299901] (-) TimerEvent: {}
+[10.400844] (-) TimerEvent: {}
+[10.502165] (-) TimerEvent: {}
+[10.603777] (-) TimerEvent: {}
+[10.705416] (-) TimerEvent: {}
+[10.806873] (-) TimerEvent: {}
+[10.907615] (-) TimerEvent: {}
+[11.008594] (-) TimerEvent: {}
+[11.110215] (-) TimerEvent: {}
+[11.211712] (-) TimerEvent: {}
+[11.313157] (-) TimerEvent: {}
+[11.414408] (-) TimerEvent: {}
+[11.515277] (-) TimerEvent: {}
+[11.616534] (-) TimerEvent: {}
+[11.718084] (-) TimerEvent: {}
+[11.819766] (-) TimerEvent: {}
+[11.921151] (-) TimerEvent: {}
+[11.980701] (nav2_behaviors) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[12.021295] (-) TimerEvent: {}
+[12.122024] (-) TimerEvent: {}
+[12.222790] (-) TimerEvent: {}
+[12.323580] (-) TimerEvent: {}
+[12.416934] (nav2_behaviors) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[12.423772] (-) TimerEvent: {}
+[12.524697] (-) TimerEvent: {}
+[12.626280] (-) TimerEvent: {}
+[12.727891] (-) TimerEvent: {}
+[12.829960] (-) TimerEvent: {}
+[12.931700] (-) TimerEvent: {}
+[13.033344] (-) TimerEvent: {}
+[13.134621] (-) TimerEvent: {}
+[13.202131] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[13.227563] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.234726] (-) TimerEvent: {}
+[13.237616] (nav2_behaviors) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pi2/ros2_ws/src/navigation2/nav2_behaviors/include\n'}
+[13.238297] (nav2_behaviors) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.256507] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[13.257162] (nav2_behaviors) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[13.266139] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.288749] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[13.289408] (nav2_behaviors) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[13.293316] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.327409] (nav2_behaviors) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.334900] (-) TimerEvent: {}
+[13.435619] (-) TimerEvent: {}
+[13.536559] (-) TimerEvent: {}
+[13.637362] (-) TimerEvent: {}
+[13.738152] (-) TimerEvent: {}
+[13.839153] (-) TimerEvent: {}
+[13.939964] (-) TimerEvent: {}
+[14.040787] (-) TimerEvent: {}
+[14.141580] (-) TimerEvent: {}
+[14.242441] (-) TimerEvent: {}
+[14.343275] (-) TimerEvent: {}
+[14.444081] (-) TimerEvent: {}
+[14.544807] (-) TimerEvent: {}
+[14.645535] (-) TimerEvent: {}
+[14.746286] (-) TimerEvent: {}
+[14.847007] (-) TimerEvent: {}
+[14.947801] (-) TimerEvent: {}
+[15.048510] (-) TimerEvent: {}
+[15.149474] (-) TimerEvent: {}
+[15.250329] (-) TimerEvent: {}
+[15.351173] (-) TimerEvent: {}
+[15.451883] (-) TimerEvent: {}
+[15.552626] (-) TimerEvent: {}
+[15.653414] (-) TimerEvent: {}
+[15.754414] (-) TimerEvent: {}
+[15.855166] (-) TimerEvent: {}
+[15.955876] (-) TimerEvent: {}
+[16.056653] (-) TimerEvent: {}
+[16.157626] (-) TimerEvent: {}
+[16.258419] (-) TimerEvent: {}
+[16.359145] (-) TimerEvent: {}
+[16.459991] (-) TimerEvent: {}
+[16.560808] (-) TimerEvent: {}
+[16.669946] (-) TimerEvent: {}
+[16.770890] (-) TimerEvent: {}
+[16.871818] (-) TimerEvent: {}
+[16.972815] (-) TimerEvent: {}
+[17.073530] (-) TimerEvent: {}
+[17.174281] (-) TimerEvent: {}
+[17.249584] (nav2_behaviors) StdoutLine: {'line': b'-- Generating done\n'}
+[17.272418] (nav2_behaviors) StdoutLine: {'line': b'-- Build files have been written to: /home/pi2/ros2_ws/build/nav2_behaviors\n'}
+[17.274530] (-) TimerEvent: {}
+[17.354523] (nav2_behaviors) CommandEnded: {'returncode': 0}
+[17.358163] (nav2_behaviors) JobProgress: {'identifier': 'nav2_behaviors', 'progress': 'build'}
+[17.362317] (nav2_behaviors) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi2/ros2_ws/build/nav2_behaviors', '--', '-j4', '-l4'], 'cwd': '/home/pi2/ros2_ws/build/nav2_behaviors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 50608 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/nav2_behaviors'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 50608 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[17.374681] (-) TimerEvent: {}
+[17.475475] (-) TimerEvent: {}
+[17.576300] (-) TimerEvent: {}
+[17.677227] (-) TimerEvent: {}
+[17.680234] (nav2_behaviors) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/nav2_spin_behavior.dir/plugins/spin.cpp.o\x1b[0m\n'}
+[17.686531] (nav2_behaviors) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/nav2_back_up_behavior.dir/plugins/back_up.cpp.o\x1b[0m\n'}
+[17.690853] (nav2_behaviors) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/nav2_wait_behavior.dir/plugins/wait.cpp.o\x1b[0m\n'}
+[17.703424] (nav2_behaviors) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/nav2_drive_on_heading_behavior.dir/plugins/drive_on_heading.cpp.o\x1b[0m\n'}
+[17.777520] (-) TimerEvent: {}
+[17.878624] (-) TimerEvent: {}
+[17.979695] (-) TimerEvent: {}
+[18.082045] (-) TimerEvent: {}
+[18.183016] (-) TimerEvent: {}
+[18.283881] (-) TimerEvent: {}
+[18.384787] (-) TimerEvent: {}
+[18.486321] (-) TimerEvent: {}
+[18.587982] (-) TimerEvent: {}
+[18.689627] (-) TimerEvent: {}
+[18.791389] (-) TimerEvent: {}
+[18.892199] (-) TimerEvent: {}
+[18.993002] (-) TimerEvent: {}
+[19.093853] (-) TimerEvent: {}
+[19.194649] (-) TimerEvent: {}
+[19.296506] (-) TimerEvent: {}
+[19.398269] (-) TimerEvent: {}
+[19.500143] (-) TimerEvent: {}
+[19.602743] (-) TimerEvent: {}
+[19.704385] (-) TimerEvent: {}
+[19.806415] (-) TimerEvent: {}
+[19.907157] (-) TimerEvent: {}
+[20.007915] (-) TimerEvent: {}
+[20.108979] (-) TimerEvent: {}
+[20.210401] (-) TimerEvent: {}
+[20.311549] (-) TimerEvent: {}
+[20.412769] (-) TimerEvent: {}
+[20.513911] (-) TimerEvent: {}
+[20.615528] (-) TimerEvent: {}
+[20.717136] (-) TimerEvent: {}
+[20.819022] (-) TimerEvent: {}
+[20.921218] (-) TimerEvent: {}
+[21.023327] (-) TimerEvent: {}
+[21.125935] (-) TimerEvent: {}
+[21.226774] (-) TimerEvent: {}
+[21.327773] (-) TimerEvent: {}
+[21.428673] (-) TimerEvent: {}
+[21.529783] (-) TimerEvent: {}
+[21.630714] (-) TimerEvent: {}
+[21.732407] (-) TimerEvent: {}
+[21.834322] (-) TimerEvent: {}
+[21.936246] (-) TimerEvent: {}
+[22.038320] (-) TimerEvent: {}
+[22.139647] (-) TimerEvent: {}
+[22.240847] (-) TimerEvent: {}
+[22.342498] (-) TimerEvent: {}
+[22.444165] (-) TimerEvent: {}
+[22.545054] (-) TimerEvent: {}
+[22.645810] (-) TimerEvent: {}
+[22.747130] (-) TimerEvent: {}
+[22.848529] (-) TimerEvent: {}
+[22.950123] (-) TimerEvent: {}
+[23.060186] (-) TimerEvent: {}
+[23.166561] (-) TimerEvent: {}
+[23.274532] (-) TimerEvent: {}
+[23.391011] (-) TimerEvent: {}
+[23.492689] (-) TimerEvent: {}
+[23.594822] (-) TimerEvent: {}
+[23.697444] (-) TimerEvent: {}
+[23.806022] (-) TimerEvent: {}
+[23.913290] (-) TimerEvent: {}
+[24.017623] (-) TimerEvent: {}
+[24.120583] (-) TimerEvent: {}
+[24.223044] (-) TimerEvent: {}
+[24.329156] (-) TimerEvent: {}
+[24.431501] (-) TimerEvent: {}
+[24.542001] (-) TimerEvent: {}
+[24.653603] (-) TimerEvent: {}
+[24.757070] (-) TimerEvent: {}
+[24.859883] (-) TimerEvent: {}
+[24.969127] (-) TimerEvent: {}
+[25.083274] (-) TimerEvent: {}
+[25.185317] (-) TimerEvent: {}
+[25.287419] (-) TimerEvent: {}
+[25.390007] (-) TimerEvent: {}
+[25.492226] (-) TimerEvent: {}
+[25.606175] (-) TimerEvent: {}
+[25.707951] (-) TimerEvent: {}
+[25.809382] (-) TimerEvent: {}
+[25.912823] (-) TimerEvent: {}

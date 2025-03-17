@@ -1,0 +1,673 @@
+[0.000000] (-) TimerEvent: {}
+[0.001779] (-) JobUnselected: {'identifier': 'bno055'}
+[0.002500] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.003055] (-) JobUnselected: {'identifier': 'csm'}
+[0.003266] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.003590] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.003770] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.003875] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.003978] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.004109] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.004216] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.004312] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.004402] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.004487] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.004572] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.004656] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.004741] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.004824] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.004908] (-) JobUnselected: {'identifier': 'nav2_collision_monitor'}
+[0.004995] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.005088] (-) JobUnselected: {'identifier': 'nav2_constrained_smoother'}
+[0.005194] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.005337] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.006039] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.006288] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.006604] (-) JobUnselected: {'identifier': 'nav2_graceful_controller'}
+[0.006777] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.006877] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.006979] (-) JobUnselected: {'identifier': 'nav2_mppi_controller'}
+[0.007103] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.007208] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.007300] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.007395] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.007483] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.007566] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.007652] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.007742] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.008345] (-) JobUnselected: {'identifier': 'nav2_smoother'}
+[0.008543] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.008833] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.009000] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.009100] (-) JobUnselected: {'identifier': 'nav2_velocity_smoother'}
+[0.009201] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.009330] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.009435] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.009529] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.009618] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.009702] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.009786] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.009870] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.009967] (nav2_behaviors) JobQueued: {'identifier': 'nav2_behaviors', 'dependencies': OrderedDict([('nav2_common', '/home/pi2/ros2_ws/install/nav2_common'), ('nav2_msgs', '/home/pi2/ros2_ws/install/nav2_msgs'), ('nav2_voxel_grid', '/home/pi2/ros2_ws/install/nav2_voxel_grid'), ('nav2_util', '/home/pi2/ros2_ws/install/nav2_util'), ('nav2_behavior_tree', '/home/pi2/ros2_ws/install/nav2_behavior_tree'), ('nav2_lifecycle_manager', '/home/pi2/ros2_ws/install/nav2_lifecycle_manager'), ('nav2_map_server', '/home/pi2/ros2_ws/install/nav2_map_server'), ('nav2_costmap_2d', '/home/pi2/ros2_ws/install/nav2_costmap_2d'), ('nav2_core', '/home/pi2/ros2_ws/install/nav2_core')])}
+[0.010208] (nav2_behaviors) JobStarted: {'identifier': 'nav2_behaviors'}
+[0.081612] (nav2_behaviors) JobProgress: {'identifier': 'nav2_behaviors', 'progress': 'cmake'}
+[0.082861] (nav2_behaviors) Command: {'cmd': ['/usr/bin/cmake', '/home/pi2/ros2_ws/src/navigation2/nav2_behaviors', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/nav2_behaviors'], 'cwd': '/home/pi2/ros2_ws/build/nav2_behaviors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 50608 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/nav2_behaviors'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 50608 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.099176] (-) TimerEvent: {}
+[0.200524] (-) TimerEvent: {}
+[0.301537] (-) TimerEvent: {}
+[0.402367] (-) TimerEvent: {}
+[0.503261] (-) TimerEvent: {}
+[0.604238] (-) TimerEvent: {}
+[0.705189] (-) TimerEvent: {}
+[0.806016] (-) TimerEvent: {}
+[0.906913] (-) TimerEvent: {}
+[1.007967] (-) TimerEvent: {}
+[1.108967] (-) TimerEvent: {}
+[1.209895] (-) TimerEvent: {}
+[1.310815] (-) TimerEvent: {}
+[1.411766] (-) TimerEvent: {}
+[1.512879] (-) TimerEvent: {}
+[1.613906] (-) TimerEvent: {}
+[1.714926] (-) TimerEvent: {}
+[1.815987] (-) TimerEvent: {}
+[1.823465] (nav2_behaviors) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.916191] (-) TimerEvent: {}
+[2.017091] (-) TimerEvent: {}
+[2.118140] (-) TimerEvent: {}
+[2.219099] (-) TimerEvent: {}
+[2.320167] (-) TimerEvent: {}
+[2.421221] (-) TimerEvent: {}
+[2.522232] (-) TimerEvent: {}
+[2.623139] (-) TimerEvent: {}
+[2.645380] (nav2_behaviors) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.717105] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.723368] (-) TimerEvent: {}
+[2.824347] (-) TimerEvent: {}
+[2.925397] (-) TimerEvent: {}
+[3.026137] (-) TimerEvent: {}
+[3.127104] (-) TimerEvent: {}
+[3.195035] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.225958] (nav2_behaviors) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.227326] (-) TimerEvent: {}
+[3.228445] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.231981] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.248870] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.327543] (-) TimerEvent: {}
+[3.428393] (-) TimerEvent: {}
+[3.529383] (-) TimerEvent: {}
+[3.630448] (-) TimerEvent: {}
+[3.670823] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.703244] (nav2_behaviors) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.704381] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.706225] (nav2_behaviors) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.730647] (-) TimerEvent: {}
+[3.831733] (-) TimerEvent: {}
+[3.880071] (nav2_behaviors) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.931933] (-) TimerEvent: {}
+[4.032740] (-) TimerEvent: {}
+[4.133614] (-) TimerEvent: {}
+[4.234320] (-) TimerEvent: {}
+[4.335087] (-) TimerEvent: {}
+[4.436118] (-) TimerEvent: {}
+[4.537299] (-) TimerEvent: {}
+[4.638133] (-) TimerEvent: {}
+[4.739029] (-) TimerEvent: {}
+[4.839987] (-) TimerEvent: {}
+[4.916649] (nav2_behaviors) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.940253] (-) TimerEvent: {}
+[5.041102] (-) TimerEvent: {}
+[5.141889] (-) TimerEvent: {}
+[5.242682] (-) TimerEvent: {}
+[5.308979] (nav2_behaviors) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.342866] (-) TimerEvent: {}
+[5.443636] (-) TimerEvent: {}
+[5.544361] (-) TimerEvent: {}
+[5.645156] (-) TimerEvent: {}
+[5.745916] (-) TimerEvent: {}
+[5.846676] (-) TimerEvent: {}
+[5.947446] (-) TimerEvent: {}
+[5.994748] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_common: 1.1.16 (/opt/ros/humble/share/nav2_common/cmake)\n'}
+[6.047645] (-) TimerEvent: {}
+[6.048290] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.147821] (-) TimerEvent: {}
+[6.248572] (-) TimerEvent: {}
+[6.349356] (-) TimerEvent: {}
+[6.450085] (-) TimerEvent: {}
+[6.550832] (-) TimerEvent: {}
+[6.651669] (-) TimerEvent: {}
+[6.752470] (-) TimerEvent: {}
+[6.782736] (nav2_behaviors) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.852655] (-) TimerEvent: {}
+[6.887177] (nav2_behaviors) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.952841] (-) TimerEvent: {}
+[7.016832] (nav2_behaviors) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.053073] (-) TimerEvent: {}
+[7.153812] (-) TimerEvent: {}
+[7.181076] (nav2_behaviors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.253992] (-) TimerEvent: {}
+[7.354915] (-) TimerEvent: {}
+[7.392966] (nav2_behaviors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.455091] (-) TimerEvent: {}
+[7.555845] (-) TimerEvent: {}
+[7.656778] (-) TimerEvent: {}
+[7.757576] (-) TimerEvent: {}
+[7.858322] (-) TimerEvent: {}
+[7.959066] (-) TimerEvent: {}
+[8.059774] (-) TimerEvent: {}
+[8.100415] (nav2_behaviors) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.156203] (nav2_behaviors) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.159933] (-) TimerEvent: {}
+[8.260662] (-) TimerEvent: {}
+[8.361405] (-) TimerEvent: {}
+[8.462198] (-) TimerEvent: {}
+[8.562935] (-) TimerEvent: {}
+[8.663825] (-) TimerEvent: {}
+[8.764686] (-) TimerEvent: {}
+[8.865709] (-) TimerEvent: {}
+[8.966639] (-) TimerEvent: {}
+[9.067590] (-) TimerEvent: {}
+[9.110224] (nav2_behaviors) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[9.167764] (-) TimerEvent: {}
+[9.268500] (-) TimerEvent: {}
+[9.369243] (-) TimerEvent: {}
+[9.430475] (nav2_behaviors) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[9.469417] (-) TimerEvent: {}
+[9.570196] (-) TimerEvent: {}
+[9.670972] (-) TimerEvent: {}
+[9.771837] (-) TimerEvent: {}
+[9.872587] (-) TimerEvent: {}
+[9.925863] (nav2_behaviors) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.972768] (-) TimerEvent: {}
+[10.073499] (-) TimerEvent: {}
+[10.091191] (nav2_behaviors) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.173706] (-) TimerEvent: {}
+[10.274684] (-) TimerEvent: {}
+[10.376339] (-) TimerEvent: {}
+[10.477466] (-) TimerEvent: {}
+[10.546912] (nav2_behaviors) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.549237] (nav2_behaviors) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.577674] (-) TimerEvent: {}
+[10.678446] (-) TimerEvent: {}
+[10.779455] (-) TimerEvent: {}
+[10.880432] (-) TimerEvent: {}
+[10.971522] (nav2_behaviors) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.976952] (nav2_behaviors) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.980604] (-) TimerEvent: {}
+[11.081407] (-) TimerEvent: {}
+[11.182336] (-) TimerEvent: {}
+[11.283142] (-) TimerEvent: {}
+[11.383953] (-) TimerEvent: {}
+[11.484818] (-) TimerEvent: {}
+[11.549335] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[11.584986] (-) TimerEvent: {}
+[11.685954] (-) TimerEvent: {}
+[11.787962] (-) TimerEvent: {}
+[11.888967] (-) TimerEvent: {}
+[11.981555] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[11.989222] (-) TimerEvent: {}
+[12.089981] (-) TimerEvent: {}
+[12.190828] (-) TimerEvent: {}
+[12.239197] (nav2_behaviors) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[12.291174] (-) TimerEvent: {}
+[12.391955] (-) TimerEvent: {}
+[12.492831] (-) TimerEvent: {}
+[12.593600] (-) TimerEvent: {}
+[12.654811] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_behavior_tree: 1.1.18 (/opt/ros/humble/share/nav2_behavior_tree/cmake)\n'}
+[12.693790] (-) TimerEvent: {}
+[12.794630] (-) TimerEvent: {}
+[12.895475] (-) TimerEvent: {}
+[13.017961] (-) TimerEvent: {}
+[13.118935] (-) TimerEvent: {}
+[13.219842] (-) TimerEvent: {}
+[13.320808] (-) TimerEvent: {}
+[13.421883] (-) TimerEvent: {}
+[13.522964] (-) TimerEvent: {}
+[13.623974] (-) TimerEvent: {}
+[13.724851] (-) TimerEvent: {}
+[13.825740] (-) TimerEvent: {}
+[13.926976] (-) TimerEvent: {}
+[14.027825] (-) TimerEvent: {}
+[14.128694] (-) TimerEvent: {}
+[14.229440] (-) TimerEvent: {}
+[14.253336] (nav2_behaviors) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[14.266239] (nav2_behaviors) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[14.267695] (nav2_behaviors) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[14.329646] (-) TimerEvent: {}
+[14.430545] (-) TimerEvent: {}
+[14.531295] (-) TimerEvent: {}
+[14.632112] (-) TimerEvent: {}
+[14.733083] (-) TimerEvent: {}
+[14.833975] (-) TimerEvent: {}
+[14.889596] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.1.18 (/opt/ros/humble/share/nav2_costmap_2d/cmake)\n'}
+[14.934227] (-) TimerEvent: {}
+[15.035096] (-) TimerEvent: {}
+[15.135945] (-) TimerEvent: {}
+[15.236885] (-) TimerEvent: {}
+[15.337633] (-) TimerEvent: {}
+[15.438424] (-) TimerEvent: {}
+[15.539198] (-) TimerEvent: {}
+[15.640046] (-) TimerEvent: {}
+[15.740848] (-) TimerEvent: {}
+[15.841646] (-) TimerEvent: {}
+[15.942803] (-) TimerEvent: {}
+[15.992412] (nav2_behaviors) StdoutLine: {'line': b'-- Found nav2_core: 1.1.18 (/opt/ros/humble/share/nav2_core/cmake)\n'}
+[16.043008] (-) TimerEvent: {}
+[16.053546] (nav2_behaviors) StdoutLine: {'line': b'-- Setting build type to Release as none was specified.\n'}
+[16.143300] (-) TimerEvent: {}
+[16.244655] (-) TimerEvent: {}
+[16.345805] (-) TimerEvent: {}
+[16.447685] (-) TimerEvent: {}
+[16.549445] (-) TimerEvent: {}
+[16.650616] (-) TimerEvent: {}
+[16.751909] (-) TimerEvent: {}
+[16.853413] (-) TimerEvent: {}
+[16.954983] (-) TimerEvent: {}
+[17.056549] (-) TimerEvent: {}
+[17.157892] (-) TimerEvent: {}
+[17.259307] (-) TimerEvent: {}
+[17.360673] (-) TimerEvent: {}
+[17.463561] (-) TimerEvent: {}
+[17.564921] (-) TimerEvent: {}
+[17.666627] (-) TimerEvent: {}
+[17.767932] (-) TimerEvent: {}
+[17.869941] (-) TimerEvent: {}
+[17.972534] (-) TimerEvent: {}
+[18.081339] (-) TimerEvent: {}
+[18.183675] (-) TimerEvent: {}
+[18.287989] (-) TimerEvent: {}
+[18.389886] (-) TimerEvent: {}
+[18.496222] (-) TimerEvent: {}
+[18.598886] (-) TimerEvent: {}
+[18.699860] (-) TimerEvent: {}
+[18.802443] (-) TimerEvent: {}
+[18.905478] (-) TimerEvent: {}
+[19.009267] (-) TimerEvent: {}
+[19.113739] (-) TimerEvent: {}
+[19.215628] (-) TimerEvent: {}
+[19.317311] (-) TimerEvent: {}
+[19.418083] (-) TimerEvent: {}
+[19.519150] (-) TimerEvent: {}
+[19.620159] (-) TimerEvent: {}
+[19.721754] (-) TimerEvent: {}
+[19.823674] (-) TimerEvent: {}
+[19.925702] (-) TimerEvent: {}
+[20.027656] (-) TimerEvent: {}
+[20.138748] (-) TimerEvent: {}
+[20.239575] (-) TimerEvent: {}
+[20.340669] (-) TimerEvent: {}
+[20.442449] (-) TimerEvent: {}
+[20.544108] (-) TimerEvent: {}
+[20.645853] (-) TimerEvent: {}
+[20.747751] (-) TimerEvent: {}
+[20.849473] (-) TimerEvent: {}
+[20.950400] (-) TimerEvent: {}
+[21.051305] (-) TimerEvent: {}
+[21.152703] (-) TimerEvent: {}
+[21.254096] (-) TimerEvent: {}
+[21.356116] (-) TimerEvent: {}
+[21.458004] (-) TimerEvent: {}
+[21.559822] (-) TimerEvent: {}
+[21.660617] (-) TimerEvent: {}
+[21.761534] (-) TimerEvent: {}
+[21.862909] (-) TimerEvent: {}
+[21.964602] (-) TimerEvent: {}
+[22.066482] (-) TimerEvent: {}
+[22.168219] (-) TimerEvent: {}
+[22.268999] (-) TimerEvent: {}
+[22.306158] (nav2_behaviors) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[22.369181] (-) TimerEvent: {}
+[22.470013] (-) TimerEvent: {}
+[22.570907] (-) TimerEvent: {}
+[22.671700] (-) TimerEvent: {}
+[22.772423] (-) TimerEvent: {}
+[22.873229] (-) TimerEvent: {}
+[22.974234] (-) TimerEvent: {}
+[23.076832] (-) TimerEvent: {}
+[23.178386] (-) TimerEvent: {}
+[23.280263] (-) TimerEvent: {}
+[23.340830] (nav2_behaviors) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[23.380454] (-) TimerEvent: {}
+[23.481343] (-) TimerEvent: {}
+[23.582649] (-) TimerEvent: {}
+[23.684358] (-) TimerEvent: {}
+[23.786378] (-) TimerEvent: {}
+[23.888055] (-) TimerEvent: {}
+[23.989603] (-) TimerEvent: {}
+[24.090360] (-) TimerEvent: {}
+[24.103022] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[24.131100] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[24.141354] (nav2_behaviors) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pi2/ros2_ws/src/navigation2/nav2_behaviors/include\n'}
+[24.141936] (nav2_behaviors) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[24.163080] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[24.163684] (nav2_behaviors) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[24.175422] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[24.190544] (-) TimerEvent: {}
+[24.202423] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[24.203083] (nav2_behaviors) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[24.209839] (nav2_behaviors) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[24.244782] (nav2_behaviors) StdoutLine: {'line': b'-- Configuring done\n'}
+[24.290702] (-) TimerEvent: {}
+[24.378263] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:50 (add_library):\n'}
+[24.379231] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.379840] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.380913] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.381484] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.382588] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.383190] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:50 (add_library):\n'}
+[24.384439] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.386111] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.387562] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.388940] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.390218] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.393377] (-) TimerEvent: {}
+[24.394728] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:50 (add_library):\n'}
+[24.397597] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.402239] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.403218] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.403862] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.404435] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.405027] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:50 (add_library):\n'}
+[24.406530] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.407271] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.407907] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.408480] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.409098] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.409645] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:50 (add_library):\n'}
+[24.410138] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.410753] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.411272] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.411775] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.412276] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.412762] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:58 (add_library):\n'}
+[24.413249] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.413748] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.414305] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.414839] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.415336] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.415813] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:58 (add_library):\n'}
+[24.416306] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.416781] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.417281] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.417765] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.418334] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.419070] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:58 (add_library):\n'}
+[24.419670] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.420268] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.420904] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.421419] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.422054] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.422784] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:58 (add_library):\n'}
+[24.423471] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.424009] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.424548] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.425045] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.425549] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.426048] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:58 (add_library):\n'}
+[24.426669] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the\n'}
+[24.427532] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.428229] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.438998] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.439523] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.439995] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:66 (add_library):\n'}
+[24.440513] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_drive_on_heading_behavior" links to target\n'}
+[24.441044] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.441542] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.442013] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.451025] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.451872] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.452651] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:66 (add_library):\n'}
+[24.453401] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_drive_on_heading_behavior" links to target\n'}
+[24.454134] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.454882] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.455551] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.456329] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.457035] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.457872] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:66 (add_library):\n'}
+[24.465937] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_drive_on_heading_behavior" links to target\n'}
+[24.466880] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.467760] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.468582] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.469449] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.470298] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.471050] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:66 (add_library):\n'}
+[24.471868] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_drive_on_heading_behavior" links to target\n'}
+[24.472690] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.473475] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.481655] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.484527] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.488329] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.491531] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:66 (add_library):\n'}
+[24.494954] (-) TimerEvent: {}
+[24.496233] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_drive_on_heading_behavior" links to target\n'}
+[24.499365] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.502571] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.505844] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.508879] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.511785] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.514637] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (add_library):\n'}
+[24.517523] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but\n'}
+[24.520645] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.523339] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.525767] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.528796] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.531919] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (add_library):\n'}
+[24.534896] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but\n'}
+[24.537387] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.539818] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.542110] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.544441] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.546745] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (add_library):\n'}
+[24.549005] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but\n'}
+[24.551339] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.552788] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.553379] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.553899] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.554548] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (add_library):\n'}
+[24.555015] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but\n'}
+[24.555557] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.556073] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.556624] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.557201] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.557767] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (add_library):\n'}
+[24.558543] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but\n'}
+[24.559192] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.559706] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.560247] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.560771] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.561326] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:82 (add_library):\n'}
+[24.561848] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_assisted_teleop_behavior" links to target\n'}
+[24.562754] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.565783] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.566519] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.567079] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.567550] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.568047] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:82 (add_library):\n'}
+[24.568534] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_assisted_teleop_behavior" links to target\n'}
+[24.569018] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.569507] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.569969] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.570506] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.571005] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.571457] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:82 (add_library):\n'}
+[24.572022] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_assisted_teleop_behavior" links to target\n'}
+[24.572512] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.572986] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.573454] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.573915] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.574450] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.574973] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:82 (add_library):\n'}
+[24.575416] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_assisted_teleop_behavior" links to target\n'}
+[24.575918] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.576433] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.576955] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.577454] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.577903] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.578418] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:82 (add_library):\n'}
+[24.578900] (nav2_behaviors) StderrLine: {'line': b'  Target "nav2_assisted_teleop_behavior" links to target\n'}
+[24.579393] (nav2_behaviors) StderrLine: {'line': b'  "smclib::smclib_header" but the target was not found.  Perhaps a\n'}
+[24.579832] (nav2_behaviors) StderrLine: {'line': b'  find_package() call is missing for an IMPORTED target, or an ALIAS target\n'}
+[24.580299] (nav2_behaviors) StderrLine: {'line': b'  is missing?\n'}
+[24.580757] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.581222] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.581683] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:93 (add_library):\n'}
+[24.582145] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server_core" links to target "smclib::smclib_header" but\n'}
+[24.582723] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.583197] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.583662] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.584135] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.584581] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:93 (add_library):\n'}
+[24.585061] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server_core" links to target "smclib::smclib_header" but\n'}
+[24.585526] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.586015] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.586541] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.587020] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.587501] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:93 (add_library):\n'}
+[24.587955] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server_core" links to target "smclib::smclib_header" but\n'}
+[24.588448] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.588880] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.589384] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.589864] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.590383] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:93 (add_library):\n'}
+[24.590858] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server_core" links to target "smclib::smclib_header" but\n'}
+[24.591315] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.591898] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.592356] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.592817] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.593256] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:93 (add_library):\n'}
+[24.593755] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server_core" links to target "smclib::smclib_header" but\n'}
+[24.594261] (nav2_behaviors) StderrLine: {'line': b'  the target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.594795] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.595249] (-) TimerEvent: {}
+[24.595737] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.596387] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.596943] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:102 (add_executable):\n'}
+[24.597490] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server" links to target "smclib::smclib_header" but the\n'}
+[24.598233] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.598882] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.599540] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.600106] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.601515] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:102 (add_executable):\n'}
+[24.602296] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server" links to target "smclib::smclib_header" but the\n'}
+[24.603743] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.604311] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.604889] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.605421] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.605939] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:102 (add_executable):\n'}
+[24.606587] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server" links to target "smclib::smclib_header" but the\n'}
+[24.607135] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.607675] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.608239] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.608787] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.609300] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:102 (add_executable):\n'}
+[24.609828] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server" links to target "smclib::smclib_header" but the\n'}
+[24.610600] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.611049] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.611497] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.612072] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.612682] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:102 (add_executable):\n'}
+[24.613223] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server" links to target "smclib::smclib_header" but the\n'}
+[24.613728] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.614329] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.614979] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.615449] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.615986] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:102 (add_executable):\n'}
+[24.616868] (nav2_behaviors) StderrLine: {'line': b'  Target "behavior_server" links to target "smclib::smclib_header" but the\n'}
+[24.617467] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.617945] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.618490] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.618965] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.619475] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):\n'}
+[24.620093] (nav2_behaviors) StderrLine: {'line': b'  Target "test_behaviors" links to target "smclib::smclib_header" but the\n'}
+[24.620695] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.621165] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.621646] (nav2_behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[24.622092] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)\n'}
+[24.622639] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)\n'}
+[24.623135] (nav2_behaviors) StderrLine: {'line': b'  test/CMakeLists.txt:1 (ament_add_gtest)\n'}
+[24.623604] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.624075] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.624511] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):\n'}
+[24.624946] (nav2_behaviors) StderrLine: {'line': b'  Target "test_behaviors" links to target "smclib::smclib_header" but the\n'}
+[24.625432] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.625900] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.626427] (nav2_behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[24.626923] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)\n'}
+[24.627393] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)\n'}
+[24.627879] (nav2_behaviors) StderrLine: {'line': b'  test/CMakeLists.txt:1 (ament_add_gtest)\n'}
+[24.628324] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.628791] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.629208] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):\n'}
+[24.629631] (nav2_behaviors) StderrLine: {'line': b'  Target "test_behaviors" links to target "smclib::smclib_header" but the\n'}
+[24.630093] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.630618] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.631112] (nav2_behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[24.631543] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)\n'}
+[24.632035] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)\n'}
+[24.632510] (nav2_behaviors) StderrLine: {'line': b'  test/CMakeLists.txt:1 (ament_add_gtest)\n'}
+[24.632968] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.633427] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.633858] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):\n'}
+[24.634536] (nav2_behaviors) StderrLine: {'line': b'  Target "test_behaviors" links to target "smclib::smclib_header" but the\n'}
+[24.635027] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.635498] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.635958] (nav2_behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[24.636424] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)\n'}
+[24.636881] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)\n'}
+[24.637344] (nav2_behaviors) StderrLine: {'line': b'  test/CMakeLists.txt:1 (ament_add_gtest)\n'}
+[24.637841] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.638391] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.638914] (nav2_behaviors) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):\n'}
+[24.639383] (nav2_behaviors) StderrLine: {'line': b'  Target "test_behaviors" links to target "smclib::smclib_header" but the\n'}
+[24.639843] (nav2_behaviors) StderrLine: {'line': b'  target was not found.  Perhaps a find_package() call is missing for an\n'}
+[24.640311] (nav2_behaviors) StderrLine: {'line': b'  IMPORTED target, or an ALIAS target is missing?\n'}
+[24.640826] (nav2_behaviors) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[24.641316] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)\n'}
+[24.641806] (nav2_behaviors) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)\n'}
+[24.642339] (nav2_behaviors) StderrLine: {'line': b'  test/CMakeLists.txt:1 (ament_add_gtest)\n'}
+[24.642855] (nav2_behaviors) StderrLine: {'line': b'\n'}
+[24.643306] (nav2_behaviors) StderrLine: {'line': b'\x1b[0m\n'}
+[24.695510] (-) TimerEvent: {}
+[24.796436] (-) TimerEvent: {}
+[24.897279] (-) TimerEvent: {}
+[24.998262] (-) TimerEvent: {}
+[25.099025] (-) TimerEvent: {}
+[25.199868] (-) TimerEvent: {}
+[25.300868] (-) TimerEvent: {}
+[25.401632] (-) TimerEvent: {}
+[25.502462] (-) TimerEvent: {}
+[25.603183] (-) TimerEvent: {}
+[25.703973] (-) TimerEvent: {}
+[25.804970] (-) TimerEvent: {}
+[25.905675] (-) TimerEvent: {}
+[26.006383] (-) TimerEvent: {}
+[26.107093] (-) TimerEvent: {}
+[26.207837] (-) TimerEvent: {}
+[26.308564] (-) TimerEvent: {}
+[26.409874] (-) TimerEvent: {}
+[26.510631] (-) TimerEvent: {}
+[26.611543] (-) TimerEvent: {}
+[26.712408] (-) TimerEvent: {}
+[26.813148] (-) TimerEvent: {}
+[26.913875] (-) TimerEvent: {}
+[27.014662] (-) TimerEvent: {}
+[27.115374] (-) TimerEvent: {}
+[27.216123] (-) TimerEvent: {}
+[27.316956] (-) TimerEvent: {}
+[27.417700] (-) TimerEvent: {}
+[27.518436] (-) TimerEvent: {}
+[27.619364] (-) TimerEvent: {}
+[27.720072] (-) TimerEvent: {}
+[27.820789] (-) TimerEvent: {}
+[27.921493] (-) TimerEvent: {}
+[28.022290] (-) TimerEvent: {}
+[28.262162] (nav2_behaviors) StdoutLine: {'line': b'-- Generating done\n'}
+[28.262892] (-) TimerEvent: {}
+[28.275800] (nav2_behaviors) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[28.349278] (nav2_behaviors) CommandEnded: {'returncode': 1}
+[28.363146] (-) TimerEvent: {}
+[28.465006] (-) TimerEvent: {}
+[28.565931] (-) TimerEvent: {}
+[28.666880] (-) TimerEvent: {}
+[28.767983] (-) TimerEvent: {}
+[28.847248] (nav2_behaviors) JobEnded: {'identifier': 'nav2_behaviors', 'rc': 1}
+[28.858960] (-) EventReactorShutdown: {}

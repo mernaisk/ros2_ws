@@ -1,0 +1,335 @@
+[0.075s] Invoking command in '/home/pi2/ros2_ws/build/nav2_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake /home/pi2/ros2_ws/src/navigation2/nav2_behaviors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/nav2_behaviors
+[1.813s] -- The C compiler identification is GNU 11.4.0
+[2.635s] -- The CXX compiler identification is GNU 11.4.0
+[2.707s] -- Detecting C compiler ABI info
+[3.185s] -- Detecting C compiler ABI info - done
+[3.216s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.218s] -- Detecting C compile features
+[3.222s] -- Detecting C compile features - done
+[3.238s] -- Detecting CXX compiler ABI info
+[3.661s] -- Detecting CXX compiler ABI info - done
+[3.693s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.694s] -- Detecting CXX compile features
+[3.696s] -- Detecting CXX compile features - done
+[3.870s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.906s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.299s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.984s] -- Found nav2_common: 1.1.16 (/opt/ros/humble/share/nav2_common/cmake)
+[6.038s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[6.772s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.877s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.006s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.171s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.383s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.090s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.146s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.100s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.420s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.915s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.081s] -- Looking for pthread.h
+[10.537s] -- Looking for pthread.h - found
+[10.539s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.962s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.967s] -- Found Threads: TRUE  
+[11.539s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[11.971s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[12.229s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[12.644s] -- Found nav2_behavior_tree: 1.1.18 (/opt/ros/humble/share/nav2_behavior_tree/cmake)
+[14.243s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[14.257s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[14.257s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[14.879s] -- Found nav2_costmap_2d: 1.1.18 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[15.982s] -- Found nav2_core: 1.1.18 (/opt/ros/humble/share/nav2_core/cmake)
+[16.043s] -- Setting build type to Release as none was specified.
+[22.296s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[23.331s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[24.093s] -- Added test 'copyright' to check source files copyright and LICENSE
+[24.121s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[24.131s] -- Configured cppcheck include dirs: /home/pi2/ros2_ws/src/navigation2/nav2_behaviors/include
+[24.131s] -- Configured cppcheck exclude dirs and/or files: 
+[24.153s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[24.153s] -- Configured cpplint exclude dirs and/or files: 
+[24.165s] -- Added test 'lint_cmake' to check CMake code style
+[24.192s] -- Added test 'uncrustify' to check C / C++ code style
+[24.192s] -- Configured uncrustify additional arguments: 
+[24.199s] -- Added test 'xmllint' to check XML markup files
+[24.234s] -- Configuring done
+[24.368s] [31mCMake Error at CMakeLists.txt:50 (add_library):
+[24.369s]   Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the
+[24.370s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.370s]   IMPORTED target, or an ALIAS target is missing?
+[24.371s] 
+[24.372s] [0m
+[24.373s] [31mCMake Error at CMakeLists.txt:50 (add_library):
+[24.375s]   Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the
+[24.376s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.378s]   IMPORTED target, or an ALIAS target is missing?
+[24.379s] 
+[24.382s] [0m
+[24.386s] [31mCMake Error at CMakeLists.txt:50 (add_library):
+[24.391s]   Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the
+[24.392s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.393s]   IMPORTED target, or an ALIAS target is missing?
+[24.393s] 
+[24.394s] [0m
+[24.395s] [31mCMake Error at CMakeLists.txt:50 (add_library):
+[24.396s]   Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the
+[24.397s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.397s]   IMPORTED target, or an ALIAS target is missing?
+[24.398s] 
+[24.399s] [0m
+[24.399s] [31mCMake Error at CMakeLists.txt:50 (add_library):
+[24.400s]   Target "nav2_spin_behavior" links to target "smclib::smclib_header" but the
+[24.400s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.401s]   IMPORTED target, or an ALIAS target is missing?
+[24.401s] 
+[24.402s] [0m
+[24.402s] [31mCMake Error at CMakeLists.txt:58 (add_library):
+[24.403s]   Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the
+[24.403s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.404s]   IMPORTED target, or an ALIAS target is missing?
+[24.404s] 
+[24.405s] [0m
+[24.405s] [31mCMake Error at CMakeLists.txt:58 (add_library):
+[24.406s]   Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the
+[24.406s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.407s]   IMPORTED target, or an ALIAS target is missing?
+[24.407s] 
+[24.408s] [0m
+[24.409s] [31mCMake Error at CMakeLists.txt:58 (add_library):
+[24.409s]   Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the
+[24.410s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.410s]   IMPORTED target, or an ALIAS target is missing?
+[24.411s] 
+[24.412s] [0m
+[24.412s] [31mCMake Error at CMakeLists.txt:58 (add_library):
+[24.413s]   Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the
+[24.413s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.414s]   IMPORTED target, or an ALIAS target is missing?
+[24.415s] 
+[24.415s] [0m
+[24.416s] [31mCMake Error at CMakeLists.txt:58 (add_library):
+[24.416s]   Target "nav2_wait_behavior" links to target "smclib::smclib_header" but the
+[24.417s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.428s]   IMPORTED target, or an ALIAS target is missing?
+[24.428s] 
+[24.429s] [0m
+[24.429s] [31mCMake Error at CMakeLists.txt:66 (add_library):
+[24.430s]   Target "nav2_drive_on_heading_behavior" links to target
+[24.430s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.431s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.440s]   is missing?
+[24.441s] 
+[24.442s] [0m
+[24.442s] [31mCMake Error at CMakeLists.txt:66 (add_library):
+[24.443s]   Target "nav2_drive_on_heading_behavior" links to target
+[24.444s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.444s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.445s]   is missing?
+[24.446s] 
+[24.447s] [0m
+[24.455s] [31mCMake Error at CMakeLists.txt:66 (add_library):
+[24.456s]   Target "nav2_drive_on_heading_behavior" links to target
+[24.457s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.457s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.458s]   is missing?
+[24.459s] 
+[24.460s] [0m
+[24.461s] [31mCMake Error at CMakeLists.txt:66 (add_library):
+[24.462s]   Target "nav2_drive_on_heading_behavior" links to target
+[24.462s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.463s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.473s]   is missing?
+[24.477s] 
+[24.480s] [0m
+[24.483s] [31mCMake Error at CMakeLists.txt:66 (add_library):
+[24.488s]   Target "nav2_drive_on_heading_behavior" links to target
+[24.491s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.494s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.497s]   is missing?
+[24.500s] 
+[24.503s] [0m
+[24.506s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[24.509s]   Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but
+[24.512s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.514s]   IMPORTED target, or an ALIAS target is missing?
+[24.517s] 
+[24.520s] [0m
+[24.523s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[24.526s]   Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but
+[24.528s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.531s]   IMPORTED target, or an ALIAS target is missing?
+[24.533s] 
+[24.535s] [0m
+[24.538s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[24.540s]   Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but
+[24.542s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.542s]   IMPORTED target, or an ALIAS target is missing?
+[24.543s] 
+[24.543s] [0m
+[24.544s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[24.545s]   Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but
+[24.545s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.546s]   IMPORTED target, or an ALIAS target is missing?
+[24.546s] 
+[24.547s] [0m
+[24.547s] [31mCMake Error at CMakeLists.txt:74 (add_library):
+[24.548s]   Target "nav2_back_up_behavior" links to target "smclib::smclib_header" but
+[24.549s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.549s]   IMPORTED target, or an ALIAS target is missing?
+[24.550s] 
+[24.550s] [0m
+[24.551s] [31mCMake Error at CMakeLists.txt:82 (add_library):
+[24.551s]   Target "nav2_assisted_teleop_behavior" links to target
+[24.553s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.555s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.556s]   is missing?
+[24.556s] 
+[24.557s] [0m
+[24.557s] [31mCMake Error at CMakeLists.txt:82 (add_library):
+[24.558s]   Target "nav2_assisted_teleop_behavior" links to target
+[24.558s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.559s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.559s]   is missing?
+[24.560s] 
+[24.560s] [0m
+[24.561s] [31mCMake Error at CMakeLists.txt:82 (add_library):
+[24.561s]   Target "nav2_assisted_teleop_behavior" links to target
+[24.562s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.562s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.563s]   is missing?
+[24.563s] 
+[24.564s] [0m
+[24.564s] [31mCMake Error at CMakeLists.txt:82 (add_library):
+[24.565s]   Target "nav2_assisted_teleop_behavior" links to target
+[24.565s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.566s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.566s]   is missing?
+[24.567s] 
+[24.567s] [0m
+[24.568s] [31mCMake Error at CMakeLists.txt:82 (add_library):
+[24.568s]   Target "nav2_assisted_teleop_behavior" links to target
+[24.569s]   "smclib::smclib_header" but the target was not found.  Perhaps a
+[24.569s]   find_package() call is missing for an IMPORTED target, or an ALIAS target
+[24.570s]   is missing?
+[24.570s] 
+[24.571s] [0m
+[24.571s] [31mCMake Error at CMakeLists.txt:93 (add_library):
+[24.572s]   Target "behavior_server_core" links to target "smclib::smclib_header" but
+[24.572s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.573s]   IMPORTED target, or an ALIAS target is missing?
+[24.573s] 
+[24.574s] [0m
+[24.574s] [31mCMake Error at CMakeLists.txt:93 (add_library):
+[24.574s]   Target "behavior_server_core" links to target "smclib::smclib_header" but
+[24.575s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.575s]   IMPORTED target, or an ALIAS target is missing?
+[24.576s] 
+[24.576s] [0m
+[24.577s] [31mCMake Error at CMakeLists.txt:93 (add_library):
+[24.577s]   Target "behavior_server_core" links to target "smclib::smclib_header" but
+[24.578s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.578s]   IMPORTED target, or an ALIAS target is missing?
+[24.579s] 
+[24.579s] [0m
+[24.580s] [31mCMake Error at CMakeLists.txt:93 (add_library):
+[24.580s]   Target "behavior_server_core" links to target "smclib::smclib_header" but
+[24.581s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.581s]   IMPORTED target, or an ALIAS target is missing?
+[24.582s] 
+[24.582s] [0m
+[24.583s] [31mCMake Error at CMakeLists.txt:93 (add_library):
+[24.583s]   Target "behavior_server_core" links to target "smclib::smclib_header" but
+[24.584s]   the target was not found.  Perhaps a find_package() call is missing for an
+[24.584s]   IMPORTED target, or an ALIAS target is missing?
+[24.585s] 
+[24.586s] [0m
+[24.586s] [31mCMake Error at CMakeLists.txt:102 (add_executable):
+[24.587s]   Target "behavior_server" links to target "smclib::smclib_header" but the
+[24.588s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.588s]   IMPORTED target, or an ALIAS target is missing?
+[24.589s] 
+[24.590s] [0m
+[24.591s] [31mCMake Error at CMakeLists.txt:102 (add_executable):
+[24.593s]   Target "behavior_server" links to target "smclib::smclib_header" but the
+[24.593s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.594s]   IMPORTED target, or an ALIAS target is missing?
+[24.594s] 
+[24.595s] [0m
+[24.596s] [31mCMake Error at CMakeLists.txt:102 (add_executable):
+[24.596s]   Target "behavior_server" links to target "smclib::smclib_header" but the
+[24.597s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.597s]   IMPORTED target, or an ALIAS target is missing?
+[24.598s] 
+[24.598s] [0m
+[24.599s] [31mCMake Error at CMakeLists.txt:102 (add_executable):
+[24.599s]   Target "behavior_server" links to target "smclib::smclib_header" but the
+[24.600s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.600s]   IMPORTED target, or an ALIAS target is missing?
+[24.601s] 
+[24.602s] [0m
+[24.602s] [31mCMake Error at CMakeLists.txt:102 (add_executable):
+[24.603s]   Target "behavior_server" links to target "smclib::smclib_header" but the
+[24.603s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.604s]   IMPORTED target, or an ALIAS target is missing?
+[24.604s] 
+[24.605s] [0m
+[24.606s] [31mCMake Error at CMakeLists.txt:102 (add_executable):
+[24.606s]   Target "behavior_server" links to target "smclib::smclib_header" but the
+[24.607s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.607s]   IMPORTED target, or an ALIAS target is missing?
+[24.608s] 
+[24.608s] [0m
+[24.609s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[24.610s]   Target "test_behaviors" links to target "smclib::smclib_header" but the
+[24.610s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.611s]   IMPORTED target, or an ALIAS target is missing?
+[24.611s] Call Stack (most recent call first):
+[24.612s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[24.612s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[24.613s]   test/CMakeLists.txt:1 (ament_add_gtest)
+[24.613s] 
+[24.613s] [0m
+[24.614s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[24.614s]   Target "test_behaviors" links to target "smclib::smclib_header" but the
+[24.615s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.615s]   IMPORTED target, or an ALIAS target is missing?
+[24.616s] Call Stack (most recent call first):
+[24.616s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[24.617s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[24.617s]   test/CMakeLists.txt:1 (ament_add_gtest)
+[24.618s] 
+[24.618s] [0m
+[24.619s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[24.619s]   Target "test_behaviors" links to target "smclib::smclib_header" but the
+[24.620s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.620s]   IMPORTED target, or an ALIAS target is missing?
+[24.621s] Call Stack (most recent call first):
+[24.621s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[24.621s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[24.622s]   test/CMakeLists.txt:1 (ament_add_gtest)
+[24.622s] 
+[24.623s] [0m
+[24.623s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[24.624s]   Target "test_behaviors" links to target "smclib::smclib_header" but the
+[24.624s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.625s]   IMPORTED target, or an ALIAS target is missing?
+[24.625s] Call Stack (most recent call first):
+[24.626s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[24.626s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[24.627s]   test/CMakeLists.txt:1 (ament_add_gtest)
+[24.627s] 
+[24.628s] [0m
+[24.628s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:50 (add_executable):
+[24.629s]   Target "test_behaviors" links to target "smclib::smclib_header" but the
+[24.629s]   target was not found.  Perhaps a find_package() call is missing for an
+[24.630s]   IMPORTED target, or an ALIAS target is missing?
+[24.630s] Call Stack (most recent call first):
+[24.631s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake:37 (_ament_add_gtest_executable)
+[24.631s]   /opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake:68 (ament_add_gtest_executable)
+[24.632s]   test/CMakeLists.txt:1 (ament_add_gtest)
+[24.632s] 
+[24.633s] [0m
+[28.252s] -- Generating done
+[28.265s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[28.339s] Invoked command in '/home/pi2/ros2_ws/build/nav2_behaviors' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble /usr/bin/cmake /home/pi2/ros2_ws/src/navigation2/nav2_behaviors -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi2/ros2_ws/install/nav2_behaviors

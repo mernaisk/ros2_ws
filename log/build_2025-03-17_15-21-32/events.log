@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.001472] (-) JobUnselected: {'identifier': 'bno055'}
+[0.001747] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.002089] (-) JobUnselected: {'identifier': 'csm'}
+[0.002279] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.002400] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.002518] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.002661] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.002771] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.002871] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.002960] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.003047] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.003131] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.003217] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.003302] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.003386] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.003472] (-) JobUnselected: {'identifier': 'nav2_behaviors'}
+[0.003574] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.004350] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.004560] (-) JobUnselected: {'identifier': 'nav2_collision_monitor'}
+[0.004868] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.005044] (-) JobUnselected: {'identifier': 'nav2_constrained_smoother'}
+[0.005147] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.005249] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.005378] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.005483] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.005576] (-) JobUnselected: {'identifier': 'nav2_graceful_controller'}
+[0.005665] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.005749] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.005833] (-) JobUnselected: {'identifier': 'nav2_mppi_controller'}
+[0.005918] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.006008] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.006144] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.006714] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.006911] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.007195] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.007365] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.007467] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.007568] (-) JobUnselected: {'identifier': 'nav2_smoother'}
+[0.007703] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.007802] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.007891] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.008051] (-) JobUnselected: {'identifier': 'nav2_velocity_smoother'}
+[0.008146] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.008230] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.008319] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.008410] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.008510] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.008641] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.009511] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.009712] (soft_robot_bringub) JobQueued: {'identifier': 'soft_robot_bringub', 'dependencies': OrderedDict([('bno055', '/home/pi2/ros2_ws/install/bno055'), ('joystick_publisher', '/home/pi2/ros2_ws/install/joystick_publisher'), ('motor_commands', '/home/pi2/ros2_ws/install/motor_commands'), ('motor_serial', '/home/pi2/ros2_ws/install/motor_serial'), ('my_slam_package', '/home/pi2/ros2_ws/install/my_slam_package'), ('nav2_common', '/home/pi2/ros2_ws/install/nav2_common'), ('nav_2d_msgs', '/home/pi2/ros2_ws/install/nav_2d_msgs'), ('dwb_msgs', '/home/pi2/ros2_ws/install/dwb_msgs'), ('nav2_msgs', '/home/pi2/ros2_ws/install/nav2_msgs'), ('nav2_voxel_grid', '/home/pi2/ros2_ws/install/nav2_voxel_grid'), ('nav2_util', '/home/pi2/ros2_ws/install/nav2_util'), ('nav2_amcl', '/home/pi2/ros2_ws/install/nav2_amcl'), ('nav2_behavior_tree', '/home/pi2/ros2_ws/install/nav2_behavior_tree'), ('nav2_lifecycle_manager', '/home/pi2/ros2_ws/install/nav2_lifecycle_manager'), ('nav2_map_server', '/home/pi2/ros2_ws/install/nav2_map_server'), ('nav_2d_utils', '/home/pi2/ros2_ws/install/nav_2d_utils'), ('nav2_costmap_2d', '/home/pi2/ros2_ws/install/nav2_costmap_2d'), ('costmap_queue', '/home/pi2/ros2_ws/install/costmap_queue'), ('nav2_core', '/home/pi2/ros2_ws/install/nav2_core'), ('dwb_core', '/home/pi2/ros2_ws/install/dwb_core'), ('nav2_behaviors', '/home/pi2/ros2_ws/install/nav2_behaviors'), ('nav2_bt_navigator', '/home/pi2/ros2_ws/install/nav2_bt_navigator'), ('nav2_controller', '/home/pi2/ros2_ws/install/nav2_controller'), ('nav2_planner', '/home/pi2/ros2_ws/install/nav2_planner'), ('dwb_critics', '/home/pi2/ros2_ws/install/dwb_critics'), ('dwb_plugins', '/home/pi2/ros2_ws/install/dwb_plugins'), ('nav2_dwb_controller', '/home/pi2/ros2_ws/install/nav2_dwb_controller')])}
+[0.010079] (soft_robot_bringub) JobStarted: {'identifier': 'soft_robot_bringub'}
+[0.097329] (-) TimerEvent: {}
+[0.115078] (soft_robot_bringub) JobProgress: {'identifier': 'soft_robot_bringub', 'progress': 'cmake'}
+[0.119668] (soft_robot_bringub) JobProgress: {'identifier': 'soft_robot_bringub', 'progress': 'build'}
+[0.123065] (soft_robot_bringub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi2/ros2_ws/build/soft_robot_bringub', '--', '-j4', '-l4'], 'cwd': '/home/pi2/ros2_ws/build/soft_robot_bringub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 44450 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/csm:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/soft_robot_bringub'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 44450 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.197543] (-) TimerEvent: {}
+[0.298494] (-) TimerEvent: {}
+[0.399371] (-) TimerEvent: {}
+[0.500481] (-) TimerEvent: {}
+[0.601487] (-) TimerEvent: {}
+[0.674901] (soft_robot_bringub) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701669] (-) TimerEvent: {}
+[0.802423] (-) TimerEvent: {}
+[0.903232] (-) TimerEvent: {}
+[1.004262] (-) TimerEvent: {}
+[1.105016] (-) TimerEvent: {}
+[1.205993] (-) TimerEvent: {}
+[1.307035] (-) TimerEvent: {}
+[1.408252] (-) TimerEvent: {}
+[1.509463] (-) TimerEvent: {}
+[1.515252] (soft_robot_bringub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.609619] (-) TimerEvent: {}
+[1.710431] (-) TimerEvent: {}
+[1.811203] (-) TimerEvent: {}
+[1.912026] (-) TimerEvent: {}
+[1.939740] (soft_robot_bringub) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.944964] (soft_robot_bringub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.948743] (soft_robot_bringub) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.966466] (soft_robot_bringub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.972689] (soft_robot_bringub) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.004546] (soft_robot_bringub) StdoutLine: {'line': b'-- Generating done\n'}
+[2.012205] (-) TimerEvent: {}
+[2.015173] (soft_robot_bringub) StdoutLine: {'line': b'-- Build files have been written to: /home/pi2/ros2_ws/build/soft_robot_bringub\n'}
+[2.112419] (-) TimerEvent: {}
+[2.143485] (soft_robot_bringub) CommandEnded: {'returncode': 0}
+[2.212686] (-) TimerEvent: {}
+[2.279137] (soft_robot_bringub) JobProgress: {'identifier': 'soft_robot_bringub', 'progress': 'install'}
+[2.312886] (-) TimerEvent: {}
+[2.319888] (soft_robot_bringub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi2/ros2_ws/build/soft_robot_bringub'], 'cwd': '/home/pi2/ros2_ws/build/soft_robot_bringub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 44450 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/csm:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/soft_robot_bringub'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 44450 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[2.358701] (soft_robot_bringub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.359452] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/launch\n'}
+[2.363056] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/launch/mapping_and_localization.launch.py\n'}
+[2.363716] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/launch/navigation.launch.py\n'}
+[2.364262] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/launch/control_motion.launch.py\n'}
+[2.367785] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/launch/sensors.launch.py\n'}
+[2.369340] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config\n'}
+[2.370270] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/gmapping_config.yaml\n'}
+[2.370836] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/my_map.pgm\n'}
+[2.371374] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/my_map.yaml\n'}
+[2.372210] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/controller_server.yaml\n'}
+[2.373405] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/amcl_config.yaml\n'}
+[2.373969] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/ekf_config.yaml\n'}
+[2.374492] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/config/smac_global_planner.yaml\n'}
+[2.375643] (soft_robot_bringub) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/soft_robot_bringub/share/ament_index/resource_index/package_run_dependencies/soft_robot_bringub\n'}
+[2.376321] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/ament_index/resource_index/parent_prefix_path/soft_robot_bringub\n'}
+[2.376831] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/ament_prefix_path.sh\n'}
+[2.377557] (soft_robot_bringub) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/ament_prefix_path.dsv\n'}
+[2.378697] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/path.sh\n'}
+[2.379452] (soft_robot_bringub) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/environment/path.dsv\n'}
+[2.380066] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.bash\n'}
+[2.380739] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.sh\n'}
+[2.381558] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.zsh\n'}
+[2.382043] (soft_robot_bringub) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/local_setup.dsv\n'}
+[2.382973] (soft_robot_bringub) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.dsv\n'}
+[2.384026] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/ament_index/resource_index/packages/soft_robot_bringub\n'}
+[2.384711] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/cmake/soft_robot_bringubConfig.cmake\n'}
+[2.385289] (soft_robot_bringub) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/cmake/soft_robot_bringubConfig-version.cmake\n'}
+[2.385842] (soft_robot_bringub) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/soft_robot_bringub/share/soft_robot_bringub/package.xml\n'}
+[2.393981] (soft_robot_bringub) CommandEnded: {'returncode': 0}
+[2.413114] (-) TimerEvent: {}
+[2.513976] (-) TimerEvent: {}
+[2.615109] (-) TimerEvent: {}
+[2.652155] (soft_robot_bringub) JobEnded: {'identifier': 'soft_robot_bringub', 'rc': 0}
+[2.655660] (-) EventReactorShutdown: {}

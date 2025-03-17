@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.001342] (-) JobUnselected: {'identifier': 'bno055'}
+[0.001593] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.001904] (-) JobUnselected: {'identifier': 'csm'}
+[0.002077] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.002172] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.002263] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.002351] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.002437] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.002524] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.002610] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.002694] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.002781] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.002866] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.002950] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.003035] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.003122] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.003211] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.003302] (-) JobUnselected: {'identifier': 'nav2_collision_monitor'}
+[0.003409] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.003500] (-) JobUnselected: {'identifier': 'nav2_constrained_smoother'}
+[0.003586] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.003670] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.003754] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.003837] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.003924] (-) JobUnselected: {'identifier': 'nav2_graceful_controller'}
+[0.004009] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.004093] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.004178] (-) JobUnselected: {'identifier': 'nav2_mppi_controller'}
+[0.004261] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.004345] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.004430] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.004515] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.004601] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.004692] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.004783] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.004873] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.004963] (-) JobUnselected: {'identifier': 'nav2_smoother'}
+[0.005089] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.005197] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.005289] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.005379] (-) JobUnselected: {'identifier': 'nav2_velocity_smoother'}
+[0.005470] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.005560] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.005651] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.005741] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.005832] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.005922] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.006012] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.006101] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.006200] (nav2_behaviors) JobQueued: {'identifier': 'nav2_behaviors', 'dependencies': OrderedDict([('nav2_common', '/home/pi2/ros2_ws/install/nav2_common'), ('nav2_msgs', '/home/pi2/ros2_ws/install/nav2_msgs'), ('nav2_voxel_grid', '/home/pi2/ros2_ws/install/nav2_voxel_grid'), ('nav2_util', '/home/pi2/ros2_ws/install/nav2_util'), ('nav2_behavior_tree', '/home/pi2/ros2_ws/install/nav2_behavior_tree'), ('nav2_lifecycle_manager', '/home/pi2/ros2_ws/install/nav2_lifecycle_manager'), ('nav2_map_server', '/home/pi2/ros2_ws/install/nav2_map_server'), ('nav2_costmap_2d', '/home/pi2/ros2_ws/install/nav2_costmap_2d'), ('nav2_core', '/home/pi2/ros2_ws/install/nav2_core')])}
+[0.006417] (nav2_behaviors) JobStarted: {'identifier': 'nav2_behaviors'}
+[0.084448] (nav2_behaviors) JobProgress: {'identifier': 'nav2_behaviors', 'progress': 'cmake'}
+[0.097363] (nav2_behaviors) JobProgress: {'identifier': 'nav2_behaviors', 'progress': 'build'}
+[0.097651] (-) TimerEvent: {}
+[0.102444] (nav2_behaviors) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi2/ros2_ws/build/nav2_behaviors', '--', '-j4', '-l4'], 'cwd': '/home/pi2/ros2_ws/build/nav2_behaviors', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 60592 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/nav2_behaviors'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 60592 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.197926] (-) TimerEvent: {}
+[0.299146] (-) TimerEvent: {}
+[0.400044] (-) TimerEvent: {}
+[0.500843] (-) TimerEvent: {}
+[0.601813] (-) TimerEvent: {}
+[0.702709] (-) TimerEvent: {}
+[0.803613] (-) TimerEvent: {}
+[0.904653] (-) TimerEvent: {}
+[0.908224] (nav2_behaviors) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/nav2_spin_behavior.dir/plugins/spin.cpp.o\x1b[0m\n'}
+[0.919694] (nav2_behaviors) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/nav2_wait_behavior.dir/plugins/wait.cpp.o\x1b[0m\n'}
+[0.921308] (nav2_behaviors) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/nav2_drive_on_heading_behavior.dir/plugins/drive_on_heading.cpp.o\x1b[0m\n'}
+[0.939234] (nav2_behaviors) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/nav2_back_up_behavior.dir/plugins/back_up.cpp.o\x1b[0m\n'}
+[1.004915] (-) TimerEvent: {}
+[1.106053] (-) TimerEvent: {}
+[1.207095] (-) TimerEvent: {}
+[1.308071] (-) TimerEvent: {}
+[1.408948] (-) TimerEvent: {}
+[1.510621] (-) TimerEvent: {}
+[1.611424] (-) TimerEvent: {}
+[1.712276] (-) TimerEvent: {}
+[1.813122] (-) TimerEvent: {}
+[1.913915] (-) TimerEvent: {}
+[2.014735] (-) TimerEvent: {}
+[2.115558] (-) TimerEvent: {}
+[2.216347] (-) TimerEvent: {}
+[2.350518] (-) TimerEvent: {}
+[2.451738] (-) TimerEvent: {}
+[2.553016] (-) TimerEvent: {}
+[2.653837] (-) TimerEvent: {}
+[2.754735] (-) TimerEvent: {}
+[2.855665] (-) TimerEvent: {}
+[2.956433] (-) TimerEvent: {}
+[3.057229] (-) TimerEvent: {}
+[3.158002] (-) TimerEvent: {}
+[3.258839] (-) TimerEvent: {}
+[3.359807] (-) TimerEvent: {}
+[3.460704] (-) TimerEvent: {}
+[3.562739] (-) TimerEvent: {}
+[3.664353] (-) TimerEvent: {}
+[3.765842] (-) TimerEvent: {}
+[3.867344] (-) TimerEvent: {}
+[3.968853] (-) TimerEvent: {}
+[4.070534] (-) TimerEvent: {}
+[4.171954] (-) TimerEvent: {}
+[4.273965] (-) TimerEvent: {}
+[4.378939] (-) TimerEvent: {}
+[4.480576] (-) TimerEvent: {}
+[4.582626] (-) TimerEvent: {}
+[4.683993] (-) TimerEvent: {}
+[4.785123] (-) TimerEvent: {}
+[4.886488] (-) TimerEvent: {}
+[4.988010] (-) TimerEvent: {}
+[5.089628] (-) TimerEvent: {}
+[5.191040] (-) TimerEvent: {}
+[5.292330] (-) TimerEvent: {}
+[5.393512] (-) TimerEvent: {}
+[5.494280] (-) TimerEvent: {}
+[5.595078] (-) TimerEvent: {}
+[5.696487] (-) TimerEvent: {}
+[5.797444] (-) TimerEvent: {}
+[5.899299] (-) TimerEvent: {}
+[6.001198] (-) TimerEvent: {}
+[6.103273] (-) TimerEvent: {}
+[6.205254] (-) TimerEvent: {}
+[6.307525] (-) TimerEvent: {}
+[6.409500] (-) TimerEvent: {}
+[6.511704] (-) TimerEvent: {}
+[6.613781] (-) TimerEvent: {}
+[6.715910] (-) TimerEvent: {}
+[6.818068] (-) TimerEvent: {}
+[6.920046] (-) TimerEvent: {}
+[7.022180] (-) TimerEvent: {}
+[7.124608] (-) TimerEvent: {}
+[7.226675] (-) TimerEvent: {}
+[7.331965] (-) TimerEvent: {}
+[7.434058] (-) TimerEvent: {}
+[7.536537] (-) TimerEvent: {}
+[7.638608] (-) TimerEvent: {}
+[7.740920] (-) TimerEvent: {}
+[7.842981] (-) TimerEvent: {}
+[7.945009] (-) TimerEvent: {}
+[8.047081] (-) TimerEvent: {}
+[8.149184] (-) TimerEvent: {}
+[8.251673] (-) TimerEvent: {}
+[8.354294] (-) TimerEvent: {}
+[8.456756] (-) TimerEvent: {}
+[8.558614] (-) TimerEvent: {}
+[8.660450] (-) TimerEvent: {}
+[8.762449] (-) TimerEvent: {}
+[8.864212] (-) TimerEvent: {}
+[8.965249] (-) TimerEvent: {}
+[9.066429] (-) TimerEvent: {}
+[9.167951] (-) TimerEvent: {}
+[9.269114] (-) TimerEvent: {}
+[9.370314] (-) TimerEvent: {}
+[9.472058] (-) TimerEvent: {}
+[9.573568] (-) TimerEvent: {}
+[9.674864] (-) TimerEvent: {}
+[9.776071] (-) TimerEvent: {}
+[9.877501] (-) TimerEvent: {}
+[9.978631] (-) TimerEvent: {}
+[10.079870] (-) TimerEvent: {}
+[10.181401] (-) TimerEvent: {}
+[10.283050] (-) TimerEvent: {}
+[10.384621] (-) TimerEvent: {}
+[10.486072] (-) TimerEvent: {}
+[10.587217] (-) TimerEvent: {}
+[10.688545] (-) TimerEvent: {}
+[10.789998] (-) TimerEvent: {}
+[10.891311] (-) TimerEvent: {}
+[10.992715] (-) TimerEvent: {}
+[11.094291] (-) TimerEvent: {}
+[11.195613] (-) TimerEvent: {}
+[11.296801] (-) TimerEvent: {}
+[11.398152] (-) TimerEvent: {}
+[11.499617] (-) TimerEvent: {}
+[11.600739] (-) TimerEvent: {}
+[11.701877] (-) TimerEvent: {}
+[11.802999] (-) TimerEvent: {}
+[11.904249] (-) TimerEvent: {}
+[12.005627] (-) TimerEvent: {}
+[12.106756] (-) TimerEvent: {}
+[12.207939] (-) TimerEvent: {}
+[12.309105] (-) TimerEvent: {}
+[12.413553] (-) TimerEvent: {}
+[12.514661] (-) TimerEvent: {}
+[12.615871] (-) TimerEvent: {}
+[12.717233] (-) TimerEvent: {}
+[12.818476] (-) TimerEvent: {}
+[12.919658] (-) TimerEvent: {}
+[13.020778] (-) TimerEvent: {}
+[13.122027] (-) TimerEvent: {}
+[13.223198] (-) TimerEvent: {}
+[13.324407] (-) TimerEvent: {}
+[13.426471] (-) TimerEvent: {}
+[13.528426] (-) TimerEvent: {}
+[13.630389] (-) TimerEvent: {}
+[13.732442] (-) TimerEvent: {}
+[13.834548] (-) TimerEvent: {}
+[13.936592] (-) TimerEvent: {}
+[14.038563] (-) TimerEvent: {}
+[14.140600] (-) TimerEvent: {}
+[14.242536] (-) TimerEvent: {}
+[14.344475] (-) TimerEvent: {}
+[14.446239] (-) TimerEvent: {}
+[14.548050] (-) TimerEvent: {}
+[14.650541] (-) TimerEvent: {}
+[14.752719] (-) TimerEvent: {}
+[14.854914] (-) TimerEvent: {}
+[14.957117] (-) TimerEvent: {}
+[15.059238] (-) TimerEvent: {}
+[15.161385] (-) TimerEvent: {}
+[15.263274] (-) TimerEvent: {}
+[15.365192] (-) TimerEvent: {}
+[15.466998] (-) TimerEvent: {}
+[15.568854] (-) TimerEvent: {}
+[15.670900] (-) TimerEvent: {}
+[15.772719] (-) TimerEvent: {}
+[15.874651] (-) TimerEvent: {}
+[15.976597] (-) TimerEvent: {}
+[16.078590] (-) TimerEvent: {}
+[16.180559] (-) TimerEvent: {}
+[16.282756] (-) TimerEvent: {}
+[16.384000] (-) TimerEvent: {}
+[16.485279] (-) TimerEvent: {}
+[16.586605] (-) TimerEvent: {}
+[16.687936] (-) TimerEvent: {}
+[16.789291] (-) TimerEvent: {}
+[16.890652] (-) TimerEvent: {}
+[16.991847] (-) TimerEvent: {}
+[17.093137] (-) TimerEvent: {}
+[17.194434] (-) TimerEvent: {}
+[17.295680] (-) TimerEvent: {}
+[17.397030] (-) TimerEvent: {}
+[17.501290] (-) TimerEvent: {}
+[17.604309] (-) TimerEvent: {}
+[17.705961] (-) TimerEvent: {}
+[17.821824] (-) TimerEvent: {}
+[17.928624] (-) TimerEvent: {}
+[18.031060] (-) TimerEvent: {}
+[18.133487] (-) TimerEvent: {}
+[18.236345] (-) TimerEvent: {}
+[18.339896] (-) TimerEvent: {}
+[18.443523] (-) TimerEvent: {}
+[18.547454] (-) TimerEvent: {}
+[18.689239] (-) TimerEvent: {}
+[18.825819] (-) TimerEvent: {}
+[18.928596] (-) TimerEvent: {}
+[19.032336] (-) TimerEvent: {}
+[19.134726] (-) TimerEvent: {}
+[19.237009] (-) TimerEvent: {}
+[19.338061] (-) TimerEvent: {}
+[19.439809] (-) TimerEvent: {}
+[19.540888] (-) TimerEvent: {}
+[19.642033] (-) TimerEvent: {}
+[19.767252] (-) TimerEvent: {}
+[19.896389] (-) TimerEvent: {}
+[19.997751] (-) TimerEvent: {}
+[20.099309] (-) TimerEvent: {}
+[20.201845] (-) TimerEvent: {}
+[20.303435] (-) TimerEvent: {}
+[20.405335] (-) TimerEvent: {}
+[20.506732] (-) TimerEvent: {}
+[20.607957] (-) TimerEvent: {}
+[20.709278] (-) TimerEvent: {}
+[20.811778] (-) TimerEvent: {}
+[20.921575] (-) TimerEvent: {}

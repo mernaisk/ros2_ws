@@ -4,3 +4,4 @@
 . "/home/pi2/ros2_ws/install/motor_commands/share/motor_commands/package.sh"
 . "/home/pi2/ros2_ws/install/motor_serial/share/motor_serial/package.sh"
 . "/home/pi2/ros2_ws/install/my_slam_package/share/my_slam_package/package.sh"
+. "/home/pi2/ros2_ws/install/nav2_behaviors/share/nav2_behaviors/package.sh"
