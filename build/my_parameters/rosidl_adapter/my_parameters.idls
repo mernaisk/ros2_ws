@@ -2,3 +2,4 @@
 /home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/JoystickParameters.idl
 /home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/Stm32Data.idl
 /home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/DebugParameter.idl
+/home/pi2/ros2_ws/build/my_parameters/rosidl_adapter/my_parameters:msg/ObstacleProximityLog.idl

@@ -1,0 +1,88 @@
+[0.000000] (-) TimerEvent: {}
+[0.001067] (-) JobUnselected: {'identifier': 'bno055'}
+[0.001983] (-) JobUnselected: {'identifier': 'csm'}
+[0.002585] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.003052] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.003233] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.003499] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.003651] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.003744] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.003833] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.003949] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.004040] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.004135] (cmd_vel_to_joystick) JobQueued: {'identifier': 'cmd_vel_to_joystick', 'dependencies': OrderedDict([('my_parameters', '/home/pi2/ros2_ws/install/my_parameters')])}
+[0.004278] (cmd_vel_to_joystick) JobStarted: {'identifier': 'cmd_vel_to_joystick'}
+[0.099089] (-) TimerEvent: {}
+[0.199793] (-) TimerEvent: {}
+[0.300563] (-) TimerEvent: {}
+[0.401278] (-) TimerEvent: {}
+[0.502042] (-) TimerEvent: {}
+[0.602755] (-) TimerEvent: {}
+[0.703424] (-) TimerEvent: {}
+[0.804355] (-) TimerEvent: {}
+[0.905027] (-) TimerEvent: {}
+[1.005671] (-) TimerEvent: {}
+[1.106311] (-) TimerEvent: {}
+[1.206968] (-) TimerEvent: {}
+[1.307802] (-) TimerEvent: {}
+[1.408881] (-) TimerEvent: {}
+[1.510017] (-) TimerEvent: {}
+[1.610786] (-) TimerEvent: {}
+[1.711484] (-) TimerEvent: {}
+[1.812388] (-) TimerEvent: {}
+[1.913142] (-) TimerEvent: {}
+[2.013806] (-) TimerEvent: {}
+[2.114458] (-) TimerEvent: {}
+[2.215102] (-) TimerEvent: {}
+[2.315751] (-) TimerEvent: {}
+[2.416500] (-) TimerEvent: {}
+[2.517233] (-) TimerEvent: {}
+[2.617913] (-) TimerEvent: {}
+[2.718582] (-) TimerEvent: {}
+[2.819371] (-) TimerEvent: {}
+[2.920190] (-) TimerEvent: {}
+[3.020943] (-) TimerEvent: {}
+[3.121907] (-) TimerEvent: {}
+[3.174986] (cmd_vel_to_joystick) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/cmd_vel_to_joystick', 'build', '--build-base', '/home/pi2/ros2_ws/build/cmd_vel_to_joystick/build', 'install', '--record', '/home/pi2/ros2_ws/build/cmd_vel_to_joystick/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi2/ros2_ws/src/cmd_vel_to_joystick', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi2', 'SSH_CLIENT': '192.168.0.107 41592 22', 'LC_TIME': 'sv_SE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi2', 'OLDPWD': '/home/pi2', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'sv_SE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/pi2/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'sv_SE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:11.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'sv_SE.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/cmd_vel_to_joystick:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install', 'SHELL': '/bin/bash', 'LC_NAME': 'sv_SE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'sv_SE.UTF-8', 'LC_IDENTIFICATION': 'sv_SE.UTF-8', 'PWD': '/home/pi2/ros2_ws/build/cmd_vel_to_joystick', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.107 41592 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi2/ros2_ws/build/cmd_vel_to_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'sv_SE.UTF-8', 'LC_PAPER': 'sv_SE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install'}, 'shell': False}
+[3.222055] (-) TimerEvent: {}
+[3.322782] (-) TimerEvent: {}
+[3.423459] (-) TimerEvent: {}
+[3.524259] (-) TimerEvent: {}
+[3.625049] (-) TimerEvent: {}
+[3.725739] (-) TimerEvent: {}
+[3.826436] (-) TimerEvent: {}
+[3.927195] (-) TimerEvent: {}
+[4.027904] (-) TimerEvent: {}
+[4.128616] (-) TimerEvent: {}
+[4.229265] (-) TimerEvent: {}
+[4.329950] (-) TimerEvent: {}
+[4.430715] (-) TimerEvent: {}
+[4.462025] (cmd_vel_to_joystick) StdoutLine: {'line': b'running egg_info\n'}
+[4.470803] (cmd_vel_to_joystick) StdoutLine: {'line': b'writing ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/PKG-INFO\n'}
+[4.471995] (cmd_vel_to_joystick) StdoutLine: {'line': b'writing dependency_links to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/dependency_links.txt\n'}
+[4.473120] (cmd_vel_to_joystick) StdoutLine: {'line': b'writing entry points to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/entry_points.txt\n'}
+[4.474079] (cmd_vel_to_joystick) StdoutLine: {'line': b'writing requirements to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/requires.txt\n'}
+[4.474836] (cmd_vel_to_joystick) StdoutLine: {'line': b'writing top-level names to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/top_level.txt\n'}
+[4.482941] (cmd_vel_to_joystick) StdoutLine: {'line': b"reading manifest file '../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/SOURCES.txt'\n"}
+[4.484462] (cmd_vel_to_joystick) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.487059] (cmd_vel_to_joystick) StdoutLine: {'line': b"writing manifest file '../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/SOURCES.txt'\n"}
+[4.487726] (cmd_vel_to_joystick) StdoutLine: {'line': b'running build\n'}
+[4.488170] (cmd_vel_to_joystick) StdoutLine: {'line': b'running build_py\n'}
+[4.489119] (cmd_vel_to_joystick) StdoutLine: {'line': b'copying cmd_vel_to_joystick/cmd_vel_to_joystick.py -> /home/pi2/ros2_ws/build/cmd_vel_to_joystick/build/lib/cmd_vel_to_joystick\n'}
+[4.490511] (cmd_vel_to_joystick) StdoutLine: {'line': b'running install\n'}
+[4.491758] (cmd_vel_to_joystick) StdoutLine: {'line': b'running install_lib\n'}
+[4.495317] (cmd_vel_to_joystick) StdoutLine: {'line': b'copying /home/pi2/ros2_ws/build/cmd_vel_to_joystick/build/lib/cmd_vel_to_joystick/cmd_vel_to_joystick.py -> /home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages/cmd_vel_to_joystick\n'}
+[4.498534] (cmd_vel_to_joystick) StdoutLine: {'line': b'byte-compiling /home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages/cmd_vel_to_joystick/cmd_vel_to_joystick.py to cmd_vel_to_joystick.cpython-310.pyc\n'}
+[4.504001] (cmd_vel_to_joystick) StdoutLine: {'line': b'running install_data\n'}
+[4.505201] (cmd_vel_to_joystick) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.513068] (cmd_vel_to_joystick) StdoutLine: {'line': b"removing '/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages/cmd_vel_to_joystick-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.515121] (cmd_vel_to_joystick) StdoutLine: {'line': b'Copying ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info to /home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages/cmd_vel_to_joystick-0.0.0-py3.10.egg-info\n'}
+[4.522124] (cmd_vel_to_joystick) StdoutLine: {'line': b'running install_scripts\n'}
+[4.530901] (-) TimerEvent: {}
+[4.602447] (cmd_vel_to_joystick) StdoutLine: {'line': b'Installing cmd_vel_to_joystick script to /home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/cmd_vel_to_joystick\n'}
+[4.605159] (cmd_vel_to_joystick) StdoutLine: {'line': b"writing list of installed files to '/home/pi2/ros2_ws/build/cmd_vel_to_joystick/install.log'\n"}
+[4.631141] (-) TimerEvent: {}
+[4.732266] (-) TimerEvent: {}
+[4.734988] (cmd_vel_to_joystick) CommandEnded: {'returncode': 0}
+[4.786706] (cmd_vel_to_joystick) JobEnded: {'identifier': 'cmd_vel_to_joystick', 'rc': 0}
+[4.789532] (-) EventReactorShutdown: {}

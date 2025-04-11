@@ -1,0 +1,864 @@
+[0.000000] (-) TimerEvent: {}
+[0.001599] (-) JobUnselected: {'identifier': 'bno055'}
+[0.002290] (-) JobUnselected: {'identifier': 'cmd_vel_to_joystick'}
+[0.002825] (-) JobUnselected: {'identifier': 'csm'}
+[0.003020] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.003307] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.003468] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.003567] (-) JobUnselected: {'identifier': 'motor_serial'}
+[0.003686] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.003815] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.003910] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003992] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.004078] (my_parameters) JobQueued: {'identifier': 'my_parameters', 'dependencies': OrderedDict()}
+[0.004169] (my_parameters) JobStarted: {'identifier': 'my_parameters'}
+[0.056786] (my_parameters) JobProgress: {'identifier': 'my_parameters', 'progress': 'cmake'}
+[0.062457] (my_parameters) JobProgress: {'identifier': 'my_parameters', 'progress': 'build'}
+[0.065688] (my_parameters) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi2/ros2_ws/build/my_parameters', '--', '-j4', '-l4'], 'cwd': '/home/pi2/ros2_ws/build/my_parameters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 39942 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/4'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/cmd_vel_to_joystick:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/my_parameters'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 39942 192.168.0.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/cmd_vel_to_joystick:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.098953] (-) TimerEvent: {}
+[0.199945] (-) TimerEvent: {}
+[0.300772] (-) TimerEvent: {}
+[0.401830] (-) TimerEvent: {}
+[0.502665] (-) TimerEvent: {}
+[0.517789] (my_parameters) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.602843] (-) TimerEvent: {}
+[0.703721] (-) TimerEvent: {}
+[0.805136] (-) TimerEvent: {}
+[0.906842] (-) TimerEvent: {}
+[1.007584] (-) TimerEvent: {}
+[1.108606] (-) TimerEvent: {}
+[1.209474] (-) TimerEvent: {}
+[1.268020] (my_parameters) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.309628] (-) TimerEvent: {}
+[1.410437] (-) TimerEvent: {}
+[1.511299] (-) TimerEvent: {}
+[1.612096] (-) TimerEvent: {}
+[1.614233] (my_parameters) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.712284] (-) TimerEvent: {}
+[1.813030] (-) TimerEvent: {}
+[1.835850] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.852722] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.889883] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.913190] (-) TimerEvent: {}
+[1.948232] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.013381] (-) TimerEvent: {}
+[2.020424] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.113573] (-) TimerEvent: {}
+[2.214315] (-) TimerEvent: {}
+[2.219301] (my_parameters) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.314463] (-) TimerEvent: {}
+[2.422079] (-) TimerEvent: {}
+[2.522777] (-) TimerEvent: {}
+[2.623478] (-) TimerEvent: {}
+[2.724141] (-) TimerEvent: {}
+[2.824884] (-) TimerEvent: {}
+[2.925553] (-) TimerEvent: {}
+[3.026292] (-) TimerEvent: {}
+[3.126982] (-) TimerEvent: {}
+[3.227593] (-) TimerEvent: {}
+[3.328370] (-) TimerEvent: {}
+[3.429323] (-) TimerEvent: {}
+[3.443164] (my_parameters) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.529514] (-) TimerEvent: {}
+[3.630247] (-) TimerEvent: {}
+[3.730998] (-) TimerEvent: {}
+[3.831933] (-) TimerEvent: {}
+[3.932651] (-) TimerEvent: {}
+[4.033360] (-) TimerEvent: {}
+[4.134070] (-) TimerEvent: {}
+[4.234753] (-) TimerEvent: {}
+[4.335459] (-) TimerEvent: {}
+[4.436183] (-) TimerEvent: {}
+[4.536858] (-) TimerEvent: {}
+[4.637594] (-) TimerEvent: {}
+[4.738349] (-) TimerEvent: {}
+[4.839034] (-) TimerEvent: {}
+[4.939690] (-) TimerEvent: {}
+[5.040383] (-) TimerEvent: {}
+[5.141102] (-) TimerEvent: {}
+[5.241887] (-) TimerEvent: {}
+[5.342884] (-) TimerEvent: {}
+[5.443746] (-) TimerEvent: {}
+[5.504797] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.543931] (-) TimerEvent: {}
+[5.644689] (-) TimerEvent: {}
+[5.745483] (-) TimerEvent: {}
+[5.846210] (-) TimerEvent: {}
+[5.946960] (-) TimerEvent: {}
+[6.047696] (-) TimerEvent: {}
+[6.148578] (-) TimerEvent: {}
+[6.249290] (-) TimerEvent: {}
+[6.321414] (my_parameters) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.349482] (-) TimerEvent: {}
+[6.444793] (my_parameters) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.449701] (-) TimerEvent: {}
+[6.550658] (-) TimerEvent: {}
+[6.572852] (my_parameters) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.573577] (my_parameters) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.574034] (my_parameters) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[6.650805] (-) TimerEvent: {}
+[6.751511] (-) TimerEvent: {}
+[6.786735] (my_parameters) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.799036] (my_parameters) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.843389] (my_parameters) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.851685] (-) TimerEvent: {}
+[6.952404] (-) TimerEvent: {}
+[7.053173] (-) TimerEvent: {}
+[7.154056] (-) TimerEvent: {}
+[7.192273] (my_parameters) StdoutLine: {'line': b'-- Generating done\n'}
+[7.219766] (my_parameters) StdoutLine: {'line': b'-- Build files have been written to: /home/pi2/ros2_ws/build/my_parameters\n'}
+[7.254259] (-) TimerEvent: {}
+[7.355107] (-) TimerEvent: {}
+[7.402846] (my_parameters) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.455289] (-) TimerEvent: {}
+[7.456034] (my_parameters) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.555533] (-) TimerEvent: {}
+[7.613522] (my_parameters) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_my_parameters\n'}
+[7.655994] (-) TimerEvent: {}
+[7.758232] (-) TimerEvent: {}
+[7.860281] (-) TimerEvent: {}
+[7.962304] (-) TimerEvent: {}
+[8.064523] (-) TimerEvent: {}
+[8.166509] (-) TimerEvent: {}
+[8.268943] (-) TimerEvent: {}
+[8.371047] (-) TimerEvent: {}
+[8.473195] (-) TimerEvent: {}
+[8.575295] (-) TimerEvent: {}
+[8.677751] (-) TimerEvent: {}
+[8.778647] (-) TimerEvent: {}
+[8.879488] (-) TimerEvent: {}
+[8.980403] (-) TimerEvent: {}
+[9.081253] (-) TimerEvent: {}
+[9.182134] (-) TimerEvent: {}
+[9.282958] (-) TimerEvent: {}
+[9.383921] (-) TimerEvent: {}
+[9.484894] (-) TimerEvent: {}
+[9.585854] (-) TimerEvent: {}
+[9.686882] (-) TimerEvent: {}
+[9.768111] (my_parameters) StdoutLine: {'line': b'running egg_info\n'}
+[9.773370] (my_parameters) StdoutLine: {'line': b'writing my_parameters.egg-info/PKG-INFO\n'}
+[9.776496] (my_parameters) StdoutLine: {'line': b'writing dependency_links to my_parameters.egg-info/dependency_links.txt\n'}
+[9.779463] (my_parameters) StdoutLine: {'line': b'writing top-level names to my_parameters.egg-info/top_level.txt\n'}
+[9.788031] (-) TimerEvent: {}
+[9.798099] (my_parameters) StdoutLine: {'line': b"reading manifest file 'my_parameters.egg-info/SOURCES.txt'\n"}
+[9.803510] (my_parameters) StdoutLine: {'line': b"writing manifest file 'my_parameters.egg-info/SOURCES.txt'\n"}
+[9.888256] (-) TimerEvent: {}
+[9.990085] (-) TimerEvent: {}
+[10.014871] (my_parameters) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_my_parameters_egg\n'}
+[10.090302] (-) TimerEvent: {}
+[10.191828] (-) TimerEvent: {}
+[10.294298] (-) TimerEvent: {}
+[10.396894] (-) TimerEvent: {}
+[10.498972] (-) TimerEvent: {}
+[10.602030] (-) TimerEvent: {}
+[10.703819] (-) TimerEvent: {}
+[10.806033] (-) TimerEvent: {}
+[10.908568] (-) TimerEvent: {}
+[11.010625] (-) TimerEvent: {}
+[11.112913] (-) TimerEvent: {}
+[11.214795] (-) TimerEvent: {}
+[11.317250] (-) TimerEvent: {}
+[11.421006] (-) TimerEvent: {}
+[11.499900] (my_parameters) StdoutLine: {'line': b'[  3%] Built target my_parameters__cpp\n'}
+[11.506744] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_generator_c\x1b[0m\n'}
+[11.521242] (-) TimerEvent: {}
+[11.593965] (my_parameters) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.621480] (-) TimerEvent: {}
+[11.636565] (my_parameters) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[11.659301] (my_parameters) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.721699] (-) TimerEvent: {}
+[11.795896] (my_parameters) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o\x1b[0m\n'}
+[11.821937] (-) TimerEvent: {}
+[11.922858] (-) TimerEvent: {}
+[12.023668] (-) TimerEvent: {}
+[12.124663] (-) TimerEvent: {}
+[12.225766] (-) TimerEvent: {}
+[12.327322] (-) TimerEvent: {}
+[12.442254] (-) TimerEvent: {}
+[12.544746] (-) TimerEvent: {}
+[12.646736] (-) TimerEvent: {}
+[12.748782] (-) TimerEvent: {}
+[12.769282] (my_parameters) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o\x1b[0m\n'}
+[12.848996] (-) TimerEvent: {}
+[12.950796] (-) TimerEvent: {}
+[13.052569] (-) TimerEvent: {}
+[13.154491] (-) TimerEvent: {}
+[13.256111] (-) TimerEvent: {}
+[13.356049] (my_parameters) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o\x1b[0m\n'}
+[13.356794] (-) TimerEvent: {}
+[13.459431] (-) TimerEvent: {}
+[13.561416] (-) TimerEvent: {}
+[13.663320] (-) TimerEvent: {}
+[13.764151] (-) TimerEvent: {}
+[13.793165] (my_parameters) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.c.o\x1b[0m\n'}
+[13.865323] (-) TimerEvent: {}
+[13.967131] (-) TimerEvent: {}
+[14.069064] (-) TimerEvent: {}
+[14.139917] (my_parameters) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__functions.c.o\x1b[0m\n'}
+[14.169341] (-) TimerEvent: {}
+[14.274302] (-) TimerEvent: {}
+[14.378253] (-) TimerEvent: {}
+[14.480649] (-) TimerEvent: {}
+[14.583671] (-) TimerEvent: {}
+[14.629905] (my_parameters) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libmy_parameters__rosidl_generator_c.so\x1b[0m\n'}
+[14.684684] (-) TimerEvent: {}
+[14.786398] (-) TimerEvent: {}
+[14.888383] (-) TimerEvent: {}
+[14.989945] (-) TimerEvent: {}
+[15.035878] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_cpp\x1b[0m\n'}
+[15.090184] (-) TimerEvent: {}
+[15.191648] (-) TimerEvent: {}
+[15.245397] (my_parameters) StdoutLine: {'line': b'[ 19%] Built target my_parameters__rosidl_generator_c\n'}
+[15.247302] (my_parameters) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/motor_parameters__type_support.cpp.o\x1b[0m\n'}
+[15.291902] (-) TimerEvent: {}
+[15.389573] (my_parameters) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.392155] (-) TimerEvent: {}
+[15.499355] (-) TimerEvent: {}
+[15.602499] (-) TimerEvent: {}
+[15.652871] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[15.702718] (-) TimerEvent: {}
+[15.803845] (-) TimerEvent: {}
+[15.892179] (my_parameters) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/motor_parameters__type_support.cpp.o\x1b[0m\n'}
+[15.904113] (-) TimerEvent: {}
+[16.005652] (-) TimerEvent: {}
+[16.107479] (-) TimerEvent: {}
+[16.209292] (-) TimerEvent: {}
+[16.247100] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[16.309565] (-) TimerEvent: {}
+[16.411053] (-) TimerEvent: {}
+[16.420517] (my_parameters) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o\x1b[0m\n'}
+[16.511447] (-) TimerEvent: {}
+[16.613055] (-) TimerEvent: {}
+[16.714526] (-) TimerEvent: {}
+[16.816495] (-) TimerEvent: {}
+[16.918736] (-) TimerEvent: {}
+[17.020701] (-) TimerEvent: {}
+[17.122608] (-) TimerEvent: {}
+[17.224551] (-) TimerEvent: {}
+[17.326670] (-) TimerEvent: {}
+[17.429102] (-) TimerEvent: {}
+[17.530521] (-) TimerEvent: {}
+[17.632349] (-) TimerEvent: {}
+[17.734550] (-) TimerEvent: {}
+[17.837041] (-) TimerEvent: {}
+[17.939364] (-) TimerEvent: {}
+[18.040364] (-) TimerEvent: {}
+[18.141506] (-) TimerEvent: {}
+[18.242634] (-) TimerEvent: {}
+[18.343626] (-) TimerEvent: {}
+[18.445374] (-) TimerEvent: {}
+[18.547839] (-) TimerEvent: {}
+[18.659226] (-) TimerEvent: {}
+[18.761663] (-) TimerEvent: {}
+[18.864136] (-) TimerEvent: {}
+[18.966797] (-) TimerEvent: {}
+[19.070288] (-) TimerEvent: {}
+[19.172626] (-) TimerEvent: {}
+[19.274681] (-) TimerEvent: {}
+[19.331614] (my_parameters) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/joystick_parameters__type_support.cpp.o\x1b[0m\n'}
+[19.378219] (-) TimerEvent: {}
+[19.479667] (-) TimerEvent: {}
+[19.581911] (-) TimerEvent: {}
+[19.684752] (-) TimerEvent: {}
+[19.786409] (-) TimerEvent: {}
+[19.810146] (my_parameters) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/joystick_parameters__type_support.cpp.o\x1b[0m\n'}
+[19.886628] (-) TimerEvent: {}
+[19.988046] (-) TimerEvent: {}
+[20.089611] (-) TimerEvent: {}
+[20.191083] (-) TimerEvent: {}
+[20.292577] (-) TimerEvent: {}
+[20.394739] (-) TimerEvent: {}
+[20.496947] (-) TimerEvent: {}
+[20.599317] (-) TimerEvent: {}
+[20.701237] (-) TimerEvent: {}
+[20.803162] (-) TimerEvent: {}
+[20.905118] (-) TimerEvent: {}
+[20.943414] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[21.005383] (-) TimerEvent: {}
+[21.107457] (-) TimerEvent: {}
+[21.180585] (my_parameters) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/motor_parameters__type_support_c.cpp.o\x1b[0m\n'}
+[21.207723] (-) TimerEvent: {}
+[21.320743] (-) TimerEvent: {}
+[21.421792] (-) TimerEvent: {}
+[21.494862] (my_parameters) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/joystick_parameters__type_support.cpp.o\x1b[0m\n'}
+[21.522094] (-) TimerEvent: {}
+[21.624059] (-) TimerEvent: {}
+[21.726149] (-) TimerEvent: {}
+[21.827865] (-) TimerEvent: {}
+[21.929510] (-) TimerEvent: {}
+[22.031524] (-) TimerEvent: {}
+[22.133575] (-) TimerEvent: {}
+[22.236022] (-) TimerEvent: {}
+[22.338337] (-) TimerEvent: {}
+[22.452312] (-) TimerEvent: {}
+[22.554161] (-) TimerEvent: {}
+[22.608065] (my_parameters) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/stm32_data__type_support.cpp.o\x1b[0m\n'}
+[22.654438] (-) TimerEvent: {}
+[22.762284] (-) TimerEvent: {}
+[22.847556] (my_parameters) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/stm32_data__type_support.cpp.o\x1b[0m\n'}
+[22.862477] (-) TimerEvent: {}
+[22.963451] (-) TimerEvent: {}
+[23.064453] (-) TimerEvent: {}
+[23.165377] (-) TimerEvent: {}
+[23.266973] (-) TimerEvent: {}
+[23.368554] (-) TimerEvent: {}
+[23.470597] (-) TimerEvent: {}
+[23.572147] (-) TimerEvent: {}
+[23.673866] (-) TimerEvent: {}
+[23.776196] (-) TimerEvent: {}
+[23.878220] (-) TimerEvent: {}
+[23.979932] (-) TimerEvent: {}
+[24.081949] (-) TimerEvent: {}
+[24.184401] (-) TimerEvent: {}
+[24.286957] (-) TimerEvent: {}
+[24.389254] (-) TimerEvent: {}
+[24.491812] (-) TimerEvent: {}
+[24.594198] (-) TimerEvent: {}
+[24.697144] (-) TimerEvent: {}
+[24.799564] (-) TimerEvent: {}
+[24.902221] (-) TimerEvent: {}
+[25.005083] (-) TimerEvent: {}
+[25.107555] (-) TimerEvent: {}
+[25.209763] (-) TimerEvent: {}
+[25.312545] (-) TimerEvent: {}
+[25.415018] (-) TimerEvent: {}
+[25.498175] (my_parameters) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/stm32_data__type_support.cpp.o\x1b[0m\n'}
+[25.516666] (-) TimerEvent: {}
+[25.620013] (-) TimerEvent: {}
+[25.687866] (my_parameters) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/joystick_parameters__type_support_c.cpp.o\x1b[0m\n'}
+[25.720331] (-) TimerEvent: {}
+[25.826219] (-) TimerEvent: {}
+[25.928357] (-) TimerEvent: {}
+[26.030463] (-) TimerEvent: {}
+[26.132265] (-) TimerEvent: {}
+[26.234235] (-) TimerEvent: {}
+[26.336313] (-) TimerEvent: {}
+[26.361772] (my_parameters) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/debug_parameter__type_support.cpp.o\x1b[0m\n'}
+[26.436581] (-) TimerEvent: {}
+[26.538867] (-) TimerEvent: {}
+[26.615755] (my_parameters) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/debug_parameter__type_support.cpp.o\x1b[0m\n'}
+[26.642221] (-) TimerEvent: {}
+[26.743974] (-) TimerEvent: {}
+[26.846012] (-) TimerEvent: {}
+[26.948088] (-) TimerEvent: {}
+[27.050623] (-) TimerEvent: {}
+[27.153193] (-) TimerEvent: {}
+[27.261460] (-) TimerEvent: {}
+[27.362547] (-) TimerEvent: {}
+[27.472553] (-) TimerEvent: {}
+[27.574207] (-) TimerEvent: {}
+[27.675784] (-) TimerEvent: {}
+[27.778362] (-) TimerEvent: {}
+[27.881154] (-) TimerEvent: {}
+[27.983887] (-) TimerEvent: {}
+[28.087322] (-) TimerEvent: {}
+[28.190246] (-) TimerEvent: {}
+[28.293032] (-) TimerEvent: {}
+[28.395685] (-) TimerEvent: {}
+[28.498056] (-) TimerEvent: {}
+[28.600572] (-) TimerEvent: {}
+[28.702744] (-) TimerEvent: {}
+[28.804829] (-) TimerEvent: {}
+[28.830110] (my_parameters) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp.o\x1b[0m\n'}
+[28.905088] (-) TimerEvent: {}
+[29.007159] (-) TimerEvent: {}
+[29.109592] (-) TimerEvent: {}
+[29.211658] (-) TimerEvent: {}
+[29.313709] (-) TimerEvent: {}
+[29.416080] (-) TimerEvent: {}
+[29.518212] (-) TimerEvent: {}
+[29.619201] (-) TimerEvent: {}
+[29.679679] (my_parameters) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o\x1b[0m\n'}
+[29.719466] (-) TimerEvent: {}
+[29.820987] (-) TimerEvent: {}
+[29.922614] (-) TimerEvent: {}
+[30.024598] (-) TimerEvent: {}
+[30.127128] (-) TimerEvent: {}
+[30.229168] (-) TimerEvent: {}
+[30.331599] (-) TimerEvent: {}
+[30.351126] (my_parameters) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/stm32_data__type_support_c.cpp.o\x1b[0m\n'}
+[30.431834] (-) TimerEvent: {}
+[30.534080] (-) TimerEvent: {}
+[30.636072] (-) TimerEvent: {}
+[30.741847] (-) TimerEvent: {}
+[30.843896] (-) TimerEvent: {}
+[30.946869] (-) TimerEvent: {}
+[31.049209] (-) TimerEvent: {}
+[31.151607] (-) TimerEvent: {}
+[31.253884] (-) TimerEvent: {}
+[31.356367] (-) TimerEvent: {}
+[31.459087] (-) TimerEvent: {}
+[31.562130] (-) TimerEvent: {}
+[31.664446] (-) TimerEvent: {}
+[31.767072] (-) TimerEvent: {}
+[31.869405] (-) TimerEvent: {}
+[31.972650] (-) TimerEvent: {}
+[32.059091] (my_parameters) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_parameters/msg/detail/obstacle_proximity_log__type_support.cpp.o\x1b[0m\n'}
+[32.072906] (-) TimerEvent: {}
+[32.175264] (-) TimerEvent: {}
+[32.277303] (-) TimerEvent: {}
+[32.379733] (-) TimerEvent: {}
+[32.483231] (-) TimerEvent: {}
+[32.585924] (-) TimerEvent: {}
+[32.688694] (-) TimerEvent: {}
+[32.791486] (-) TimerEvent: {}
+[32.894227] (-) TimerEvent: {}
+[32.996300] (-) TimerEvent: {}
+[33.054591] (my_parameters) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/debug_parameter__type_support_c.cpp.o\x1b[0m\n'}
+[33.096561] (-) TimerEvent: {}
+[33.198667] (-) TimerEvent: {}
+[33.301007] (-) TimerEvent: {}
+[33.403295] (-) TimerEvent: {}
+[33.507001] (-) TimerEvent: {}
+[33.536100] (my_parameters) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[33.607230] (-) TimerEvent: {}
+[33.709533] (-) TimerEvent: {}
+[33.811765] (-) TimerEvent: {}
+[33.913824] (-) TimerEvent: {}
+[34.015910] (-) TimerEvent: {}
+[34.118227] (-) TimerEvent: {}
+[34.208129] (my_parameters) StdoutLine: {'line': b'[ 49%] Built target my_parameters__rosidl_typesupport_cpp\n'}
+[34.219122] (-) TimerEvent: {}
+[34.282055] (my_parameters) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o\x1b[0m\n'}
+[34.319402] (-) TimerEvent: {}
+[34.361448] (my_parameters) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[34.419609] (-) TimerEvent: {}
+[34.521579] (-) TimerEvent: {}
+[34.623800] (-) TimerEvent: {}
+[34.725859] (-) TimerEvent: {}
+[34.828265] (-) TimerEvent: {}
+[34.930478] (-) TimerEvent: {}
+[35.032849] (-) TimerEvent: {}
+[35.135518] (-) TimerEvent: {}
+[35.237678] (-) TimerEvent: {}
+[35.339747] (-) TimerEvent: {}
+[35.442133] (-) TimerEvent: {}
+[35.544171] (-) TimerEvent: {}
+[35.646294] (-) TimerEvent: {}
+[35.748428] (-) TimerEvent: {}
+[35.850795] (-) TimerEvent: {}
+[35.952955] (-) TimerEvent: {}
+[36.053917] (-) TimerEvent: {}
+[36.154962] (-) TimerEvent: {}
+[36.255949] (-) TimerEvent: {}
+[36.358136] (-) TimerEvent: {}
+[36.461724] (-) TimerEvent: {}
+[36.562802] (-) TimerEvent: {}
+[36.612362] (my_parameters) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[36.663023] (-) TimerEvent: {}
+[36.675882] (my_parameters) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_parameters/msg/detail/obstacle_proximity_log__type_support_c.cpp.o\x1b[0m\n'}
+[36.763318] (-) TimerEvent: {}
+[36.865653] (-) TimerEvent: {}
+[36.967720] (-) TimerEvent: {}
+[37.069695] (-) TimerEvent: {}
+[37.172008] (-) TimerEvent: {}
+[37.240372] (my_parameters) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[37.272468] (-) TimerEvent: {}
+[37.276287] (my_parameters) StdoutLine: {'line': b'[ 57%] Built target my_parameters__rosidl_typesupport_introspection_cpp\n'}
+[37.372639] (-) TimerEvent: {}
+[37.373532] (my_parameters) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[37.473207] (-) TimerEvent: {}
+[37.580393] (-) TimerEvent: {}
+[37.696530] (-) TimerEvent: {}
+[37.798357] (-) TimerEvent: {}
+[37.900034] (-) TimerEvent: {}
+[37.925457] (my_parameters) StdoutLine: {'line': b'[ 58%] Built target my_parameters__rosidl_typesupport_fastrtps_cpp\n'}
+[38.000311] (-) TimerEvent: {}
+[38.090540] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[38.101382] (-) TimerEvent: {}
+[38.202259] (my_parameters) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/joystick_parameters__type_support.c.o\x1b[0m\n'}
+[38.203318] (-) TimerEvent: {}
+[38.213032] (my_parameters) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/motor_parameters__type_support.c.o\x1b[0m\n'}
+[38.303584] (-) TimerEvent: {}
+[38.405096] (-) TimerEvent: {}
+[38.506756] (-) TimerEvent: {}
+[38.531392] (my_parameters) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/stm32_data__type_support.c.o\x1b[0m\n'}
+[38.606963] (-) TimerEvent: {}
+[38.687589] (my_parameters) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/debug_parameter__type_support.c.o\x1b[0m\n'}
+[38.707222] (-) TimerEvent: {}
+[38.809364] (-) TimerEvent: {}
+[38.894950] (my_parameters) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/obstacle_proximity_log__type_support.c.o\x1b[0m\n'}
+[38.909623] (-) TimerEvent: {}
+[39.011893] (-) TimerEvent: {}
+[39.114186] (-) TimerEvent: {}
+[39.215897] (-) TimerEvent: {}
+[39.251929] (my_parameters) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libmy_parameters__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[39.316277] (-) TimerEvent: {}
+[39.418241] (-) TimerEvent: {}
+[39.489549] (my_parameters) StdoutLine: {'line': b'[ 68%] Built target my_parameters__rosidl_typesupport_introspection_c\n'}
+[39.518470] (-) TimerEvent: {}
+[39.566218] (my_parameters) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[39.618638] (-) TimerEvent: {}
+[39.720217] (-) TimerEvent: {}
+[39.824036] (-) TimerEvent: {}
+[39.927729] (-) TimerEvent: {}
+[40.006798] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_c\x1b[0m\n'}
+[40.027942] (-) TimerEvent: {}
+[40.034981] (my_parameters) StdoutLine: {'line': b'[ 69%] Built target my_parameters__rosidl_typesupport_fastrtps_c\n'}
+[40.080980] (my_parameters) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp.o\x1b[0m\n'}
+[40.084253] (my_parameters) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o\x1b[0m\n'}
+[40.094206] (my_parameters) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.o\x1b[0m\n'}
+[40.101096] (my_parameters) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp.o\x1b[0m\n'}
+[40.128482] (-) TimerEvent: {}
+[40.231165] (-) TimerEvent: {}
+[40.321059] (my_parameters) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o\x1b[0m\n'}
+[40.331429] (-) TimerEvent: {}
+[40.432240] (-) TimerEvent: {}
+[40.484747] (my_parameters) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libmy_parameters__rosidl_typesupport_c.so\x1b[0m\n'}
+[40.532448] (-) TimerEvent: {}
+[40.634540] (-) TimerEvent: {}
+[40.674189] (my_parameters) StdoutLine: {'line': b'[ 79%] Built target my_parameters__rosidl_typesupport_c\n'}
+[40.734718] (-) TimerEvent: {}
+[40.768662] (my_parameters) StdoutLine: {'line': b'[ 79%] Built target my_parameters\n'}
+[40.834944] (-) TimerEvent: {}
+[40.866549] (my_parameters) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[40.935142] (-) TimerEvent: {}
+[41.035977] (-) TimerEvent: {}
+[41.137276] (-) TimerEvent: {}
+[41.238576] (-) TimerEvent: {}
+[41.339479] (-) TimerEvent: {}
+[41.440325] (-) TimerEvent: {}
+[41.541632] (-) TimerEvent: {}
+[41.643256] (-) TimerEvent: {}
+[41.744053] (-) TimerEvent: {}
+[41.844820] (-) TimerEvent: {}
+[41.945671] (-) TimerEvent: {}
+[42.047827] (-) TimerEvent: {}
+[42.149524] (-) TimerEvent: {}
+[42.250405] (-) TimerEvent: {}
+[42.351550] (-) TimerEvent: {}
+[42.452750] (-) TimerEvent: {}
+[42.553579] (-) TimerEvent: {}
+[42.654440] (-) TimerEvent: {}
+[42.766619] (-) TimerEvent: {}
+[42.867581] (-) TimerEvent: {}
+[42.968431] (-) TimerEvent: {}
+[43.069342] (-) TimerEvent: {}
+[43.170699] (-) TimerEvent: {}
+[43.271577] (-) TimerEvent: {}
+[43.372422] (-) TimerEvent: {}
+[43.473282] (-) TimerEvent: {}
+[43.574165] (-) TimerEvent: {}
+[43.675051] (-) TimerEvent: {}
+[43.775939] (-) TimerEvent: {}
+[43.877437] (-) TimerEvent: {}
+[43.979127] (-) TimerEvent: {}
+[44.080771] (-) TimerEvent: {}
+[44.182451] (-) TimerEvent: {}
+[44.283959] (-) TimerEvent: {}
+[44.385554] (-) TimerEvent: {}
+[44.489163] (-) TimerEvent: {}
+[44.592230] (-) TimerEvent: {}
+[44.633729] (my_parameters) StdoutLine: {'line': b'[ 80%] Built target my_parameters__py\n'}
+[44.686951] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_generator_py\x1b[0m\n'}
+[44.692428] (-) TimerEvent: {}
+[44.778343] (my_parameters) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c.o\x1b[0m\n'}
+[44.794583] (-) TimerEvent: {}
+[44.802843] (my_parameters) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_stm32_data_s.c.o\x1b[0m\n'}
+[44.850553] (my_parameters) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c.o\x1b[0m\n'}
+[44.862724] (my_parameters) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_debug_parameter_s.c.o\x1b[0m\n'}
+[44.894829] (-) TimerEvent: {}
+[44.996107] (-) TimerEvent: {}
+[45.097573] (-) TimerEvent: {}
+[45.199340] (-) TimerEvent: {}
+[45.300849] (-) TimerEvent: {}
+[45.402303] (-) TimerEvent: {}
+[45.503878] (-) TimerEvent: {}
+[45.605461] (-) TimerEvent: {}
+[45.707174] (-) TimerEvent: {}
+[45.809964] (-) TimerEvent: {}
+[45.863128] (my_parameters) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_generator_py.dir/rosidl_generator_py/my_parameters/msg/_obstacle_proximity_log_s.c.o\x1b[0m\n'}
+[45.910224] (-) TimerEvent: {}
+[46.012268] (-) TimerEvent: {}
+[46.113821] (-) TimerEvent: {}
+[46.215778] (-) TimerEvent: {}
+[46.317654] (-) TimerEvent: {}
+[46.418968] (-) TimerEvent: {}
+[46.487441] (my_parameters) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_parameters/libmy_parameters__rosidl_generator_py.so\x1b[0m\n'}
+[46.519224] (-) TimerEvent: {}
+[46.621131] (-) TimerEvent: {}
+[46.723047] (-) TimerEvent: {}
+[46.769303] (my_parameters) StdoutLine: {'line': b'[ 90%] Built target my_parameters__rosidl_generator_py\n'}
+[46.823396] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[46.824265] (-) TimerEvent: {}
+[46.867323] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[46.868407] (my_parameters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_parameters__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[46.924488] (-) TimerEvent: {}
+[46.967668] (my_parameters) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[46.994443] (my_parameters) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[47.024712] (-) TimerEvent: {}
+[47.025531] (my_parameters) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[47.124986] (-) TimerEvent: {}
+[47.225787] (-) TimerEvent: {}
+[47.326628] (-) TimerEvent: {}
+[47.427532] (-) TimerEvent: {}
+[47.528492] (-) TimerEvent: {}
+[47.629588] (-) TimerEvent: {}
+[47.731863] (-) TimerEvent: {}
+[47.832851] (-) TimerEvent: {}
+[47.887481] (my_parameters) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[47.925427] (my_parameters) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[47.933075] (-) TimerEvent: {}
+[48.034733] (-) TimerEvent: {}
+[48.046139] (my_parameters) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[48.135087] (-) TimerEvent: {}
+[48.237228] (-) TimerEvent: {}
+[48.339366] (-) TimerEvent: {}
+[48.363433] (my_parameters) StdoutLine: {'line': b'[100%] Built target my_parameters__rosidl_typesupport_fastrtps_c__pyext\n'}
+[48.423502] (my_parameters) StdoutLine: {'line': b'[100%] Built target my_parameters__rosidl_typesupport_introspection_c__pyext\n'}
+[48.439611] (-) TimerEvent: {}
+[48.484835] (my_parameters) StdoutLine: {'line': b'[100%] Built target my_parameters__rosidl_typesupport_c__pyext\n'}
+[48.539984] (-) TimerEvent: {}
+[48.543144] (my_parameters) CommandEnded: {'returncode': 0}
+[48.640231] (-) TimerEvent: {}
+[48.743072] (-) TimerEvent: {}
+[48.845431] (-) TimerEvent: {}
+[48.947722] (-) TimerEvent: {}
+[49.050215] (-) TimerEvent: {}
+[49.152160] (-) TimerEvent: {}
+[49.254199] (-) TimerEvent: {}
+[49.355275] (-) TimerEvent: {}
+[49.456141] (-) TimerEvent: {}
+[49.556960] (-) TimerEvent: {}
+[49.658191] (-) TimerEvent: {}
+[49.759516] (-) TimerEvent: {}
+[49.861298] (-) TimerEvent: {}
+[49.941892] (my_parameters) JobProgress: {'identifier': 'my_parameters', 'progress': 'install'}
+[49.961600] (-) TimerEvent: {}
+[49.990537] (my_parameters) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi2/ros2_ws/build/my_parameters'], 'cwd': '/home/pi2/ros2_ws/build/my_parameters', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi2'), ('SSH_CLIENT', '192.168.0.107 39942 22'), ('LC_TIME', 'sv_SE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi2'), ('OLDPWD', '/home/pi2'), ('SSH_TTY', '/dev/pts/4'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'sv_SE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'sv_SE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'sv_SE.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/cmd_vel_to_joystick:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble:/home/pi2/ros2_ws/install'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sv_SE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sv_SE.UTF-8'), ('LC_IDENTIFICATION', 'sv_SE.UTF-8'), ('PWD', '/home/pi2/ros2_ws/build/my_parameters'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.107 39942 192.168.0.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sv_SE.UTF-8'), ('LC_PAPER', 'sv_SE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/cmd_vel_to_joystick:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[50.034465] (my_parameters) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[50.035521] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/rosidl_interfaces/my_parameters\n'}
+[50.036647] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters\n'}
+[50.037424] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg\n'}
+[50.038165] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/motor_parameters.h\n'}
+[50.039524] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/debug_parameter.h\n'}
+[50.041019] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/obstacle_proximity_log.h\n'}
+[50.042964] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_generator_c__visibility_control.h\n'}
+[50.043662] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail\n'}
+[50.044303] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__functions.h\n'}
+[50.045494] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__functions.h\n'}
+[50.047118] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__type_support.h\n'}
+[50.048532] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__functions.c\n'}
+[50.050206] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__struct.h\n'}
+[50.051527] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__type_support.h\n'}
+[50.060808] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__functions.c\n'}
+[50.061791] (-) TimerEvent: {}
+[50.062830] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__functions.c\n'}
+[50.064427] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__struct.h\n'}
+[50.066087] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__type_support.h\n'}
+[50.067848] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__type_support.h\n'}
+[50.069426] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__functions.c\n'}
+[50.071211] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__struct.h\n'}
+[50.072790] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__functions.h\n'}
+[50.074472] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__struct.h\n'}
+[50.076027] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__struct.h\n'}
+[50.077564] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__functions.h\n'}
+[50.079215] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__functions.c\n'}
+[50.080790] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__functions.h\n'}
+[50.082327] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__type_support.h\n'}
+[50.083935] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/stm32_data.h\n'}
+[50.085363] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/joystick_parameters.h\n'}
+[50.087172] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/library_path.sh\n'}
+[50.088127] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/library_path.dsv\n'}
+[50.094195] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_c.so\n'}
+[50.101456] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_c.so" to ""\n'}
+[50.102648] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters\n'}
+[50.103422] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg\n'}
+[50.104344] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[50.105149] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail\n'}
+[50.106030] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_fastrtps_c.h\n'}
+[50.107325] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_fastrtps_c.h\n'}
+[50.108884] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_fastrtps_c.h\n'}
+[50.113519] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_fastrtps_c.h\n'}
+[50.115399] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_fastrtps_c.h\n'}
+[50.120645] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_c.so\n'}
+[50.124378] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[50.125363] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters\n'}
+[50.126293] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg\n'}
+[50.126912] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/joystick_parameters.hpp\n'}
+[50.127757] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/obstacle_proximity_log.hpp\n'}
+[50.128626] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/stm32_data.hpp\n'}
+[50.130268] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/debug_parameter.hpp\n'}
+[50.131922] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/motor_parameters.hpp\n'}
+[50.133386] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail\n'}
+[50.134326] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__traits.hpp\n'}
+[50.135849] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__struct.hpp\n'}
+[50.137820] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__builder.hpp\n'}
+[50.142291] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__builder.hpp\n'}
+[50.143302] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__builder.hpp\n'}
+[50.144107] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__traits.hpp\n'}
+[50.155023] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__traits.hpp\n'}
+[50.155998] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__traits.hpp\n'}
+[50.158279] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__struct.hpp\n'}
+[50.159719] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__builder.hpp\n'}
+[50.170923] (-) TimerEvent: {}
+[50.172349] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__builder.hpp\n'}
+[50.173388] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__struct.hpp\n'}
+[50.174640] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__struct.hpp\n'}
+[50.175411] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__struct.hpp\n'}
+[50.176065] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__traits.hpp\n'}
+[50.176686] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters\n'}
+[50.184873] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg\n'}
+[50.185569] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[50.186717] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail\n'}
+[50.187576] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/dds_fastrtps\n'}
+[50.188455] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.189359] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.190573] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.202358] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.203241] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.204155] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_cpp.so\n'}
+[50.204924] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[50.205739] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters\n'}
+[50.206597] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg\n'}
+[50.207405] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail\n'}
+[50.208174] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_introspection_c.h\n'}
+[50.208964] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_introspection_c.h\n'}
+[50.212778] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_introspection_c.h\n'}
+[50.218255] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__type_support.c\n'}
+[50.226255] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_introspection_c.h\n'}
+[50.226977] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__type_support.c\n'}
+[50.230620] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_introspection_c.h\n'}
+[50.231343] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__type_support.c\n'}
+[50.232936] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__type_support.c\n'}
+[50.233616] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__type_support.c\n'}
+[50.234362] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[50.235013] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_c.so\n'}
+[50.239735] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_c.so" to ""\n'}
+[50.240395] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_c.so\n'}
+[50.254332] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_c.so" to ""\n'}
+[50.257773] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters\n'}
+[50.258547] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg\n'}
+[50.260887] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail\n'}
+[50.261548] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__type_support.cpp\n'}
+[50.262249] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/stm32_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.262880] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.263491] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.264153] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.264819] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/joystick_parameters__type_support.cpp\n'}
+[50.265485] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__type_support.cpp\n'}
+[50.266233] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/motor_parameters__type_support.cpp\n'}
+[50.266887] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.267458] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/include/my_parameters/my_parameters/msg/detail/obstacle_proximity_log__type_support.cpp\n'}
+[50.269516] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_cpp.so\n'}
+[50.271979] (-) TimerEvent: {}
+[50.274918] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[50.278168] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_cpp.so\n'}
+[50.281826] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_typesupport_cpp.so" to ""\n'}
+[50.286782] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/pythonpath.sh\n'}
+[50.287498] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/pythonpath.dsv\n'}
+[50.288883] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info\n'}
+[50.289477] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[50.290210] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[50.290771] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[50.291574] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[50.293471] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters\n'}
+[50.294375] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/__init__.py\n'}
+[50.302242] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[50.302995] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[50.304658] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[50.307709] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/_my_parameters_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[50.310687] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/libmy_parameters__rosidl_generator_py.so\n'}
+[50.313653] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[50.317700] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg\n'}
+[50.319296] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/__init__.py\n'}
+[50.322024] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_joystick_parameters.py\n'}
+[50.324679] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_stm32_data.py\n'}
+[50.327427] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_debug_parameter.py\n'}
+[50.330181] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_motor_parameters_s.c\n'}
+[50.332796] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_stm32_data_s.c\n'}
+[50.335633] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_obstacle_proximity_log_s.c\n'}
+[50.338383] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_debug_parameter_s.c\n'}
+[50.341210] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_motor_parameters.py\n'}
+[50.343911] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_obstacle_proximity_log.py\n'}
+[50.346301] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_joystick_parameters_s.c\n'}
+[50.348815] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/_my_parameters_s.ep.rosidl_typesupport_c.c\n'}
+[50.372223] (-) TimerEvent: {}
+[50.473125] (-) TimerEvent: {}
+[50.574182] (-) TimerEvent: {}
+[50.676354] (-) TimerEvent: {}
+[50.745696] (my_parameters) StdoutLine: {'line': b"Listing '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters'...\n"}
+[50.747631] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/__init__.py'...\n"}
+[50.749907] (my_parameters) StdoutLine: {'line': b"Listing '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg'...\n"}
+[50.751480] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/__init__.py'...\n"}
+[50.752962] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_debug_parameter.py'...\n"}
+[50.753974] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_joystick_parameters.py'...\n"}
+[50.756309] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_motor_parameters.py'...\n"}
+[50.758101] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_obstacle_proximity_log.py'...\n"}
+[50.759681] (my_parameters) StdoutLine: {'line': b"Compiling '/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/msg/_stm32_data.py'...\n"}
+[50.776633] (-) TimerEvent: {}
+[50.785746] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[50.789267] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[50.791611] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[50.796763] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[50.800045] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[50.804934] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages/my_parameters/my_parameters_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[50.810610] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_py.so\n'}
+[50.826285] (my_parameters) StdoutLine: {'line': b'-- Set runtime path of "/home/pi2/ros2_ws/install/my_parameters/lib/libmy_parameters__rosidl_generator_py.so" to ""\n'}
+[50.828252] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/MotorParameters.idl\n'}
+[50.830400] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/JoystickParameters.idl\n'}
+[50.832391] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/Stm32Data.idl\n'}
+[50.834247] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/DebugParameter.idl\n'}
+[50.836168] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/ObstacleProximityLog.idl\n'}
+[50.839366] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/MotorParameters.msg\n'}
+[50.841289] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/JoystickParameters.msg\n'}
+[50.843678] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/Stm32Data.msg\n'}
+[50.846114] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/DebugParameter.msg\n'}
+[50.847988] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/msg/ObstacleProximityLog.msg\n'}
+[50.851003] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/package_run_dependencies/my_parameters\n'}
+[50.853507] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/parent_prefix_path/my_parameters\n'}
+[50.857012] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/ament_prefix_path.sh\n'}
+[50.859140] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/ament_prefix_path.dsv\n'}
+[50.863123] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/path.sh\n'}
+[50.865263] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/environment/path.dsv\n'}
+[50.868698] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.bash\n'}
+[50.870582] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.sh\n'}
+[50.872331] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.zsh\n'}
+[50.874117] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/local_setup.dsv\n'}
+[50.876968] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/package.dsv\n'}
+[50.877665] (-) TimerEvent: {}
+[50.880422] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/ament_index/resource_index/packages/my_parameters\n'}
+[50.885016] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_cExport.cmake\n'}
+[50.887866] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_cExport-noconfig.cmake\n'}
+[50.893491] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[50.896165] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[50.901287] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_cppExport.cmake\n'}
+[50.906927] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[50.909979] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[50.912706] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cExport.cmake\n'}
+[50.913733] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[50.916033] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cExport.cmake\n'}
+[50.917919] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[50.921206] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[50.923417] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[50.926604] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cppExport.cmake\n'}
+[50.928515] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parameters__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[50.931653] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_pyExport.cmake\n'}
+[50.933622] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/export_my_parameters__rosidl_generator_pyExport-noconfig.cmake\n'}
+[50.935453] (my_parameters) StdoutLine: {'line': b'-- Installing: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/rosidl_cmake-extras.cmake\n'}
+[50.938545] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[50.940457] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[50.942412] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[50.943567] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[50.944755] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[50.946147] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[50.947204] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parametersConfig.cmake\n'}
+[50.947991] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/cmake/my_parametersConfig-version.cmake\n'}
+[50.948825] (my_parameters) StdoutLine: {'line': b'-- Up-to-date: /home/pi2/ros2_ws/install/my_parameters/share/my_parameters/package.xml\n'}
+[50.956075] (my_parameters) CommandEnded: {'returncode': 0}
+[50.978930] (-) TimerEvent: {}
+[51.083057] (-) TimerEvent: {}
+[51.186711] (-) TimerEvent: {}
+[51.289211] (-) TimerEvent: {}
+[51.391416] (-) TimerEvent: {}
+[51.494186] (-) TimerEvent: {}
+[51.596392] (-) TimerEvent: {}
+[51.697334] (-) TimerEvent: {}
+[51.799238] (-) TimerEvent: {}
+[51.901524] (-) TimerEvent: {}
+[52.003694] (-) TimerEvent: {}
+[52.105888] (-) TimerEvent: {}
+[52.207960] (-) TimerEvent: {}
+[52.310314] (-) TimerEvent: {}
+[52.398534] (my_parameters) JobEnded: {'identifier': 'my_parameters', 'rc': 0}
+[52.408285] (-) EventReactorShutdown: {}

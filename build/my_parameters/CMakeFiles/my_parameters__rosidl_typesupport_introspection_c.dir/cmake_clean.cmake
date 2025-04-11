@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/joystick_parameters__type_support.c.o.d"
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/motor_parameters__type_support.c.o"
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/motor_parameters__type_support.c.o.d"
+  "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/obstacle_proximity_log__type_support.c.o"
+  "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/obstacle_proximity_log__type_support.c.o.d"
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/stm32_data__type_support.c.o"
   "CMakeFiles/my_parameters__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_parameters/msg/detail/stm32_data__type_support.c.o.d"
   "libmy_parameters__rosidl_typesupport_introspection_c.pdb"
@@ -15,6 +17,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/my_parameters/msg/detail/joystick_parameters__type_support.c"
   "rosidl_typesupport_introspection_c/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_parameters/msg/detail/motor_parameters__type_support.c"
+  "rosidl_typesupport_introspection_c/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/my_parameters/msg/detail/obstacle_proximity_log__type_support.c"
   "rosidl_typesupport_introspection_c/my_parameters/msg/detail/stm32_data__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_parameters/msg/detail/stm32_data__type_support.c"
 )

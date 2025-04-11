@@ -82,6 +82,10 @@ CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/debug_para
 CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp
 CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp
 CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/obstacle_proximity_log.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__builder.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__struct.hpp
+CMakeFiles/my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__traits.hpp
 
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -102,6 +106,7 @@ rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_p
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/JoystickParameters.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/Stm32Data.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/DebugParameter.idl
+rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: rosidl_adapter/my_parameters/msg/ObstacleProximityLog.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -210,6 +215,18 @@ rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__struct.hpp: rosid
 rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__traits.hpp
 
+rosidl_generator_cpp/my_parameters/msg/obstacle_proximity_log.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/obstacle_proximity_log.hpp
+
+rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__builder.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__builder.hpp
+
+rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__struct.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__struct.hpp
+
+rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__traits.hpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__traits.hpp
+
 my_parameters__cpp: CMakeFiles/my_parameters__cpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/debug_parameter.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/debug_parameter__builder.hpp
@@ -221,11 +238,15 @@ my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/joystick_param
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/motor_parameters__builder.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/motor_parameters__struct.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/motor_parameters__traits.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__builder.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__struct.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/obstacle_proximity_log__traits.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__builder.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__struct.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/detail/stm32_data__traits.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/joystick_parameters.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/motor_parameters.hpp
+my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/obstacle_proximity_log.hpp
 my_parameters__cpp: rosidl_generator_cpp/my_parameters/msg/stm32_data.hpp
 my_parameters__cpp: CMakeFiles/my_parameters__cpp.dir/build.make
 .PHONY : my_parameters__cpp

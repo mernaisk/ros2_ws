@@ -43,7 +43,7 @@ def generate_launch_description():
         Node(
             package='nav2_behaviors',
             executable='behavior_server',
-            name='recoveries_server',
+            name='behavior_server',
             output='screen'
         ),
 
@@ -55,7 +55,7 @@ def generate_launch_description():
             parameters=[{
                 'use_sim_time': True,
                 'autostart': True,
-                'node_names': ['map_server', 'amcl', 'planner_server', 'controller_server', 'bt_navigator', 'behavior_server']
+                'node_names': ['planner_server', 'controller_server', 'bt_navigator', 'behavior_server']
             }]
         )
     ])

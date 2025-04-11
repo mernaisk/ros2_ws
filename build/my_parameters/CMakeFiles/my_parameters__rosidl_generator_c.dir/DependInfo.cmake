@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.c" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.c.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.c.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.c.o.d"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__functions.c" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__functions.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__functions.c.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o" "gcc" "CMakeFiles/my_parameters__rosidl_generator_c.dir/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c.o.d"
   )
 
@@ -29,11 +30,16 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__functions.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__struct.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/motor_parameters__type_support.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__functions.c" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__functions.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__struct.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/obstacle_proximity_log__type_support.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.c" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__struct.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/detail/stm32_data__type_support.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/joystick_parameters.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/obstacle_proximity_log.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/stm32_data.h" "/home/pi2/ros2_ws/build/my_parameters/rosidl_generator_c/my_parameters/msg/motor_parameters.h"
   )
 

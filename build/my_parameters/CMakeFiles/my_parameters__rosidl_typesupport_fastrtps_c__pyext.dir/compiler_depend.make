@@ -250,8 +250,15 @@ CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_genera
   rosidl_generator_c/my_parameters/msg/detail/joystick_parameters__functions.h \
   rosidl_generator_c/my_parameters/msg/detail/stm32_data__type_support.h \
   rosidl_generator_c/my_parameters/msg/detail/stm32_data__struct.h \
-  rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h
+  rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h \
+  rosidl_generator_c/my_parameters/msg/detail/debug_parameter__type_support.h \
+  rosidl_generator_c/my_parameters/msg/detail/debug_parameter__struct.h \
+  rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.h
 
+
+rosidl_generator_c/my_parameters/msg/detail/debug_parameter__struct.h:
+
+rosidl_generator_c/my_parameters/msg/detail/debug_parameter__type_support.h:
 
 rosidl_generator_c/my_parameters/msg/detail/stm32_data__functions.h:
 
@@ -662,6 +669,8 @@ rosidl_generator_py/my_parameters/_my_parameters_s.ep.rosidl_typesupport_fastrtp
 /usr/include/aarch64-linux-gnu/bits/floatn.h:
 
 /usr/include/aarch64-linux-gnu/bits/posix_opt.h:
+
+rosidl_generator_c/my_parameters/msg/detail/debug_parameter__functions.h:
 
 /usr/include/aarch64-linux-gnu/bits/confname.h:
 

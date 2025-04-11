@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.o" "gcc" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp.o" "gcc" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o" "gcc" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o.d"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o" "gcc" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o.d"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp.o" "gcc" "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp.o.d"
   )
 
@@ -18,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp"
+  "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp"
   "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp" "/home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp"
   )
 

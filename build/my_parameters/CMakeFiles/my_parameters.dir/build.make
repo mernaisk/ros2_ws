@@ -70,6 +70,7 @@ CMakeFiles/my_parameters: /home/pi2/ros2_ws/src/my_parameters/msg/MotorParameter
 CMakeFiles/my_parameters: /home/pi2/ros2_ws/src/my_parameters/msg/JoystickParameters.msg
 CMakeFiles/my_parameters: /home/pi2/ros2_ws/src/my_parameters/msg/Stm32Data.msg
 CMakeFiles/my_parameters: /home/pi2/ros2_ws/src/my_parameters/msg/DebugParameter.msg
+CMakeFiles/my_parameters: /home/pi2/ros2_ws/src/my_parameters/msg/ObstacleProximityLog.msg
 CMakeFiles/my_parameters: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/my_parameters: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/my_parameters: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

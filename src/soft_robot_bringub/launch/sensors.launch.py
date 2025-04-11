@@ -7,7 +7,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 sllidar_launch_file = os.path.join(
-    get_package_share_directory('sllidar_ros2'), 'launch', 'view_sllidar_a2m8_launch.py'
+    get_package_share_directory('sllidar_ros2'), 'launch', 'sllidar_a2m8_launch.py'
 )
 
 def generate_launch_description():
@@ -15,14 +15,14 @@ def generate_launch_description():
         # Launch joystick_publisher node
 
 
-        Node(
-            package='bno055',
-            executable='bno055',
-            name='bno055',
-            output='screen',
-            respawn=True,  
-            respawn_delay=2.0 
-        ),
+        # Node(
+        #     package='bno055',
+        #     executable='bno055',
+        #     name='bno055',
+        #     output='screen',
+        #     respawn=True,  
+        #     respawn_delay=2.0 
+        # ),
 
 
         IncludeLaunchDescription(

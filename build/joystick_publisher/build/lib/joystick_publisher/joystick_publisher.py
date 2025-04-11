@@ -51,21 +51,32 @@ class JoySubscriber(Node):
         if msg.axes[2] >= -0.5 and msg.axes[2] <= 0.5 and msg.axes[3] >= -0.5 and msg.axes[3] <= 0.5:
             position_direction = 0.0
         elif msg.axes[2] == 0 and msg.axes[3] > 0.5 and msg.axes[3] <= 1:
-            position_direction = math.pi/2
-        elif msg.axes[2] == 0 and msg.axes[3] >= -1 and msg.axes[3] < -0.5:
-            position_direction = -math.pi/2
-        elif msg.axes[3] == 0 and msg.axes[2] > 0.5 and msg.axes[2] <= 1:
-            position_direction = math.pi
-        elif msg.axes[3] == 0 and msg.axes[2] >= -1 and msg.axes[2] < -0.5:
+            # position_direction = math.pi/2
             position_direction = 0.0
+
+        elif msg.axes[2] == 0 and msg.axes[3] >= -1 and msg.axes[3] < -0.5:
+            # position_direction = -math.pi/2
+            position_direction = math.pi
+
+        elif msg.axes[3] == 0 and msg.axes[2] > 0.5 and msg.axes[2] <= 1:
+            # position_direction = math.pi
+            position_direction = math.pi/2
+
+        elif msg.axes[3] == 0 and msg.axes[2] >= -1 and msg.axes[2] < -0.5:
+            position_direction = -math.pi/2
+            # position_direction = 0.0
+
         elif msg.axes[2] >= -1 and msg.axes[2] < 0 and msg.axes[3] > 0 and msg.axes[3] <= 1:
-            position_direction = math.atan(msg.axes[3]/-msg.axes[2])
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) - math.pi/2
+
         elif msg.axes[2] >= -1 and msg.axes[2] < 0 and msg.axes[3] >= -1 and msg.axes[3] < 0:
-            position_direction = math.atan(msg.axes[3]/-msg.axes[2])
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) - math.pi/2
+
         elif msg.axes[2] > 0 and msg.axes[2] <= 1 and msg.axes[3] > 0 and msg.axes[3] <= 1:
-            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) + math.pi
+            position_direction = math.atan(msg.axes[2]/msg.axes[3]) 
+
         elif msg.axes[2] > 0 and msg.axes[2] <= 1 and msg.axes[3] >= -1 and msg.axes[3] < 0:
-            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) - math.pi
+            position_direction = math.atan(msg.axes[3]/-msg.axes[2]) + math.pi/2
 
 
         if msg.buttons[3] == 1 and msg.buttons[1] == 0:

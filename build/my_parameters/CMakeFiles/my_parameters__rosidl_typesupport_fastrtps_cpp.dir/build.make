@@ -81,6 +81,7 @@ rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_para
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/JoystickParameters.idl
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/Stm32Data.idl
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/DebugParameter.idl
+rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/ObstacleProximityLog.idl
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -165,6 +166,12 @@ rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_para
 rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_fastrtps_cpp.hpp
 
+rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_fastrtps_cpp.hpp
+
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
@@ -221,12 +228,27 @@ CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp -o CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp.s
 
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o -MF CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o.d -o CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o -c /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp
+
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp > CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.i
+
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp -o CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.s
+
 # Object files for target my_parameters__rosidl_typesupport_fastrtps_cpp
 my_parameters__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp.o" \
 "CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/joystick_parameters__type_support.cpp.o" \
 "CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/stm32_data__type_support.cpp.o" \
-"CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp.o"
+"CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp.o" \
+"CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o"
 
 # External object files for target my_parameters__rosidl_typesupport_fastrtps_cpp
 my_parameters__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
@@ -235,6 +257,7 @@ libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/joystick_parameters__type_support.cpp.o
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/stm32_data__type_support.cpp.o
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp.o
+libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp.o
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -245,7 +268,7 @@ libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librmw
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so
 libmy_parameters__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libmy_parameters__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libmy_parameters__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -259,10 +282,12 @@ CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/debug_parameter__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/joystick_parameters__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/motor_parameters__type_support.cpp
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/obstacle_proximity_log__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/dds_fastrtps/stm32_data__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/debug_parameter__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/joystick_parameters__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/motor_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/obstacle_proximity_log__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_parameters/msg/detail/stm32_data__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/pi2/ros2_ws/build/my_parameters && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi2/ros2_ws/src/my_parameters /home/pi2/ros2_ws/src/my_parameters /home/pi2/ros2_ws/build/my_parameters /home/pi2/ros2_ws/build/my_parameters /home/pi2/ros2_ws/build/my_parameters/CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_parameters__rosidl_typesupport_fastrtps_cpp.dir/depend

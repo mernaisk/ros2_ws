@@ -4,5 +4,7 @@ msg/JoystickParameters.idl
 msg/JoystickParameters.msg
 msg/MotorParameters.idl
 msg/MotorParameters.msg
+msg/ObstacleProximityLog.idl
+msg/ObstacleProximityLog.msg
 msg/Stm32Data.idl
 msg/Stm32Data.msg

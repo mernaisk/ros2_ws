@@ -4,6 +4,7 @@
     "/home/pi2/ros2_ws/src/my_parameters:msg/MotorParameters.msg",
     "/home/pi2/ros2_ws/src/my_parameters:msg/JoystickParameters.msg",
     "/home/pi2/ros2_ws/src/my_parameters:msg/Stm32Data.msg",
-    "/home/pi2/ros2_ws/src/my_parameters:msg/DebugParameter.msg"
+    "/home/pi2/ros2_ws/src/my_parameters:msg/DebugParameter.msg",
+    "/home/pi2/ros2_ws/src/my_parameters:msg/ObstacleProximityLog.msg"
   ]
 }

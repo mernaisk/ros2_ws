@@ -79,6 +79,7 @@ rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: rosid
 rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/JoystickParameters.idl
 rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/Stm32Data.idl
 rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/DebugParameter.idl
+rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: rosidl_adapter/my_parameters/msg/ObstacleProximityLog.idl
 rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -151,6 +152,9 @@ rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp: rosidl_type
 rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp: rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp
 
+rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp: rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp
+
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o: rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/compiler_depend.ts
@@ -207,12 +211,27 @@ CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_param
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp -o CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.s
 
+CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o: rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp
+CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o -MF CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o.d -o CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o -c /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp
+
+CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp > CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.i
+
+CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi2/ros2_ws/build/my_parameters/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp -o CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.s
+
 # Object files for target my_parameters__rosidl_typesupport_c
 my_parameters__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp.o" \
 "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp.o" \
 "CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp.o" \
-"CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.o"
+"CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.o" \
+"CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o"
 
 # External object files for target my_parameters__rosidl_typesupport_c
 my_parameters__rosidl_typesupport_c_EXTERNAL_OBJECTS =
@@ -221,6 +240,7 @@ libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_type
 libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp.o
 libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp.o
 libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp.o
+libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp.o
 libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/build.make
 libmy_parameters__rosidl_typesupport_c.so: libmy_parameters__rosidl_generator_c.so
 libmy_parameters__rosidl_typesupport_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
@@ -233,7 +253,7 @@ libmy_parameters__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interf
 libmy_parameters__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_parameters__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_parameters__rosidl_typesupport_c.so: CMakeFiles/my_parameters__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libmy_parameters__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi2/ros2_ws/build/my_parameters/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libmy_parameters__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_parameters__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -247,6 +267,7 @@ CMakeFiles/my_parameters__rosidl_typesupport_c.dir/clean:
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/my_parameters/msg/debug_parameter__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/my_parameters/msg/joystick_parameters__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/my_parameters/msg/motor_parameters__type_support.cpp
+CMakeFiles/my_parameters__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/my_parameters/msg/obstacle_proximity_log__type_support.cpp
 CMakeFiles/my_parameters__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/my_parameters/msg/stm32_data__type_support.cpp
 	cd /home/pi2/ros2_ws/build/my_parameters && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi2/ros2_ws/src/my_parameters /home/pi2/ros2_ws/src/my_parameters /home/pi2/ros2_ws/build/my_parameters /home/pi2/ros2_ws/build/my_parameters /home/pi2/ros2_ws/build/my_parameters/CMakeFiles/my_parameters__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_parameters__rosidl_typesupport_c.dir/depend

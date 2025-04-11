@@ -15,7 +15,7 @@ class MotorCommandPublisher(Node):
             self.function,
             10
         )
-        self.publisher_ = self.create_publisher(Stm32Data, '/StmData', 10)
+        self.publisher_ = self.create_publisher(Stm32Data, '/StmData', 20)
 
         self.motor1_fr = 0
         self.motor2_fr = 0
@@ -86,26 +86,26 @@ class MotorCommandPublisher(Node):
 
 
         if msg.pre_tight == True:
-            const = 12  
+            const = 10
         else:
             const = 0
 
               
-        self.pretight1_fr = -6 + const
-        self.pretight2_fr = -2 + const
-        self.pretight3_fr = 3 + const
+        self.pretight1_fr = 10 + const
+        self.pretight2_fr = 6 + const
+        self.pretight3_fr = 1 + const
 
-        self.pretight1_fl = -4 + const
-        self.pretight2_fl = -2 + const
-        self.pretight3_fl = 8 + const
-
+        self.pretight1_fl = 11 + const
+        self.pretight2_fl = 14 + const
+        self.pretight3_fl =25 + const
+        
         self.pretight1_rr = -1 + const
-        self.pretight2_rr = 9 + const
-        self.pretight3_rr = 6 + const
+        self.pretight2_rr = 11 + const
+        self.pretight3_rr = 4 + const
 
-        self.pretight1_rl = 5 + const
-        self.pretight2_rl = -3 + const
-        self.pretight3_rl = 6 + const
+        self.pretight1_rl = 11 + const
+        self.pretight2_rl = 10 + const
+        self.pretight3_rl = 4 + const
 
         self.motor1_fr -=  self.pretight1_fr
         self.motor2_fr -=  self.pretight2_fr

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_parameters/msg/_joystick_parameters_s.c"
   "../rosidl_generator_py/my_parameters/msg/_motor_parameters.py"
   "../rosidl_generator_py/my_parameters/msg/_motor_parameters_s.c"
+  "../rosidl_generator_py/my_parameters/msg/_obstacle_proximity_log.py"
+  "../rosidl_generator_py/my_parameters/msg/_obstacle_proximity_log_s.c"
   "../rosidl_generator_py/my_parameters/msg/_stm32_data.py"
   "../rosidl_generator_py/my_parameters/msg/_stm32_data_s.c"
   "CMakeFiles/my_parameters__py"

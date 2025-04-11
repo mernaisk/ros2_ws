@@ -21,7 +21,7 @@ class MotorCommandPublisher(Node):
             JoystickParameters,  
             '/joystick_command',
             self.function,
-            10
+            20
         )
 
         # Initial references and states
