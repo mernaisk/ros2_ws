@@ -1,0 +1,25 @@
+[18.073s] Invoking command in '/home/pi2/ros2_ws/src/motor_commands': PYTHONPATH=/home/pi2/ros2_ws/build/motor_commands/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_commands build --build-base /home/pi2/ros2_ws/build/motor_commands/build install --record /home/pi2/ros2_ws/build/motor_commands/install.log --single-version-externally-managed install_data
+[24.566s] running egg_info
+[24.574s] writing ../../build/motor_commands/motor_commands.egg-info/PKG-INFO
+[24.579s] writing dependency_links to ../../build/motor_commands/motor_commands.egg-info/dependency_links.txt
+[24.585s] writing entry points to ../../build/motor_commands/motor_commands.egg-info/entry_points.txt
+[24.593s] writing requirements to ../../build/motor_commands/motor_commands.egg-info/requires.txt
+[24.595s] writing top-level names to ../../build/motor_commands/motor_commands.egg-info/top_level.txt
+[24.619s] reading manifest file '../../build/motor_commands/motor_commands.egg-info/SOURCES.txt'
+[24.633s] writing manifest file '../../build/motor_commands/motor_commands.egg-info/SOURCES.txt'
+[24.634s] running build
+[24.637s] running build_py
+[24.639s] copying motor_commands/transmit_command.py -> /home/pi2/ros2_ws/build/motor_commands/build/lib/motor_commands
+[24.641s] running install
+[24.648s] running install_lib
+[24.656s] copying /home/pi2/ros2_ws/build/motor_commands/build/lib/motor_commands/transmit_command.py -> /home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands
+[24.668s] byte-compiling /home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands/transmit_command.py to transmit_command.cpython-310.pyc
+[24.680s] running install_data
+[24.682s] running install_egg_info
+[24.706s] removing '/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands-0.0.0-py3.10.egg-info' (and everything under it)
+[24.711s] Copying ../../build/motor_commands/motor_commands.egg-info to /home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages/motor_commands-0.0.0-py3.10.egg-info
+[24.733s] running install_scripts
+[24.994s] Installing motor_commands script to /home/pi2/ros2_ws/install/motor_commands/lib/motor_commands
+[24.996s] Installing transmit_command script to /home/pi2/ros2_ws/install/motor_commands/lib/motor_commands
+[25.001s] writing list of installed files to '/home/pi2/ros2_ws/build/motor_commands/install.log'
+[25.301s] Invoked command in '/home/pi2/ros2_ws/src/motor_commands' returned '0': PYTHONPATH=/home/pi2/ros2_ws/build/motor_commands/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_commands build --build-base /home/pi2/ros2_ws/build/motor_commands/build install --record /home/pi2/ros2_ws/build/motor_commands/install.log --single-version-externally-managed install_data

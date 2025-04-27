@@ -29,18 +29,21 @@ def generate_launch_description():
             package='tf2_ros',
             executable='static_transform_publisher',
             name='tf_static_lidar',
-            arguments=['0.3', '0.0', '0.2', '0', '0', '0', '1', 'base_link', 'laser']
+            arguments=['0.0', '0.0', '0.26', '1.57', '0', '0','base_link', 'laser']
         ),
 
 
 
         # Static transform between base_link and bno055 (IMU)
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_static_bno055',
-            arguments=['0.0', '0.0', '0.0', '0', '0', '0', '1', 'base_link', 'bno055']
-        ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='tf_static_bno055',
+        #     # arguments=['0.0', '0.0', '0.16', '4.71', '0', '0', 'base_link', 'bno055']
+        #     # arguments=['0.0', '0.0', '0.16', '1.57', '0', '0', 'base_link', 'bno055']
+        #     arguments=['0.0', '0.0', '0.16', '0', '0',  '0', 'base_link', 'bno055']
+
+        # ),
 
         Node(
             package='ros2_laser_scan_matcher',
@@ -66,38 +69,5 @@ def generate_launch_description():
         #     parameters=[config_file2]  # SLAM Toolbox config file
         # )
 
-        Node(
-            package='nav2_map_server',
-            executable='map_server',
-            name='map_server',
-            output='screen',
-            parameters=[
-                {'use_sim_time': True},
-                {'yaml_filename': config_file4}
-                ]
-        ),
-
-
-        
-        # AMCL node for localization
-        Node(
-            package='nav2_amcl',
-            executable='amcl',
-            name='amcl',  
-            output='screen',
-            parameters=[config_file3]
-        ),
-
-        Node(
-            package='nav2_lifecycle_manager',
-            executable='lifecycle_manager',
-            name='lifecycle_manager_mapper',
-            output='screen',
-            parameters=[{
-                'use_sim_time': True,
-                'autostart': True,
-                'node_names': ['map_server', 'amcl']
-            }]
-        )
         
     ])

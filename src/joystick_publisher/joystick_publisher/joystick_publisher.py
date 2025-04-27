@@ -14,12 +14,12 @@ class JoySubscriber(Node):
             Joy,
             '/joy',
             self.joy_callback,
-            10  
+            20  
         )
         self.velocity = math.pi/12
         
         self.enabled = False
-        self.publisher_ = self.create_publisher(JoystickParameters, '/joystick_command', 10)
+        self.publisher_ = self.create_publisher(JoystickParameters, '/joystick_command', 20)
 
     def joy_callback(self, msg):
         self.joystick_commands(msg)

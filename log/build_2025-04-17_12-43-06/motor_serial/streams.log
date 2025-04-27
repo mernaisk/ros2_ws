@@ -1,0 +1,24 @@
+[19.424s] Invoking command in '/home/pi2/ros2_ws/src/motor_serial': PYTHONPATH=/home/pi2/ros2_ws/build/motor_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_serial build --build-base /home/pi2/ros2_ws/build/motor_serial/build install --record /home/pi2/ros2_ws/build/motor_serial/install.log --single-version-externally-managed install_data
+[22.501s] running egg_info
+[22.503s] writing ../../build/motor_serial/motor_serial.egg-info/PKG-INFO
+[22.508s] writing dependency_links to ../../build/motor_serial/motor_serial.egg-info/dependency_links.txt
+[22.511s] writing entry points to ../../build/motor_serial/motor_serial.egg-info/entry_points.txt
+[22.515s] writing requirements to ../../build/motor_serial/motor_serial.egg-info/requires.txt
+[22.518s] writing top-level names to ../../build/motor_serial/motor_serial.egg-info/top_level.txt
+[22.539s] reading manifest file '../../build/motor_serial/motor_serial.egg-info/SOURCES.txt'
+[22.545s] writing manifest file '../../build/motor_serial/motor_serial.egg-info/SOURCES.txt'
+[22.546s] running build
+[22.547s] running build_py
+[22.547s] copying motor_serial/motor_serial.py -> /home/pi2/ros2_ws/build/motor_serial/build/lib/motor_serial
+[22.551s] running install
+[22.552s] running install_lib
+[22.568s] copying /home/pi2/ros2_ws/build/motor_serial/build/lib/motor_serial/motor_serial.py -> /home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial
+[22.569s] byte-compiling /home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial/motor_serial.py to motor_serial.cpython-310.pyc
+[22.569s] running install_data
+[22.570s] running install_egg_info
+[22.580s] removing '/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial-0.0.0-py3.10.egg-info' (and everything under it)
+[22.592s] Copying ../../build/motor_serial/motor_serial.egg-info to /home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial-0.0.0-py3.10.egg-info
+[22.593s] running install_scripts
+[22.821s] Installing motor_serial script to /home/pi2/ros2_ws/install/motor_serial/lib/motor_serial
+[22.822s] writing list of installed files to '/home/pi2/ros2_ws/build/motor_serial/install.log'
+[23.053s] Invoked command in '/home/pi2/ros2_ws/src/motor_serial' returned '0': PYTHONPATH=/home/pi2/ros2_ws/build/motor_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_serial build --build-base /home/pi2/ros2_ws/build/motor_serial/build install --record /home/pi2/ros2_ws/build/motor_serial/install.log --single-version-externally-managed install_data

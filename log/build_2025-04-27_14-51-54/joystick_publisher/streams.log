@@ -1,0 +1,21 @@
+[17.875s] Invoking command in '/home/pi2/ros2_ws/src/joystick_publisher': PYTHONPATH=/home/pi2/ros2_ws/build/joystick_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/joystick_publisher build --build-base /home/pi2/ros2_ws/build/joystick_publisher/build install --record /home/pi2/ros2_ws/build/joystick_publisher/install.log --single-version-externally-managed install_data
+[25.633s] running egg_info
+[25.641s] writing ../../build/joystick_publisher/joystick_publisher.egg-info/PKG-INFO
+[25.644s] writing dependency_links to ../../build/joystick_publisher/joystick_publisher.egg-info/dependency_links.txt
+[25.651s] writing entry points to ../../build/joystick_publisher/joystick_publisher.egg-info/entry_points.txt
+[25.677s] writing requirements to ../../build/joystick_publisher/joystick_publisher.egg-info/requires.txt
+[25.679s] writing top-level names to ../../build/joystick_publisher/joystick_publisher.egg-info/top_level.txt
+[25.700s] reading manifest file '../../build/joystick_publisher/joystick_publisher.egg-info/SOURCES.txt'
+[25.703s] writing manifest file '../../build/joystick_publisher/joystick_publisher.egg-info/SOURCES.txt'
+[25.705s] running build
+[25.710s] running build_py
+[25.738s] running install
+[25.740s] running install_lib
+[25.741s] running install_data
+[25.755s] running install_egg_info
+[25.760s] removing '/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages/joystick_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[25.773s] Copying ../../build/joystick_publisher/joystick_publisher.egg-info to /home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages/joystick_publisher-0.0.0-py3.10.egg-info
+[25.800s] running install_scripts
+[26.061s] Installing joystick_publisher script to /home/pi2/ros2_ws/install/joystick_publisher/lib/joystick_publisher
+[26.066s] writing list of installed files to '/home/pi2/ros2_ws/build/joystick_publisher/install.log'
+[26.377s] Invoked command in '/home/pi2/ros2_ws/src/joystick_publisher' returned '0': PYTHONPATH=/home/pi2/ros2_ws/build/joystick_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/joystick_publisher build --build-base /home/pi2/ros2_ws/build/joystick_publisher/build install --record /home/pi2/ros2_ws/build/joystick_publisher/install.log --single-version-externally-managed install_data

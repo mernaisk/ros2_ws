@@ -1,0 +1,167 @@
+[0.000000] (-) TimerEvent: {}
+[0.002846] (-) JobUnselected: {'identifier': 'bno055'}
+[0.003376] (-) JobUnselected: {'identifier': 'cmd_vel_to_joystick'}
+[0.004117] (-) JobUnselected: {'identifier': 'csm'}
+[0.004545] (-) JobUnselected: {'identifier': 'joystick_publisher'}
+[0.004903] (-) JobUnselected: {'identifier': 'motor_commands'}
+[0.005173] (-) JobUnselected: {'identifier': 'my_parameters'}
+[0.005510] (-) JobUnselected: {'identifier': 'my_slam_package'}
+[0.005771] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.006024] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.007556] (-) JobUnselected: {'identifier': 'soft_robot_bringub'}
+[0.008025] (motor_serial) JobQueued: {'identifier': 'motor_serial', 'dependencies': OrderedDict()}
+[0.008760] (motor_serial) JobStarted: {'identifier': 'motor_serial'}
+[0.095078] (-) TimerEvent: {}
+[0.196281] (-) TimerEvent: {}
+[0.297887] (-) TimerEvent: {}
+[0.399135] (-) TimerEvent: {}
+[0.500432] (-) TimerEvent: {}
+[0.601727] (-) TimerEvent: {}
+[0.703049] (-) TimerEvent: {}
+[0.804322] (-) TimerEvent: {}
+[0.905604] (-) TimerEvent: {}
+[1.006922] (-) TimerEvent: {}
+[1.108263] (-) TimerEvent: {}
+[1.209809] (-) TimerEvent: {}
+[1.311801] (-) TimerEvent: {}
+[1.413426] (-) TimerEvent: {}
+[1.514967] (-) TimerEvent: {}
+[1.616404] (-) TimerEvent: {}
+[1.720654] (-) TimerEvent: {}
+[1.822550] (-) TimerEvent: {}
+[1.924495] (-) TimerEvent: {}
+[2.026523] (-) TimerEvent: {}
+[2.128445] (-) TimerEvent: {}
+[2.230405] (-) TimerEvent: {}
+[2.332328] (-) TimerEvent: {}
+[2.434279] (-) TimerEvent: {}
+[2.536169] (-) TimerEvent: {}
+[2.637511] (-) TimerEvent: {}
+[2.738820] (-) TimerEvent: {}
+[2.840216] (-) TimerEvent: {}
+[2.942425] (-) TimerEvent: {}
+[3.043936] (-) TimerEvent: {}
+[3.145370] (-) TimerEvent: {}
+[3.246605] (-) TimerEvent: {}
+[3.347893] (-) TimerEvent: {}
+[3.449890] (-) TimerEvent: {}
+[3.551110] (-) TimerEvent: {}
+[3.652333] (-) TimerEvent: {}
+[3.753784] (-) TimerEvent: {}
+[3.855486] (-) TimerEvent: {}
+[3.957249] (-) TimerEvent: {}
+[4.058683] (-) TimerEvent: {}
+[4.159955] (-) TimerEvent: {}
+[4.261283] (-) TimerEvent: {}
+[4.362573] (-) TimerEvent: {}
+[4.463805] (-) TimerEvent: {}
+[4.565176] (-) TimerEvent: {}
+[4.666500] (-) TimerEvent: {}
+[4.767772] (-) TimerEvent: {}
+[4.869059] (-) TimerEvent: {}
+[4.970417] (-) TimerEvent: {}
+[5.071885] (-) TimerEvent: {}
+[5.173515] (-) TimerEvent: {}
+[5.274803] (-) TimerEvent: {}
+[5.376156] (-) TimerEvent: {}
+[5.477513] (-) TimerEvent: {}
+[5.578725] (-) TimerEvent: {}
+[5.680008] (-) TimerEvent: {}
+[5.781431] (-) TimerEvent: {}
+[5.882848] (-) TimerEvent: {}
+[5.984164] (-) TimerEvent: {}
+[6.085565] (-) TimerEvent: {}
+[6.186836] (-) TimerEvent: {}
+[6.288124] (-) TimerEvent: {}
+[6.389426] (-) TimerEvent: {}
+[6.490726] (-) TimerEvent: {}
+[6.592037] (-) TimerEvent: {}
+[6.693395] (-) TimerEvent: {}
+[6.794633] (-) TimerEvent: {}
+[6.895902] (-) TimerEvent: {}
+[6.997273] (-) TimerEvent: {}
+[7.098482] (-) TimerEvent: {}
+[7.199849] (-) TimerEvent: {}
+[7.301391] (-) TimerEvent: {}
+[7.404058] (-) TimerEvent: {}
+[7.505451] (-) TimerEvent: {}
+[7.607381] (-) TimerEvent: {}
+[7.708800] (-) TimerEvent: {}
+[7.810095] (-) TimerEvent: {}
+[7.911352] (-) TimerEvent: {}
+[8.012733] (-) TimerEvent: {}
+[8.114016] (-) TimerEvent: {}
+[8.215252] (-) TimerEvent: {}
+[8.316619] (-) TimerEvent: {}
+[8.419192] (-) TimerEvent: {}
+[8.520810] (-) TimerEvent: {}
+[8.625226] (-) TimerEvent: {}
+[8.729152] (motor_serial) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_serial', 'build', '--build-base', '/home/pi2/ros2_ws/build/motor_serial/build', 'install', '--record', '/home/pi2/ros2_ws/build/motor_serial/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi2/ros2_ws/src/motor_serial', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi2', 'SSH_CLIENT': '192.168.0.107 58294 22', 'LC_TIME': 'sv_SE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi2/ros2_ws/install/my_parameters/lib:/home/pi2/ros2_ws/install/csm/lib:/home/pi2/install/csm/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi2', 'OLDPWD': '/home/pi2', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'sv_SE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/pi2/ros2_ws/install:/home/pi2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'sv_SE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'sv_SE.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_slam_package:/home/pi2/ros2_ws/install/cmd_vel_to_joystick:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/motor_serial:/home/pi2/ros2_ws/install/motor_commands:/home/pi2/ros2_ws/install/locolization:/home/pi2/ros2_ws/install/joystick_publisher:/home/pi2/ros2_ws/install/csm:/home/pi2/ros2_ws/install/bno055:/home/pi2/install/motor_serial:/home/pi2/install/motor_commands:/home/pi2/install/joystick_publisher:/home/pi2/install/csm:/opt/ros/humble:/home/pi2/ros2_ws/install', 'SHELL': '/bin/bash', 'LC_NAME': 'sv_SE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'sv_SE.UTF-8', 'LC_IDENTIFICATION': 'sv_SE.UTF-8', 'PWD': '/home/pi2/ros2_ws/build/motor_serial', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.107 58294 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi2/ros2_ws/build/motor_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_slam_package/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/my_parameters/local/lib/python3.10/dist-packages:/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/motor_commands/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/locolization/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/joystick_publisher/lib/python3.10/site-packages:/home/pi2/ros2_ws/install/bno055/lib/python3.10/site-packages:/home/pi2/install/motor_serial/lib/python3.10/site-packages:/home/pi2/install/motor_commands/lib/python3.10/site-packages:/home/pi2/install/joystick_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'sv_SE.UTF-8', 'LC_PAPER': 'sv_SE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/csm:/home/pi2/install/csm:/home/pi2/ros2_ws/install'}, 'shell': False}
+[8.739276] (-) TimerEvent: {}
+[8.841194] (-) TimerEvent: {}
+[8.943254] (-) TimerEvent: {}
+[9.045477] (-) TimerEvent: {}
+[9.146818] (-) TimerEvent: {}
+[9.248104] (-) TimerEvent: {}
+[9.349443] (-) TimerEvent: {}
+[9.450709] (-) TimerEvent: {}
+[9.552152] (-) TimerEvent: {}
+[9.654006] (-) TimerEvent: {}
+[9.755332] (-) TimerEvent: {}
+[9.856681] (-) TimerEvent: {}
+[9.957952] (-) TimerEvent: {}
+[10.059368] (-) TimerEvent: {}
+[10.160721] (-) TimerEvent: {}
+[10.262371] (-) TimerEvent: {}
+[10.363650] (-) TimerEvent: {}
+[10.465124] (-) TimerEvent: {}
+[10.566398] (-) TimerEvent: {}
+[10.667730] (-) TimerEvent: {}
+[10.769065] (-) TimerEvent: {}
+[10.871287] (-) TimerEvent: {}
+[10.972638] (-) TimerEvent: {}
+[11.073893] (-) TimerEvent: {}
+[11.175149] (-) TimerEvent: {}
+[11.276444] (-) TimerEvent: {}
+[11.377855] (-) TimerEvent: {}
+[11.479070] (-) TimerEvent: {}
+[11.580341] (-) TimerEvent: {}
+[11.681689] (-) TimerEvent: {}
+[11.783014] (-) TimerEvent: {}
+[11.884320] (-) TimerEvent: {}
+[11.985795] (-) TimerEvent: {}
+[12.087066] (-) TimerEvent: {}
+[12.188288] (-) TimerEvent: {}
+[12.290193] (-) TimerEvent: {}
+[12.316513] (motor_serial) StdoutLine: {'line': b'running egg_info\n'}
+[12.323967] (motor_serial) StdoutLine: {'line': b'writing ../../build/motor_serial/motor_serial.egg-info/PKG-INFO\n'}
+[12.326640] (motor_serial) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_serial/motor_serial.egg-info/dependency_links.txt\n'}
+[12.328357] (motor_serial) StdoutLine: {'line': b'writing entry points to ../../build/motor_serial/motor_serial.egg-info/entry_points.txt\n'}
+[12.330193] (motor_serial) StdoutLine: {'line': b'writing requirements to ../../build/motor_serial/motor_serial.egg-info/requires.txt\n'}
+[12.331757] (motor_serial) StdoutLine: {'line': b'writing top-level names to ../../build/motor_serial/motor_serial.egg-info/top_level.txt\n'}
+[12.359857] (motor_serial) StdoutLine: {'line': b"reading manifest file '../../build/motor_serial/motor_serial.egg-info/SOURCES.txt'\n"}
+[12.370564] (motor_serial) StdoutLine: {'line': b"writing manifest file '../../build/motor_serial/motor_serial.egg-info/SOURCES.txt'\n"}
+[12.372257] (motor_serial) StdoutLine: {'line': b'running build\n'}
+[12.373657] (motor_serial) StdoutLine: {'line': b'running build_py\n'}
+[12.375196] (motor_serial) StdoutLine: {'line': b'copying motor_serial/motor_serial.py -> /home/pi2/ros2_ws/build/motor_serial/build/lib/motor_serial\n'}
+[12.378940] (motor_serial) StdoutLine: {'line': b'running install\n'}
+[12.382460] (motor_serial) StdoutLine: {'line': b'running install_lib\n'}
+[12.390446] (-) TimerEvent: {}
+[12.392912] (motor_serial) StdoutLine: {'line': b'copying /home/pi2/ros2_ws/build/motor_serial/build/lib/motor_serial/motor_serial.py -> /home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial\n'}
+[12.401276] (motor_serial) StdoutLine: {'line': b'byte-compiling /home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial/motor_serial.py to motor_serial.cpython-310.pyc\n'}
+[12.412685] (motor_serial) StdoutLine: {'line': b'running install_data\n'}
+[12.414496] (motor_serial) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.433385] (motor_serial) StdoutLine: {'line': b"removing '/home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[12.438014] (motor_serial) StdoutLine: {'line': b'Copying ../../build/motor_serial/motor_serial.egg-info to /home/pi2/ros2_ws/install/motor_serial/lib/python3.10/site-packages/motor_serial-0.0.0-py3.10.egg-info\n'}
+[12.456695] (motor_serial) StdoutLine: {'line': b'running install_scripts\n'}
+[12.490726] (-) TimerEvent: {}
+[12.592836] (-) TimerEvent: {}
+[12.677966] (motor_serial) StdoutLine: {'line': b'Installing motor_serial script to /home/pi2/ros2_ws/install/motor_serial/lib/motor_serial\n'}
+[12.682043] (motor_serial) StdoutLine: {'line': b"writing list of installed files to '/home/pi2/ros2_ws/build/motor_serial/install.log'\n"}
+[12.693258] (-) TimerEvent: {}
+[12.799762] (-) TimerEvent: {}
+[12.903519] (-) TimerEvent: {}
+[12.923990] (motor_serial) CommandEnded: {'returncode': 0}
+[13.004727] (-) TimerEvent: {}
+[13.069909] (motor_serial) JobEnded: {'identifier': 'motor_serial', 'rc': 0}
+[13.075708] (-) EventReactorShutdown: {}

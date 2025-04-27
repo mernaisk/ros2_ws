@@ -14,8 +14,8 @@ class MotorCommandPublisher(Node):
 
 
         # Publisher for motor command
-        self.publisher_ = self.create_publisher(MotorParameters, "motor_command", 10)
-        self.debug_publisher_ = self.create_publisher(DebugParameter, "debug_motor_parameters", 10)
+        self.publisher_ = self.create_publisher(MotorParameters, "motor_command", 20)
+        # self.debug_publisher_ = self.create_publisher(DebugParameter, "debug_motor_parameters", 10)
         # Subscription to joystick command
         self.subscription = self.create_subscription(
             JoystickParameters,  
@@ -171,21 +171,21 @@ class MotorCommandPublisher(Node):
         self.publisher_.publish(motor_command)
 
 
-        debug_msg = DebugParameter()
-        debug_msg.alpha_r_fr = self.alpha_r_fr
-        debug_msg.alpha_b_fr = self.alpha_b_fr
-        debug_msg.z_l_fr = self.z_l_fr
-        debug_msg.alpha_r_fl = self.alpha_r_fl
-        debug_msg.alpha_b_fl = self.alpha_b_fl
-        debug_msg.z_l_fl = self.z_l_fl
-        debug_msg.alpha_r_rr = self.alpha_r_rr
-        debug_msg.alpha_b_rr = self.alpha_b_rr
-        debug_msg.z_l_rr = self.z_l_rr
-        debug_msg.alpha_r_rl = self.alpha_r_rl
-        debug_msg.alpha_b_rl = self.alpha_b_rl
-        debug_msg.z_l_rl = self.z_l_rl
+        # debug_msg = DebugParameter()
+        # debug_msg.alpha_r_fr = self.alpha_r_fr
+        # debug_msg.alpha_b_fr = self.alpha_b_fr
+        # debug_msg.z_l_fr = self.z_l_fr
+        # debug_msg.alpha_r_fl = self.alpha_r_fl
+        # debug_msg.alpha_b_fl = self.alpha_b_fl
+        # debug_msg.z_l_fl = self.z_l_fl
+        # debug_msg.alpha_r_rr = self.alpha_r_rr
+        # debug_msg.alpha_b_rr = self.alpha_b_rr
+        # debug_msg.z_l_rr = self.z_l_rr
+        # debug_msg.alpha_r_rl = self.alpha_r_rl
+        # debug_msg.alpha_b_rl = self.alpha_b_rl
+        # debug_msg.z_l_rl = self.z_l_rl
 
-        self.debug_publisher_.publish(debug_msg)
+        # self.debug_publisher_.publish(debug_msg)
 
         # self.get_logger().info(f'alpha a fr: {motor_command.alpha_a_fr}')
         # self.get_logger().info(f'alpha b fr: {motor_command.alpha_b_fr}')

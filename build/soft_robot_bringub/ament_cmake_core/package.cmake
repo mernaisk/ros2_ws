@@ -5,7 +5,7 @@ set(soft_robot_bringub_BUILD_DEPENDS "robot_localization" "tf2_ros" "slam_toolbo
 set(soft_robot_bringub_BUILDTOOL_DEPENDS "ament_cmake")
 set(soft_robot_bringub_BUILD_EXPORT_DEPENDS "robot_localization" "tf2_ros" "slam_toolbox" "nav2_amcl" "nav2_map_server" "nav2_lifecycle_manager" "nav2_planner" "nav2_bt_navigator" "nav2_controller" "nav2_dwb_controller" "nav2_behaviors" "rcl_yaml_param_parser")
 set(soft_robot_bringub_BUILDTOOL_EXPORT_DEPENDS )
-set(soft_robot_bringub_EXEC_DEPENDS "joystick_publisher" "motor_commands" "bno055" "motor_serial" "my_slam_package" "robot_localization" "tf2_ros" "slam_toolbox" "nav2_amcl" "nav2_map_server" "nav2_lifecycle_manager" "nav2_planner" "nav2_bt_navigator" "nav2_controller" "nav2_dwb_controller" "nav2_behaviors" "rcl_yaml_param_parser")
+set(soft_robot_bringub_EXEC_DEPENDS "joystick_publisher" "motor_commands" "bno055" "motor_serial" "my_slam_package" "cmd_vel_to_joystick" "robot_localization" "tf2_ros" "slam_toolbox" "nav2_amcl" "nav2_map_server" "nav2_lifecycle_manager" "nav2_planner" "nav2_bt_navigator" "nav2_controller" "nav2_dwb_controller" "nav2_behaviors" "rcl_yaml_param_parser")
 set(soft_robot_bringub_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(soft_robot_bringub_GROUP_DEPENDS )
 set(soft_robot_bringub_MEMBER_OF_GROUPS )

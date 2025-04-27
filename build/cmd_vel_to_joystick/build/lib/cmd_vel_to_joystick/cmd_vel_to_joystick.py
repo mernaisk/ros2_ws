@@ -21,7 +21,7 @@ class CmdVelToJoystick(Node):
         self.goal_active = False
         self.override_enabled = False
         self.cmd_vel_enabled = True
-
+        self.alpha_b= math.pi/12
         self.last_button6 = 0
         self.last_button7 = 0
         self.distance_zone = 1
@@ -38,7 +38,7 @@ class CmdVelToJoystick(Node):
 
         # Publishers
         self.publisher_ = self.create_publisher(JoystickParameters, '/joystick_command', 20)
-        self.obstacle_log_pub = self.create_publisher(ObstacleProximityLog, '/obstacle_log', 10)
+        self.obstacle_log_pub = self.create_publisher(ObstacleProximityLog, '/obstacle_log', 20)
 
     def joy_callback(self, msg):
         button6 = msg.buttons[6]
@@ -67,6 +67,7 @@ class CmdVelToJoystick(Node):
         if new_goal_active and not self.goal_active:
             self.get_logger().info("🟢 Navigation became active")
             self.turn_counter = 0
+            self.distance_zone = 1
             self.start_transition_sequence("start")
 
         elif not new_goal_active and self.goal_active:
@@ -130,7 +131,8 @@ class CmdVelToJoystick(Node):
         self.last_turn_command = out_msg.turn_command
 
         # Motion logic
-        out_msg.velocity = max(min(msg.linear.x, math.pi / 4), math.pi / 12)
+        self.alpha_b = 2.895 * msg.linear.x + 0.2531
+        out_msg.velocity = max(min(self.alpha_b , math.pi / 4), math.pi / 12)
         out_msg.position_direction = 0.0
         out_msg.position_command = True
         out_msg.enabled = self.override_enabled and self.goal_active

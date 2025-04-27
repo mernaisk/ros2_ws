@@ -12,7 +12,7 @@ class MotorSerialNode(Node):
         super().__init__('motor_serial_node')
 
         try:
-            self.ser = serial.Serial("/dev/ttyS0", 115200, timeout=0.01)
+            self.ser = serial.Serial("/dev/ttyACM0", 115200, timeout=0.1)
             self.ser.flushInput()
             self.ser.flushOutput()
             time.sleep(1)
@@ -23,7 +23,8 @@ class MotorSerialNode(Node):
         
         self.lock = threading.Lock()
         # self.timer = self.create_timer(0.05, self.send_motor_commands)
-
+        self.releasing = False
+        self.release_start_time = None
         self.motor_commands = bytearray([90, 85, 80, 93, 91, 83, 92, 82, 85, 85, 90, 87])
 
         self.relay_commands = bytearray([10, 10])  # Default to stopped
@@ -31,9 +32,12 @@ class MotorSerialNode(Node):
 
         self.header = bytearray([83])  # STM32 Header
         self.terminators = bytearray([0, 55, 69])  # STM32 Terminators
-
+        self.debug_pub = self.create_publisher(Stm32Data, '/stm_debug', 10)
         self.create_subscription(Stm32Data, '/StmData', self.stm_data_callback, 20)
-
+        self.timer = self.create_timer(0.05, self.timer_callback)
+    
+    def timer_callback(self):
+        self.send_motor_commands()
 
     def stm_data_callback(self, msg):
         """ Callback function to update motor command values from /StmData """
@@ -48,56 +52,40 @@ class MotorSerialNode(Node):
             self.relay_commands = bytearray([200, 200])
             self.enabled = msg.enabled
         elif self.enabled == True and msg.enabled == False:
-            self.relay_commands = bytearray([200, 200])  # Temporary relay command to set neutral
+            self.relay_commands = bytearray([200, 200])  # prepare for stop
             self.motor_commands = bytearray([90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90])
-            self.release()
-            self.enabled = msg.enabled
+            self.releasing = True
+            self.release_start_time = time.time()
             # self.release()
-        
-        self.send_motor_commands()
-        
+            self.enabled = msg.enabled
 
-        
-
-
-
-
-
-    def release(self):
-        # self.get_logger().info(f"release")
-
-        start_time = time.time()
-        
-        while time.time() - start_time < 2:  # Run for 2 seconds
-            data_to_stm32 = self.get_data_to_stm32()
-            if data_to_stm32:
-                with self.lock:
-                    self.ser.write(data_to_stm32)
-                    # time.sleep(0.25)
-                    # self.get_logger().info(f"⏳ Sending: {list(data_to_stm32)}")
-            time.sleep(0.05)  # Send every 50ms
-        
-        self.relay_commands = bytearray([10, 10])  # Turn off relay after 2 seconds
-        data_to_stm32 = self.get_data_to_stm32()
-        if data_to_stm32:
-            with self.lock:
-                self.ser.write(data_to_stm32)
-                self.get_logger().info("🛑 Motors fully stopped!")
 
 
 
     def send_motor_commands(self):
         """ Sends the motor and relay commands to STM32 """
         try:
+            # If we are in releasing mode
+            if self.releasing:
+                if time.time() - self.release_start_time > 2.0:
+                    # After 2 seconds, fully stop
+                    self.relay_commands = bytearray([10, 10])
+                    self.releasing = False  # Done releasing
+
             data_to_stm32 = self.get_data_to_stm32()
             if data_to_stm32 is None:
                 return
 
             with self.lock:
                 self.ser.write(data_to_stm32)
-                self.get_logger().info(f"➡️ Sent to STM32: {list(data_to_stm32)}")
+                # self.ser.flush()
+                time.sleep(0.005)
                 data_from_stm32 = self.ser.read(19)
-                # self.get_logger().info(f"⬅️ Received from STM32: {list(data_from_stm32)}")
+                # self.get_logger().info(f"➡️ Sent: {list(data_to_stm32)} ⬅️ Received: {list(data_from_stm32)}")
+            
+            # debug_msg = Stm32Data()
+            # debug_msg.motor1_fr = int(time.time() * 1000) % 256  # Just to see changing values
+            # self.debug_pub.publish(debug_msg)
 
         except Exception as error:
             self.get_logger().error(f"Error in serial communication: {error}")

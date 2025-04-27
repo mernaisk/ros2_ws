@@ -13,6 +13,7 @@
   <exec_depend>bno055</exec_depend>
   <exec_depend>motor_serial</exec_depend>
   <exec_depend>my_slam_package</exec_depend>
+  <exec_depend>cmd_vel_to_joystick</exec_depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
   <depend>robot_localization</depend>
@@ -26,7 +27,6 @@
   <depend>nav2_controller</depend>
   <depend>nav2_dwb_controller</depend>
   <depend>nav2_behaviors</depend>
-
   <depend>rcl_yaml_param_parser</depend>
 
   <export>
