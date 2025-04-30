@@ -1,3 +1,0 @@
-[console_scripts]
-joystick_publisher = joystick_publisher.joystick_publisher:main
-

@@ -1,3 +1,0 @@
-[console_scripts]
-static_tf_broadcaster = my_slam_package.static_tf_broadcaster:main
-
