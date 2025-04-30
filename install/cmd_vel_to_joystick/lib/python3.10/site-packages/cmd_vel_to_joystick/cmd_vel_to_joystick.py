@@ -116,10 +116,10 @@ class CmdVelToJoystick(Node):
         out_msg = JoystickParameters()
 
         # Turn logic
-        if msg.angular.z > 0.3:
+        if msg.angular.z > 0.2:
             out_msg.turn_command = True
             out_msg.turn_angle = math.pi / 2
-        elif msg.angular.z < -0.3:
+        elif msg.angular.z < -0.2:
             out_msg.turn_command = True
             out_msg.turn_angle = -math.pi / 2
         else:
@@ -131,7 +131,8 @@ class CmdVelToJoystick(Node):
         self.last_turn_command = out_msg.turn_command
 
         # Motion logic
-        self.alpha_b = 2.895 * msg.linear.x + 0.2531
+        # self.alpha_b = 2.895 * msg.linear.x + 0.2531
+        self.alpha_b = msg.linear.x 
         out_msg.velocity = max(min(self.alpha_b , math.pi / 4), math.pi / 12)
         out_msg.position_direction = 0.0
         out_msg.position_command = True

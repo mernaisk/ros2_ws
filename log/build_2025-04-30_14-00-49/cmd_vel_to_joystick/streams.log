@@ -1,0 +1,22 @@
+[6.148s] Invoking command in '/home/pi2/ros2_ws/src/cmd_vel_to_joystick': CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/csm:/home/pi2/install/csm:/home/pi2/ros2_ws/install PYTHONPATH=/home/pi2/ros2_ws/build/cmd_vel_to_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel_to_joystick build --build-base /home/pi2/ros2_ws/build/cmd_vel_to_joystick/build install --record /home/pi2/ros2_ws/build/cmd_vel_to_joystick/install.log --single-version-externally-managed install_data
+[9.586s] running egg_info
+[9.593s] writing ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/PKG-INFO
+[9.596s] writing dependency_links to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/dependency_links.txt
+[9.597s] writing entry points to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/entry_points.txt
+[9.598s] writing requirements to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/requires.txt
+[9.598s] writing top-level names to ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/top_level.txt
+[9.611s] reading manifest file '../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/SOURCES.txt'
+[9.613s] adding license file 'LICENSE'
+[9.615s] writing manifest file '../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info/SOURCES.txt'
+[9.616s] running build
+[9.616s] running build_py
+[9.618s] running install
+[9.619s] running install_lib
+[9.625s] running install_data
+[9.626s] running install_egg_info
+[9.634s] removing '/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages/cmd_vel_to_joystick-0.0.0-py3.10.egg-info' (and everything under it)
+[9.636s] Copying ../../build/cmd_vel_to_joystick/cmd_vel_to_joystick.egg-info to /home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages/cmd_vel_to_joystick-0.0.0-py3.10.egg-info
+[9.643s] running install_scripts
+[9.781s] Installing cmd_vel_to_joystick script to /home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/cmd_vel_to_joystick
+[9.785s] writing list of installed files to '/home/pi2/ros2_ws/build/cmd_vel_to_joystick/install.log'
+[10.007s] Invoked command in '/home/pi2/ros2_ws/src/cmd_vel_to_joystick' returned '0': CMAKE_PREFIX_PATH=/home/pi2/ros2_ws/install/my_parameters:/home/pi2/ros2_ws/install/soft_robot_bringub:/home/pi2/ros2_ws/install/sllidar_ros2:/home/pi2/ros2_ws/install/ros2_laser_scan_matcher:/home/pi2/ros2_ws/install/csm:/home/pi2/install/csm:/home/pi2/ros2_ws/install PYTHONPATH=/home/pi2/ros2_ws/build/cmd_vel_to_joystick/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi2/ros2_ws/install/cmd_vel_to_joystick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel_to_joystick build --build-base /home/pi2/ros2_ws/build/cmd_vel_to_joystick/build install --record /home/pi2/ros2_ws/build/cmd_vel_to_joystick/install.log --single-version-externally-managed install_data

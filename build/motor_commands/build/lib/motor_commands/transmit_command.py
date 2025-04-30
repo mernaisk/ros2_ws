@@ -106,21 +106,21 @@ class MotorCommandPublisher(Node):
         # self.pretight2_rl = 1 + const
         # self.pretight3_rl = 7 + const
 
-        self.pretight1_fr = -5 + const
-        self.pretight2_fr = -7 + const
-        self.pretight3_fr = -4 + const
+        self.pretight1_fr = -2 + const
+        self.pretight2_fr = -4 + const
+        self.pretight3_fr = -1 + const
 
-        self.pretight1_fl = 0 + const
+        self.pretight1_fl = -2 + const
         self.pretight2_fl = 0 + const
         self.pretight3_fl = 0 + const
         
-        self.pretight1_rr = 1 + const
-        self.pretight2_rr = 0 + const
-        self.pretight3_rr = 2 + const
+        self.pretight1_rr = 6 + const
+        self.pretight2_rr = -1 + const
+        self.pretight3_rr = 13 + const
 
-        self.pretight1_rl = -2 + const
-        self.pretight2_rl = -2 + const
-        self.pretight3_rl = 5 + const
+        self.pretight1_rl = 0 + const
+        self.pretight2_rl = 3 + const
+        self.pretight3_rl = 10 + const
 
         self.motor1_fr -=  self.pretight1_fr
         self.motor2_fr -=  self.pretight2_fr

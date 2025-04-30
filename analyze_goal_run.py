@@ -5,9 +5,9 @@ from rclpy.serialization import deserialize_message
 from rosidl_runtime_py.utilities import get_message
 from math import sqrt
 
-# Set the correct path to your bag
-bag_path = "/home/pi2/ros2_ws/data1"  # Change if needed
-topics_of_interest = ["/obstacle_log", "/amcl_pose"]
+# --- Settings ---
+bag_path = "/home/pi2/ros2_ws/data1"  # Change this to your bag folder path
+use_obstacle_log = False  # Set to True if you have the /obstacle_log message type installed
 
 # Open rosbag
 reader = rosbag2_py.SequentialReader()
@@ -26,7 +26,7 @@ while reader.has_next():
     topic, msg_data, t = reader.read_next()
     t_sec = t / 1e9  # nanoseconds → seconds
 
-    if topic == "/obstacle_log":
+    if topic == "/obstacle_log" and use_obstacle_log:
         msg = deserialize_message(msg_data, get_message(topic_type_map[topic]))
         obstacle_data.append({
             "time": t_sec,
@@ -44,51 +44,82 @@ while reader.has_next():
         })
 
 # Convert to DataFrames
-df_obs = pd.DataFrame(obstacle_data)
 df_pose = pd.DataFrame(pose_data)
+print(f"Total AMCL poses loaded: {len(df_pose)}")
 
-# --- Analysis ---
-# Find last 0 → 1 → 0 transition
-starts = df_obs[(df_obs['goal_status'].shift(1) == 0) & (df_obs['goal_status'] == 1)]
-ends = df_obs[(df_obs['goal_status'].shift(1) == 1) & (df_obs['goal_status'] == 0)]
-
-if not starts.empty and not ends.empty:
-    end_time = ends['time'].iloc[-1]
-    start_time_candidates = starts[starts['time'] < end_time]
-    if start_time_candidates.empty:
-        raise ValueError("No start found before last end.")
-    start_time = start_time_candidates['time'].iloc[-1]
+if not df_pose.empty:
+    print(f"Pose timestamp range: {df_pose['time'].min():.2f}s → {df_pose['time'].max():.2f}s")
 else:
-    raise ValueError("Could not find a valid 0→1→0 transition in goal_status.")
+    print("No AMCL pose data found. Exiting.")
+    exit(1)
 
-print(f"Start time: {start_time:.2f}s")
-print(f"End time: {end_time:.2f}s")
+# --- Goal timing from obstacle_log (if available) ---
+if use_obstacle_log:
+    df_obs = pd.DataFrame(obstacle_data)
+    starts = df_obs[(df_obs['goal_status'].shift(1) == 0) & (df_obs['goal_status'] == 1)]
+    ends = df_obs[(df_obs['goal_status'].shift(1) == 1) & (df_obs['goal_status'] == 0)]
 
-# Filter data
-obs_filtered = df_obs[(df_obs["time"] >= start_time) & (df_obs["time"] <= end_time)]
+    if not starts.empty and not ends.empty:
+        end_time = ends['time'].iloc[-1]
+        start_time_candidates = starts[starts['time'] < end_time]
+        if start_time_candidates.empty:
+            print("No matching start time found before last goal end.")
+            start_time = df_pose['time'].min()
+            end_time = df_pose['time'].max()
+        else:
+            start_time = start_time_candidates['time'].iloc[-1]
+    else:
+        print("Could not find valid goal transitions, falling back to full time range.")
+        start_time = df_pose['time'].min()
+        end_time = df_pose['time'].max()
+else:
+    print("Skipping obstacle_log analysis. Using full pose time range.")
+    start_time = df_pose['time'].min()
+    end_time = df_pose['time'].max()
+
+# Filter pose data to time window
 pose_filtered = df_pose[(df_pose["time"] >= start_time) & (df_pose["time"] <= end_time)]
+print(f"Filtered poses: {len(pose_filtered)}")
 
-# Plot distance_zone over time
-if obs_filtered.empty:
-    print("No obstacle_log data in the selected time window.")
-else:
-    plt.figure(figsize=(10, 4))
-    plt.plot(obs_filtered["time"].to_numpy(), obs_filtered["distance_zone"].to_numpy(), label="Distance Zone")
-    plt.xlabel("Time (s)")
-    plt.ylabel("Distance Zone")
-    plt.title("Distance Zone during Goal Active Period")
-    plt.grid()
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
+if pose_filtered.empty:
+    print("Filtered pose data is empty. Using all pose data.")
+    pose_filtered = df_pose
 
-# Compute distance walked
+# --- Plot trajectory ---
+plt.figure(figsize=(6, 6))
+plt.plot(pose_filtered["x"], pose_filtered["y"], marker='o', markersize=2, label="Trajectory")
+plt.xlabel("X position (m)")
+plt.ylabel("Y position (m)")
+plt.title("Robot Trajectory")
+plt.grid()
+plt.axis('equal')
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+# --- Plot distance zone (if available) ---
+if use_obstacle_log and not df_obs.empty:
+    obs_filtered = df_obs[(df_obs["time"] >= start_time) & (df_obs["time"] <= end_time)]
+    if not obs_filtered.empty:
+        plt.figure(figsize=(10, 4))
+        plt.plot(obs_filtered["time"], obs_filtered["distance_zone"], label="Distance Zone")
+        plt.xlabel("Time (s)")
+        plt.ylabel("Distance Zone")
+        plt.title("Distance Zone during Goal Active Period")
+        plt.grid()
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
+    else:
+        print("No obstacle_log data in the selected time window.")
+
+# --- Compute distance walked ---
 total_distance = 0.0
 for i in range(1, len(pose_filtered)):
-    x1, y1 = pose_filtered.iloc[i - 1][["x", "y"]].to_numpy()
-    x2, y2 = pose_filtered.iloc[i][["x", "y"]].to_numpy()
+    x1, y1 = pose_filtered.iloc[i - 1][["x", "y"]]
+    x2, y2 = pose_filtered.iloc[i][["x", "y"]]
     total_distance += sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-duration = end_time - start_time
+duration = pose_filtered["time"].iloc[-1] - pose_filtered["time"].iloc[0]
 print(f"Total walked distance: {total_distance:.2f} meters")
 print(f"Time taken: {duration:.2f} seconds")
