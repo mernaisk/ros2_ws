@@ -12,7 +12,6 @@
   <exec_depend>motor_commands</exec_depend>
   <exec_depend>bno055</exec_depend>
   <exec_depend>motor_serial</exec_depend>
-  <exec_depend>my_slam_package</exec_depend>
   <exec_depend>cmd_vel_to_joystick</exec_depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

@@ -131,8 +131,8 @@ class CmdVelToJoystick(Node):
         self.last_turn_command = out_msg.turn_command
 
         # Motion logic
-        # self.alpha_b = 2.895 * msg.linear.x + 0.2531
-        self.alpha_b = msg.linear.x 
+        self.alpha_b = 2.895 * msg.linear.x + 0.2531
+        # self.alpha_b = msg.linear.x 
         out_msg.velocity = max(min(self.alpha_b , math.pi / 4), math.pi / 12)
         out_msg.position_direction = 0.0
         out_msg.position_command = True

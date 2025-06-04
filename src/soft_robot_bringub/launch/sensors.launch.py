@@ -23,7 +23,13 @@ def generate_launch_description():
         #     respawn=True,  
         #     respawn_delay=2.0 
         # ),
-
+        
+        Node(
+            package='joy_linux',
+            executable='joy_linux_node',
+            name='joy_linux_node',
+            output='screen'
+        ),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(sllidar_launch_file)

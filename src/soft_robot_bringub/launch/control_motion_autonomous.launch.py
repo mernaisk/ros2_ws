@@ -12,20 +12,14 @@ config_file = os.path.join(
 
 def generate_launch_description():
     return LaunchDescription([
-        # Launch joystick_publisher node
+
+        
         Node(
-            package='joystick_publisher',
-            executable='joystick_publisher',
-            name='joystick_publisher',
+            package='cmd_vel_to_joystick',
+            executable='cmd_vel_to_joystick',
+            name='cmd_vel_to_joystick',
             output='screen'
         ),
-        
-        # Node(
-        #     package='cmd_vel_to_joystick',
-        #     executable='cmd_vel_to_joystick',
-        #     name='cmd_vel_to_joystick',
-        #     output='screen'
-        # ),
         
         # Launch motor_commands.py node
         Node(

@@ -10,7 +10,7 @@ def generate_launch_description():
     )
 
     control_motion_launch_file = os.path.join(
-        get_package_share_directory('soft_robot_bringub'), 'launch', 'control_motion.launch.py'
+        get_package_share_directory('soft_robot_bringub'), 'launch', 'control_motion_autonomous.launch.py'
     )
 
     return LaunchDescription([
