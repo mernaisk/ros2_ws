@@ -61,13 +61,14 @@ def generate_launch_description():
             parameters=[config_file1]  # path to the EKF config file
         ),
 
-        # Node(
-        #     package='slam_toolbox',
-        #     executable='sync_slam_toolbox_node',
-        #     name='slam_toolbox',
-        #     output='screen',
-        #     parameters=[config_file2]  # SLAM Toolbox config file
-        # )
-
+        # comment it if you have saved map. if you want to do the mapping from begging, then use this node
+        Node(
+            package='slam_toolbox',
+            executable='sync_slam_toolbox_node',
+            name='slam_toolbox',
+            output='screen',
+            parameters=[config_file2]  # SLAM Toolbox config file
+        )
+        # then run in another terminal the following:ros2 run nav2_map_server map_saver_cli -f my_map
         
     ])
